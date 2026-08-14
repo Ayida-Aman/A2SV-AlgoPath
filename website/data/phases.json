@@ -1,0 +1,77 @@
+[
+  {
+    "id": "foundation",
+    "name": "Foundation",
+    "description": "Establish core programming competencies in Python, best coding practices, clean architecture, complexity analysis (Big-O), the 7-step problem-solving methodology, and essential built-in data structures (Lists, Tuples, Sets, Dictionaries, Classes).",
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "totalWeeks": 12
+  },
+  {
+    "id": "phase_1",
+    "name": "Phase 1 — Core DSA",
+    "description": "Master foundational data structures and fundamental algorithmic paradigms: Arrays, Matrices, Elementary Sorting, Two Pointers, Sliding Window, Prefix Sum, Singly/Doubly Linked Lists, Stacks, Queues, Monotonic Structures, Recursion Fundamentals, and Binary Search.",
+    "weeks": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "totalWeeks": 13
+  },
+  {
+    "id": "phase_2",
+    "name": "Phase 2 — Advanced DSA",
+    "description": "Dive deep into non-linear data structures, advanced recursion, and foundational graph algorithms: Binary Trees, Binary Search Trees (BST), Backtracking, Divide & Conquer, Graph Representations, Depth-First Search (DFS), Breadth-First Search (BFS), Heaps/Priority Queues, Greedy Optimization, Topological Sort, and Dynamic Programming (Top-Down & Bottom-Up).",
+    "weeks": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "totalWeeks": 11
+  },
+  {
+    "id": "phase_3",
+    "name": "Phase 3 — Competitive Programming",
+    "description": "Tackle advanced competitive programming paradigms and specialized data structures: Bitwise Operations, Disjoint Set Union (Union-Find), Advanced & Non-Comparison Sorting, Numerics & Number Theory, Trie (Prefix Tree), All-Pairs & Single-Source Shortest Paths (Dijkstra, Bellman-Ford, Floyd-Warshall), and Advanced String Algorithms (KMP, Rabin-Karp, Z-Algorithm).",
+    "weeks": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "totalWeeks": 7
+  }
+]
