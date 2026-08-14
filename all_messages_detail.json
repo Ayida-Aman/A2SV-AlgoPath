@@ -1,0 +1,3425 @@
+[
+  {
+    "index": 0,
+    "id": "message-1",
+    "classes": [
+      "message",
+      "service"
+    ],
+    "author": null,
+    "date_title": "",
+    "date_text": "",
+    "forwarded_from": null,
+    "media_files": [],
+    "text": "13 August 2026",
+    "links": []
+  },
+  {
+    "index": 1,
+    "id": "message1",
+    "classes": [
+      "message",
+      "service"
+    ],
+    "author": null,
+    "date_title": "",
+    "date_text": "",
+    "forwarded_from": null,
+    "media_files": [],
+    "text": "Channel «Test» created",
+    "links": []
+  },
+  {
+    "index": 2,
+    "id": "message10",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "13.08.2026 12:49:12 UTC+03:00",
+    "date_text": "12:49",
+    "forwarded_from": null,
+    "media_files": [],
+    "text": "Hello\n@aydu_test",
+    "links": [
+      {
+        "href": "https://t.me/aydu_test",
+        "text": "@aydu_test"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "id": "message-2",
+    "classes": [
+      "message",
+      "service"
+    ],
+    "author": null,
+    "date_title": "",
+    "date_text": "",
+    "forwarded_from": null,
+    "media_files": [],
+    "text": "14 August 2026",
+    "links": []
+  },
+  {
+    "index": 4,
+    "id": "message11",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:14:08 UTC+03:00",
+    "date_text": "10:14",
+    "forwarded_from": null,
+    "media_files": [],
+    "text": "​🚀 Day 1 - Onboarding & Best Coding Practices\n​🎯 What We Covered:\n​We officially kicked off our journey! Today was all about setting the right foundation by diving into best coding practices—learning how to write clean, readable, and industry-standard code from day one.\nI will share the onboarding slides in the group!\n​🌟 Key Takeaways – Writing Clean & Efficient Code\n​Writing code isn't just about getting the right output; it’s about writing maintainable and clear logic:\n🔹 Meaningful Naming: Use descriptive variable and function names (e.g., calculate_total instead of calc).\n🔹 DRY Principle (Don't Repeat Yourself): Avoid redundant code by breaking logic into reusable functions.\n🔹 Clean Formatting & Modularity: Keep proper indentation, consistent style, and single-purpose functions.\n​🏆 Today's Action Items:\n​Get your setup ready before we jump into problem-solving tomorrow:\nSet up your LeetCode, Codeforces, and HackerRank accounts\nReview the coding standards and styling guidelines\nJoin our discussion group and introduce yourself\n​📢 Quote of the Day:\n\"Any fool can write code that a computer can understand. Good programmers write code that humans can understand.\"\n​\n#A2SV\n#DSA\n#Day1",
+    "links": [
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day1"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "id": "message12",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:14:19 UTC+03:00",
+    "date_text": "10:14",
+    "forwarded_from": "Y",
+    "media_files": [],
+    "text": "10:14\nTest\nY\nYeab\n14.08.2025 19:23:59\nA2SV_G6_Python_Track_Focus_time_management_and_planning.pdf\nExceeds maximum size, change data exporting settings to download.\n9.0 MB",
+    "links": []
+  },
+  {
+    "index": 6,
+    "id": "message13",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": null,
+    "date_title": "14.08.2026 10:14:19 UTC+03:00",
+    "date_text": "10:14",
+    "forwarded_from": "A2SV Python Track - Best Coding Practices.pdf3.8 MB",
+    "media_files": [
+      {
+        "href": "files/A2SV Python Track - Best Coding Practices.pdf",
+        "text": "A2SV Python Track - Best Coding Practices.pdf3.8 MB",
+        "title": ""
+      }
+    ],
+    "text": "10:14\nA2SV Python Track - Best Coding Practices.pdf\n3.8 MB",
+    "links": []
+  },
+  {
+    "index": 7,
+    "id": "message14",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [],
+    "text": "🚀\nDay 2 - Lecture on Python Basics, Conditionals, Loops & Functions\n🎯 What We Covered:\nWe dived into the\nfundamentals of Python\n– covering\nconditionals, loops, and functions\n! we solved some simple problems along the way to reinforce our understanding.\nI will share the lecture slides on the\nnew group\n!\n🌟 New Thing I Learned – Lambda Functions in Python\nLambda function\ns are a way to write quick, one-line functions without using\ndef\n. Here’s a comparison with the normal function definition:\n🔹 Using a normal function:\ndef square(x):\nreturn x * x\nprint(square(5))  # Output: 25\n🔹 Using a lambda function:\nsquare = lambda x: x * x\nprint(square(5))  # Output: 25\n🏆 Practice Problems:\nThese are today’s practice problems:\nSolve them in their respective platforms and share them in the\ngroup\n.\nSmallest even multiple\nWeird\nPowers\nMod Power\nLongest Common Prefix\n🔥Announcement! – Dedicated DSA Group 🎉\nTo keep things\nstructured\n&\ncollaborative\n, I’ve created a dedicated group just for\nsolving problems, asking questions, and discussing solutions.\nJoin now! 👉\nhttps://t.me/codewithbakacommunity/6\n📌 What’s in the Group?\n✅ Lecture slides will be shared 📂\n✅ Solve daily problems together 💡\n✅ Ask & answer questions 🤝\n✅ Share helpful resources (videos, code snippets, etc.) 📺\n📝 How to Submit Solutions:\nTo track progress and maintain consistency, follow this format when submitting solutions:\n1️⃣\nReply to the daily post where the problem is shared.\n2️⃣ First line: Add '\n#solution\n' at the top (IMPORTANT for tracking our daily streak 🚀).\n3️⃣ Second line: Write the title of the problem (as seen on LeetCode, Codeforces, or HackerRank).\n4️⃣ Third line: Write a short explanation (1-2 sentences) of your thought process for solving the problem(!Important)\n5️⃣ Paste your code between three backticks (```) so that Telegram formats it as code.(example: ```your code```)\nThere is a solved example in the group!\n🚀 Guys, it’s time to get to work—C’MON LET’S GOOO! 💪🔥\n📢 Quote of the Day:\n\"A year from now, you may wish you had started today.\"\n#A2SV\n#DSA\n#Day2\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "new group"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "https://leetcode.com/problems/smallest-even-multiple/",
+        "text": "Smallest even multiple"
+      },
+      {
+        "href": "https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true",
+        "text": "Weird"
+      },
+      {
+        "href": "https://www.hackerrank.com/challenges/python-loops/problem?isFullScreen=true",
+        "text": "Powers"
+      },
+      {
+        "href": "https://www.hackerrank.com/challenges/python-power-mod-power/problem?isFullScreen=true",
+        "text": "Mod Power"
+      },
+      {
+        "href": "https://leetcode.com/problems/longest-common-prefix/",
+        "text": "Longest Common Prefix"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "https://t.me/codewithbakacommunity/6"
+      },
+      {
+        "href": "",
+        "text": "#solution"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day2"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "id": "message15",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": "Muluken Zewge",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_G6_Remote_Python_Track_Python_Basics,_Conditionals,_Loops_and.pdf",
+        "text": "A2SV_G6_Remote_Python_Track_Python_Basics,_Conditionals,_Loops_and.pdf3.9 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 2 Lecture Slides",
+    "links": []
+  },
+  {
+    "index": 9,
+    "id": "message16",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 3 - Lecture on Best Coding Practices & Code Review\nToday’s session was all about\nwriting clean, readable, and maintainable code\n—because let’s be real, debugging messy code is like reading someone’s handwriting from the 17th century🫠😂\n🏆 What We Covered:\n✅\nWhy follow best practices?\n– Clean code makes life easier for\nyou and your teammates\n(and prevents future debugging nightmares 😅).\n✅\nMeaningful variable & function names\n– No more\nx = 25\nor\nfunc1()\n, please! Instead, go for\nage = 25\nor\ncalculate_total_price()\n✅\nWriting Modular Code\n– Keep your code\norganized and reusable\ninstead of one giant, unreadable block.\n✅\nConsistent Indentation\n– Because Python said “\nIndent properly or perish\n”. 😂\n✅\nEssential Comments\n– Not explaining\nwhat\nthe code does, but\nwhy\nit exists. (But no essay-length comments, please! 📝🚫)\n📌 We also solved problems while following these best practices!\n🏆 Practice Problems:\nThese are today’s practice problems:\nFind Common Characters\nReverse String\nConcatenation of Array\n📝Remember!\nYou can solve any problem from any day at your own pace but make sure you solve at least one problem a day. and share them in the group so that it will help you to keep your daily strike.\n📂\nLecture slides\nwill be shared in the\nDSA with A2SV group\n. Make sure to check them out!\n📢 Quote of the Day:\n“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”\n💪\nc'mon guys don't just read the post, open your code editor and start coding\n🔥\n#A2SV\n#DSA\n#Day3\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/find-common-characters/description/",
+        "text": "Find Common Characters"
+      },
+      {
+        "href": "https://leetcode.com/problems/reverse-string/description/",
+        "text": "Reverse String"
+      },
+      {
+        "href": "https://leetcode.com/problems/concatenation-of-array/description/",
+        "text": "Concatenation of Array"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSA with A2SV group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day3"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "id": "message17",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV Python Track - Best Coding Practices and Code review.pdf",
+        "text": "A2SV Python Track - Best Coding Practices and Code review.pdf3.9 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 3 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 11,
+    "id": "message18",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 4 - Problem-Solving Session!\nToday was all about\nputting our skills to the test!\nNo lectures, no slides—just\nyou, the problems, and your keyboard\n. 🧑‍💻🔥\n🎯 What We Did:\n✅\nSolved algorithmic problems\nusing the best coding practices we learned.\n✅\nWorked on improving our problem-solving approach\n—breaking problems down, optimizing solutions, and writing clean, efficient code.\n✅\nFaced frustration, debugged relentlessly, and finally felt that sweet joy of passing all test cases!\n😂💪\n📌 Your Turn!\n💡\nCheck out today’s problems:\nKeyboard Row\nNon-decreasing Array\nTeam\nWay Too Long Words\n👨‍💻\nSolve them and share your solutions in\nthe group\n!\n⚡️\nFollow the group’s solution format\nso we can track our streak!\n💬\nGot stuck?\nDon’t suffer alone—\nask for help, discuss different approaches, and improve together!\n❓\nif you are finding it hard to get to know the platforms specially codeforces, you can ask in\nthe group!\n🔥\nNo Shortcut, Just Hard Work!\nThere’s no way around it—\nyou have to solve problems, struggle through the difficulty, and push past frustration\n. The only way to get better is to\nkeep practicing. Face the challenge, solve problems, and level up!\n🚀💯\nNow, let’s get to work!\n💪🔥\n#A2SV\n#DSA\n#Day4\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/keyboard-row/description/",
+        "text": "Keyboard Row"
+      },
+      {
+        "href": "https://leetcode.com/problems/non-decreasing-array/description/",
+        "text": "Non-decreasing Array"
+      },
+      {
+        "href": "https://codeforces.com/contest/231/problem/A",
+        "text": "Team"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/71/A",
+        "text": "Way Too Long Words"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group!"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day4"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "id": "message19",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": "baka Codes",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 5 - Lists, Tuples & A Fun Moonwalk!\nToday’s session was packed with\nPython fundamentals\n—we explored the power of\nlists and tuples\nand how they can make our lives easier in problem-solving!\n🎯 What We Covered:\n✅\nLists in Python\n•\nCreating lists, accessing items, slicing, and performing operations\n•\nList comprehension—because who doesn’t love one-liners? 😎\n✅\nTuples in Python\n•\nHow they are similar to lists, but\nimmutable\n(once set, you can't change them!)\n🏆 Practice Problems:\nSolve\nthem,\nshare\nyour solution in\nthe group\n, and let’s\ndiscuss\ndifferent approaches!\n•\nLists\n•\nBuild Array from Permutation\n•\nPresents\n•\nMaximum Product of Three Numbers\n🌙\nMoonwalk Session – Because We’re Not Just About Code!\nwe had our first\nMoonwalk Session\n—a time to\nget to know each other beyond just DSA\n. We were paired up randomly to talk about things apart from DSA and problem solving. We talked, laughed, and for a moment, forgot about all the\ndebugging struggles.\n🤣\nHonestly,\nwe might have enjoyed it more than the problem-solving sessions… but shhh!\n🤫😂\n🔥\nQuote of the Day:\n\"A boat doesn’t go forward if each one is rowing their own way.\"\n– Swahili Proverb\nLet’s keep\nlearning\n,\nsolving\n, and rowing\ntogether\ntowards success! 🚀💡",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://www.hackerrank.com/challenges/python-lists/problem",
+        "text": "Lists"
+      },
+      {
+        "href": "https://leetcode.com/problems/build-array-from-permutation/description/",
+        "text": "Build Array from Permutation"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/136/A",
+        "text": "Presents"
+      },
+      {
+        "href": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+        "text": ""
+      },
+      {
+        "href": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+        "text": "Maximum Product of Three Numbers"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "id": "message20",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV G6 Remote - Python Track-DS Basics(Lists and Tuples).pdf",
+        "text": "A2SV G6 Remote - Python Track-DS Basics(Lists and Tuples).pdf1.8 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 5 Lecture slide",
+    "links": []
+  },
+  {
+    "index": 14,
+    "id": "message21",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Keep the Momentum Going! - Contest Problems from Saturday\nYesterday was a\nday off\n, but that doesn't mean we stop sharpening our problem-solving skills! 💪🔥\n🎯 Saturday’s Contest Problems\nHere are the problems we tackled in last Saturday's contest—we were given 2 hours to solve them. it was the first contest, I solved 4 / 5 problems and I am ranked 138th of all remote education students🙈 I will improve the rank this week I promise😉\n📌\nContest Problems:\n•\nDivision\n•\nWord Capitalization\n•\nPetya and Strings\n•\nStones on the Table\n•\nOnly Pluses\n👉\nSolve\nthem and share your solutions in\nthe group!\n💡\nConsistency is Key!\nDSA is all about\npractice, practice, and more practice.\nThe more problems you solve, the more patterns you recognize, and the easier things become. 🚀\nSo, let’s\nkeep up the streak\nand stay accountable!\nNo excuses!\n💯🔥\nNow, let’s get to work! 🏆💻\n#A2SV\n#DayOff\n#ContestProblems\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://codeforces.com/problemset/problem/1669/A",
+        "text": "Division"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/281/A",
+        "text": "Word Capitalization"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/112/A",
+        "text": "Petya and Strings"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/266/A",
+        "text": "Stones on the Table"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/1992/A",
+        "text": "Only Pluses"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group!"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DayOff"
+      },
+      {
+        "href": "",
+        "text": "#ContestProblems"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "id": "message22",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": "baka Codes",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 6 - Soft Skill Session: Focus, Planning & Time Management\nToday's session wasn’t about code—it was about something just as important:\nFocus, Planning & Time Management.\nMastering these skills is what separates those who\njust \"try\"\nfrom those who\nactually succeed.\n💡\n🎯 Key Takeaways:\n✅\nFocus\n– The ability to concentrate on a task without distractions. In problem-solving and learning, deep focus leads to better retention and faster progress.\n✅\nPlanning\n– A roadmap for your goals. Whether it's solving a problem, managing your study schedule, or preparing for interviews, a solid plan helps you stay on track.\n✅\nTime Management\n– We all have the same 24 hours, but how we use them makes the difference. Prioritizing tasks and eliminating time-wasters boosts productivity.\n🔗\nHow are they related?\nWithout focus, your plans mean nothing. Without planning, your time is wasted. Without time management, distractions take over.\nMastering all three creates a powerful cycle of growth! 🚀\n🌙 Moonwalk Session – Chill & Chat Time!\nOnce again, we had our\nMoonwalk Session\n, where we took a break from problem-solving, got to know each other better, and had some fun conversations. of course with a different person than last time😆\n📌 Problem of the Day:\n•\nSum of Even Numbers After Queries\n•\nRemove Comments\n📌\nLecture slides will be shared in\nthe group!\n🔥\nQuote of the Day:\n\"Until you make the unconscious conscious, it will rule your life and you will call it fate.\" – Carl Jung\nStay focused, plan smart, and use your time wisely! Let’s keep growing together. 💡🔥\n#A2SV\n#DSA\n#Day6\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/sum-of-even-numbers-after-queries/description/",
+        "text": "Sum of Even Numbers After Queries"
+      },
+      {
+        "href": "https://leetcode.com/problems/remove-comments/description/",
+        "text": "Remove Comments"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group!"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day6"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "id": "message23",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [],
+    "text": "Day 6 Lecture slide",
+    "links": []
+  },
+  {
+    "index": 17,
+    "id": "message24",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 7 - DS Basics 2 (Sets & Dictionaries)\nToday, we dived deeper into\nPython’s powerful data structures: Sets & Dictionaries.\nThese are fundamental tools that every Python developer should master.\nTake your time with this one\n—it’s crucial for leveling up your Python skills! 💡🔥\n🎯 What We Covered:\n✅\nSets\n• Definition & Initialization\n• How Sets Work Internally\n• Valid & Invalid Operators in Sets\n✅\nDictionaries\n• Definition & Initialization\n• Common Dictionary Operations\nSets help\nremove duplicates\nand\nperform\nfast lookups\n, while dictionaries allow\nefficient key-value storage\n.\nMastering them is a game-changer!\n🚀\n📌 Problems of the Day:\n•\nContains Duplicate\n• Missing Number\n• Dictionaries and Maps\n• Same Differences\n📌 Lecture slides will be shared in the\nDSV with A2SV group!\n🔥 Quote of the Day:\n\"Success is neither magical nor mysterious. Success is the natural consequence of consistently applying the basic fundamentals.\"\n— Jim Rohn\nLet’s keep applying the\nfundamentals\nand\nstay consistent!\n💪🔥",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/contains-duplicate/description/",
+        "text": "•"
+      },
+      {
+        "href": "https://leetcode.com/problems/contains-duplicate/description/",
+        "text": "Contains Duplicate"
+      },
+      {
+        "href": "https://leetcode.com/problems/missing-number/description/",
+        "text": "• Missing Number"
+      },
+      {
+        "href": "https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem",
+        "text": "• Dictionaries and Maps"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/1520/D",
+        "text": "• Same Differences"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSV with A2SV group!"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "id": "message25",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_Remote_G6_Python_Track_DS_Basics_2_Sets_and_Dictionaries.pdf",
+        "text": "A2SV_Remote_G6_Python_Track_DS_Basics_2_Sets_and_Dictionaries.pdf2.1 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 7 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 19,
+    "id": "message26",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 8: Contest Analysis & Upsolving Session\nToday was all about\nupsolving\n—revisiting the problems we couldn’t crack in Saturday’s contest and making sure we actually solve them. Because let’s be real:\nleaving problems unsolved is not an option!\n😤\nAfter that, we had\na contest analysis session\n, where a randomly selected person walked us through:\n✅ How they understood the problem\n✅ Their approach to solving it\n✅ Step-by-step code implementation\nThis session was\nGOLD\n. You get to see:\n🔹\nDifferent ways to solve the same problem\n🔹 Which method is better and why\n🔹 Where you went wrong and how to improve\nCollaboration is what makes us stronger. We asked, answered, and learned\ntogether\n—and that’s the way to grow! 🚀\n📌 Problems of the Day:\n• Find Words That Can Be Formed by Characters\n•\nGroup Anagrams\n•\n4Sum II\nLet’s keep pushing!\n💪🔥\n#A2SV\n#DSA\n#Day8\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/description/",
+        "text": "• Find Words That Can Be Formed by Characters"
+      },
+      {
+        "href": "https://leetcode.com/problems/group-anagrams/description/",
+        "text": "Group Anagrams"
+      },
+      {
+        "href": "https://leetcode.com/problems/4sum-ii/description/",
+        "text": "4Sum II"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day8"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "id": "message27",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": "baka Codes",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 9: Lecture on Built-in Functions and Classes in Python\nToday,\nwe dug deeper into Python\nand uncovered some powerful concepts that can make our code more efficient and elegant.\n🔍 What We Covered:\n✅\nClasses\n– Because organizing code like a pro is key!\n✅\nIterators & Generators\n– For when you don’t want to store all values in memory but still need to loop through them.\n✅\nCollections & Containers\n– Python’s hidden treasures for handling data structures efficiently.\n✅\nBuilt-in Functions\n– Python has a function for everything (well, almost).\n✅\nCommon Pitfalls & Best Practices\n– Because nobody likes debugging for hours over a silly mistake!\n🎯 Action Steps:\n📌 Problem of the Day\n– Solve them, share it in\nthe group\n, and let’s discuss!\n•\nTwo Sum\n•\nMajority Element\n•\nMaximum Number of Pairs in Array\n📌\nLecture Slides\n– Will be shared in\nthe group\n.\n💡 Quote of the Day:\n\"The difference between ordinary and extraordinary is that little extra. Add a touch of class to everything you do.\" – Jimmy Johnson\nNow go out there and\ncode with class!\n😎💻\n#A2SV\n#DSA\n#Day9\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://leetcode.com/problems/two-sum/description/",
+        "text": "Two Sum"
+      },
+      {
+        "href": "https://leetcode.com/problems/majority-element/",
+        "text": "Majority Element"
+      },
+      {
+        "href": "https://leetcode.com/problems/maximum-number-of-pairs-in-array/description/",
+        "text": "Maximum Number of Pairs in Array"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day9"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "id": "message28",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_Remote_G5_Python_Track_Built_in_functions_and_classes.pdf",
+        "text": "A2SV_Remote_G5_Python_Track_Built_in_functions_and_classes.pdf1.8 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 9 Lecture slide",
+    "links": []
+  },
+  {
+    "index": 22,
+    "id": "message29",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 10: Lecture on Time and Space Complexity\nToday’s session was all about\nefficiency\n—because writing code that works is good, but writing code that works fast is even better! 🚀\n🔍\nWhat We Covered:\n✅\nWhat is time and space complexity?\n– Understanding why performance matters.\n✅\nAsymptotic analysis\n– The art of ignoring constants and focusing on the big picture.\n✅\nBest, Worst, and Average Cases\n– Because not all inputs are created equal.\n✅\nHow to calculate time and space complexity\n– Mastering Big-O notation like a pro!\n📌 Lecture Slides\n– This is an important topic, so\nTake a closer look in to the Lecture slide\nwhich will be shared on\nDSA with A2SV group!\n🎯\nAction Steps:\n📌\nProblems of the Day\n:\n•\nRoman to Integer\n•\nFind All Duplicates in an Array\n•\nIsomorphic Strings\n•\nFrequency Tracker\nSolve them, share your solutions, and discuss in\nthe group!\n💡\nQuote of the Day:\n\"The first principle is that you must not fool yourself — and you are the easiest person to fool.\" – Richard Feynman\n🔎\nNow, let’s go analyze some code!\n🧐💻\n#A2SV\n#DSA\n#Day10\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSA with A2SV group!"
+      },
+      {
+        "href": "https://leetcode.com/problems/roman-to-integer/description/?envType=problem-list-v2&envId=string",
+        "text": "Roman to Integer"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-all-duplicates-in-an-array/description/",
+        "text": "Find All Duplicates in an Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/isomorphic-strings/description/",
+        "text": "Isomorphic Strings"
+      },
+      {
+        "href": "https://leetcode.com/problems/frequency-tracker/description/",
+        "text": "Frequency Tracker"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group!"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day10"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "id": "message30",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:23:59 UTC+03:00",
+    "date_text": "10:23",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_Remote_G6_Python_Track_Time_and_Space_Complexity_1.pdf",
+        "text": "A2SV_Remote_G6_Python_Track_Time_and_Space_Complexity_1.pdf3.3 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 10 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 24,
+    "id": "message31",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:37 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 11: The 7 Steps of Highly Effective Problem Solving\nToday’s session was all about\nsolving problems effectively\n—not just rushing into code, but thinking\nstrategically\n. These\n7 steps\nare the key to approaching problems like a pro! 💡\n🔍 The 7 Steps:\n1️⃣\nUnderstand the problem\n– If you misinterpret it, your solution is already wrong.\n2️⃣\nSolve it manually first\n– If you can't do it by hand, how will a computer? 🤔\n3️⃣\nCome up with a solution idea\n– Spot patterns and think of an approach.\n4️⃣\nPlay devil’s advocate\n– Try to break your solution before the test cases do!\n5️⃣\nImplement your solution\n– Write clean, structured code.\n6️⃣\nTest comprehensively\n– Edge cases, performance, and unexpected inputs matter.\n7️⃣\nClean up your code\n– Refactor, rename variables meaningfully, and optimize if possible.\nThis approach\nsaves time, reduces errors, and helps you develop a problem-solving mindset.\n📌 Your Tasks:\n📌\nProblems of the Day\n–\nSolve them\nand\nshare\nyour solution in\nthe group\n.\n•\nCheck if All the Integers in a Range Are Covered\n•\nRabbits in Forest\n•\nMajority Element II\n•\nThe Two Sneaky Numbers of Digitville\n📌\nLecture slides will be shared in\nthe group.\n🔥 Quote of the Day:\n\"Practice doesn't make perfect, perfect practice makes perfect.\" – Vince Lombardi\nNow, let’s\npractice the right way\nand level up! 🚀🔥\n#A2SV\n#DSA\n#Day11\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/description/",
+        "text": "Check if All the Integers in a Range Are Covered"
+      },
+      {
+        "href": "https://leetcode.com/problems/rabbits-in-forest/description/",
+        "text": "Rabbits in Forest"
+      },
+      {
+        "href": "https://leetcode.com/problems/majority-element-ii/description/?envType=daily-question&envId=2023-10-05",
+        "text": "Majority Element II"
+      },
+      {
+        "href": "https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/description/",
+        "text": "The Two Sneaky Numbers of Digitville"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group."
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day11"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "id": "message32",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:37 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_Remote_G6_The_7_Steps_of_Highly_Effective_Problem_Solving.pdf",
+        "text": "A2SV_Remote_G6_The_7_Steps_of_Highly_Effective_Problem_Solving.pdf2.4 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 11Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 26,
+    "id": "message33",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:37 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 12: Contest Analysis & Upsolving Session\nToday was another\nupsolving session\n, where we tackled the\nproblems we couldn't solve in Saturday’s contest\n. Because if a problem defeats us once, we come back\nstronger and smarter!\n💪🔥\nWe also had a\ncontest analysis\n, breaking down:\n✅ How to approach each problem\n✅ Different solutions & optimizations\n✅ Mistakes we made and how to avoid them\nThis session is a\ngame-changer\n—you see\nmultiple ways to solve a problem, learn from others, and refine your problem-solving skills!\n📌 Problems of the Day\n– Solve them and share your solution in\nthe group\n!\n•\nLongest Consecutive Sequence\n•\nInteger to Roman\n•\nReplace Elements in an Array\n💡\nKeep practicing—every solved problem is a step closer to mastery! 🚀\n#A2SV\n#DSA\n#Day12\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://leetcode.com/problems/longest-consecutive-sequence/description/",
+        "text": "Longest Consecutive Sequence"
+      },
+      {
+        "href": "https://leetcode.com/problems/integer-to-roman/description/",
+        "text": "Integer to Roman"
+      },
+      {
+        "href": "https://leetcode.com/problems/replace-elements-in-an-array/description/",
+        "text": "Replace Elements in an Array"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day12"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "id": "message34",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": "baka Codes",
+    "date_title": "14.08.2026 10:25:37 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 13: Lecture on Arrays/Lists\nToday, we\ndived deeper into Arrays/Lists\n, one of the most fundamental\ndata structures.\nMastering them is key to writing\nefficient\nand\noptimized\ncode!\n🔍 What We Covered:\n✅\nWhat are Arrays?\n– Contiguous memory storage for fast access.\n✅\nStatic vs. Dynamic Arrays\n– Understanding memory allocation.\n✅\nList Operations in Python\n– Appending, inserting, and removing elements efficiently.\n✅\nTraversing Techniques\n– Reverse traversal, even/odd index traversal, and circular traversal.\n✅\nSwapping Elements & Storing Data in Arrays\n– Using arrays as dictionaries.\nLists are everywhere in Python—\nso take your time and truly understand them!\n📌\nLecture Slides\n– Will be shared in\nthe group\n.\n📌 Problems of the Day\n•\nApply Operations to an Array\n•\nFind the Winner of the Circular Game\n•\nChat Order\nSolve\nthem and\nshare\nyour solutions in\nthe group!\n🔥\nQuote of the Day:\n\"If you want to enjoy the rainbow, be prepared to endure the storm.\" – Warren W. Wiersbe\nLet’s keep pushing forward!\nMore practice = More growth!\n🚀🔥\n#A2SV\n#DSA\n#Day13\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://leetcode.com/problems/apply-operations-to-an-array/description/",
+        "text": "Apply Operations to an Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/",
+        "text": "Find the Winner of the Circular Game"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/637/B",
+        "text": "Chat Order"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group!"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day13"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "id": "message35",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:37 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV Arrays_Lists .pdf",
+        "text": "A2SV Arrays_Lists .pdf845.2 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 13 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 29,
+    "id": "message36",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:37 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nNo Class, But No Days Off from Solving Problems!\nYesterday was an\noff day\n, but that doesn’t mean we take a break from\ngrowing as problem solvers! 💡\nSince we recently covered\nArrays/Lists\n, today is the perfect time to\nreinforce what we’ve learned\nby practicing more problems! 🔥It will also be important for the next lecture which is about\nMatrices in Python\nsince\nmatrices are essentially 2D arrays\n.\n🎯 Your Task for Today:\n✅ Solve these problems of the day\n•\nHappy Number\n•\nGas Station\n•\nMaximum Product of Word Lengths\n✅ Review the Arrays/Lists lecture slides – Make sure you understand the concepts.\n🔥\nWhy Keep Practicing?\nConsistency is what makes you\nbetter, faster, and more confident.\nEvery problem you solve is another\nstep closer to mastery!\nNow, let’s get to work and\nstay sharp\n! 💪🚀\n#A2SV\n#DSA\n#DayOff\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/happy-number/description/",
+        "text": "Happy Number"
+      },
+      {
+        "href": "https://leetcode.com/problems/gas-station/description/",
+        "text": "Gas Station"
+      },
+      {
+        "href": "https://leetcode.com/problems/maximum-product-of-word-lengths/description/",
+        "text": "Maximum Product of Word Lengths"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#DayOff"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "id": "message37",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": "baka Codes",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 14: Lecture on Matrices in Python\nToday, we explored\nMatrices in Python\n, a fundamental concept for handling\n2D data structures\n. Mastering matrices will give you an edge in\ngrid-based problems, dynamic programming, and image processing! 🔥\n🔍 What We Covered:\n✅\nWhat are Matrices?\n– Understanding them as 2D arrays (arrays within arrays).\n✅\nMatrix Traversal Techniques\n– Row-wise, column-wise, and diagonal traversal.\n✅\nEnumerating Cells & 2D to 1D Mapping\n– Converting matrix positions to single indices.\n✅\nCommon Pitfalls\n– Avoiding index errors, shallow copies, and iteration mistakes.\nMatrix problems\nappear frequently in coding interviews\n—so take your time to understand these concepts! 🚀\n📌 Your Tasks:\n📌 Solve today’s problems:\n•\nImage Smoother\n•\nTranspose Matrix\n•\nRotate Image\n📌\nLecture slides will be shared in\nthe group\n.\n🔥Quote of the Day:\n\"If you want to enjoy the rainbow, be prepared to endure the storm.\" – Warren W. Wiersbe\nLet’s keep pushing forward and\nget comfortable working with matrices\n! 💪🔥\n#A2SV\n#DSA\n#Day14\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/image-smoother/description/",
+        "text": "Image Smoother"
+      },
+      {
+        "href": "https://leetcode.com/problems/transpose-matrix/description/",
+        "text": "Transpose Matrix"
+      },
+      {
+        "href": "https://leetcode.com/problems/rotate-image/description/",
+        "text": "Rotate Image"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day14"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "id": "message38",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV Matrices.pdf",
+        "text": "A2SV Matrices.pdf297.6 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 14 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 32,
+    "id": "message39",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 15: Lecture on Sorting Part I\nYesterday, we kicked off our\nSorting\njourney by exploring fundamental concepts and two key sorting algorithms:\nBubble Sort\nand\nSelection Sort\n🚀\n🔍\nWhat We Covered:\n✅\nWhat is Sorting?\n– Arranging data in a logical order (ascending/descending) to make searching, processing, and analysis more efficient.\n✅\nIn-Place vs. Out-of-Place Sorting:\n• In-Place Sorting\n– Sorts the list without using extra space (e.g., Bubble Sort, Selection Sort).\n•\nOut-of-Place Sorting\n– Requires extra memory to store a new sorted version (e.g., Merge Sort).\n✅\nStable vs. Unstable Sorting:\n•\nStable Sorting\n– Maintains the original order of equal elements (e.g., Bubble Sort).\n•\nUnstable Sorting\n– Does not guarantee original order preservation (e.g., Selection Sort).\n✅\nBubble Sort\n– Repeatedly swaps adjacent elements until the list is sorted.\n✅\nSelection Sort\n– Finds the smallest element and places it in its correct position, one at a time.\n📌 We’ll continue with\nInsertion Sort and Counting Sort in Thursday’s session\n, so stay tuned!\n📌\nLecture slides will be shared in the\nDSA with A2SV group\n.\n📌\nProblems of the Day:\n•\nFind Target Indices After Sorting Array\n•\nPancake Sorting\n•\nSort Colors\nSolve\nthem and\nshare\nyour solutions in\nthe group\n.\n🔥 Quote of the Day:\n\"In the short term, you are as good as your intensity. In the long term you are only as good as your consistency.\n- Shane Parrish\n#A2SV\n#DSA\n#Day15\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSA with A2SV group"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-target-indices-after-sorting-array/description/",
+        "text": "Find Target Indices After Sorting Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/pancake-sorting/description/",
+        "text": "Pancake Sorting"
+      },
+      {
+        "href": "https://leetcode.com/problems/sort-colors/description/",
+        "text": "Sort Colors"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day15"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "id": "message40",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/_A2SV Remote G6 - Education Phase I - Sorting Part 1.pdf",
+        "text": "_A2SV Remote G6 - Education Phase I - Sorting Part 1.pdf3.2 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 15 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 34,
+    "id": "message41",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 16: Lecture on Sorting Part I (Continued)\nToday, we continued our\nSorting\nlecture by covering two more important sorting algorithms:\nInsertion Sort and Counting Sort\n.\n🔍 What We Covered:\n✅\nInsertion Sort\n– Builds a sorted list one element at a time, shifting elements as needed.\n✅\nCounting Sort\n– A\ndistribution-based sorting algorithm\nthat works well when the range of numbers is small compared to the number of elements.\nFaster than comparison-based sorting but requires extra space.\n✅\nTime Complexity Comparison:\nAlgorithm\nBest Case\n|\nAverage Case\n|\nWorst Case\n🔹Bubble Sort\nO(n)\nO(n²)\nO(n²)\n🔹Selection Sort\nO(n²)      O(n²)       O(n²)\n🔹Insertion Sort\nO(n)       O(n²)       O(n²)\n🔹Counting Sort\nO(n+k)     O(n+k)      O(n+k)\n🚀\nWhich Sort to Use?\n• Use Insertion Sort\nwhen the array is\nsmall\nor\nnearly sorted\n.\n•\nUse Counting Sort\nwhen dealing with a\nsmall range of values\n(non-comparative sorting).\n•\nBubble Sort and Selection Sort\nare generally not the best choices unless for\nlearning purposes\nor\nvery small inputs\n.\n📌 Problems of the Day:\n•\nThird Maximum Number\n•\nLess or Equal\n•\nMinimum Processing Time\nSolve\nthem and\nshare\nyour solution in\nthe group\n.\n📌\nLecture slides\nare already shared\nin the group\nunder the last post.\nNow, let’s practice and level up! 💪🔥\n#A2SV\n#DSA\n#Day16\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/third-maximum-number/description/",
+        "text": "Third Maximum Number"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/977/C",
+        "text": "Less or Equal"
+      },
+      {
+        "href": "https://leetcode.com/problems/minimum-processing-time/description/",
+        "text": "Minimum Processing Time"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "in the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day16"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "id": "message42",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": "baka Codes",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 17: Lecture on Two Pointers Technique\nToday, we explored the\nTwo Pointers\ntechnique—one of the most powerful and commonly used techniques for\noptimizing solutions\nto array and string problems. Instead of using\nnested loops (O(n²))\n, Two Pointers helps us solve problems\nefficiently in O(n)\n! 🔥\n🔍 What We Covered:\n✅\nDefinition\n– Using two different pointers to track array indices for solving problems efficiently.\n✅\nDifferent Variants & Their Problem Patterns:\n🔹\nVariant I: Parallel Pointers\n– Used for problems that require comparing adjacent elements (e.g., checking if an array is sorted).\n🔹\nVariant II: Pointers on Separate Arrays\n– Used for merging two sorted arrays efficiently.\n🔹\nVariant III: Colliding Pointers\n– Solving problems like two sum in a sorted array by moving two pointers toward each other.\n🔹\nVariant IV: Seeker and Placeholder\n– Used for modifying arrays in-place, like moving non-zero elements to the front.\n🔹\nVariant V: For-While Combo\n– When one pointer moves one step at a time, but the other moves multiple steps (e.g., counting smaller elements in two sorted arrays).\n✅\nPractice Problems\n– We solved problems related to each variant to understand when and how to apply them. you can find them in the lecture slide.\n📌 Problems of the Day\n:\n•\nValid Palindrome II\n•\nString Compression\n•\nContainer With Most Water\n📌\nLecture slides will be shared in\nDSA with A2SV\ngroup.\n🔥\nQuote of the Day:\n\"There are no foolish questions, and no man becomes a fool until he has stopped asking questions\" – Charles Proteus Steinmetz\nNow, let’s go\npractice\nand\napply\nwhat we’ve learned! 🚀💪\n#A2SV\n#DSA\n#Day17\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/valid-palindrome-ii/description/",
+        "text": "Valid Palindrome II"
+      },
+      {
+        "href": "https://leetcode.com/problems/string-compression/description/",
+        "text": "String Compression"
+      },
+      {
+        "href": "https://leetcode.com/problems/container-with-most-water/description/",
+        "text": "Container With Most Water"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSA with A2SV"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day17"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "id": "message43",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV G6 Remote Education - Education Phase I - Two Pointers.pdf",
+        "text": "A2SV G6 Remote Education - Education Phase I - Two Pointers.pdf1.0 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 17 Lecture slide",
+    "links": []
+  },
+  {
+    "index": 37,
+    "id": "message44",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 18: Lecture on Sliding Window Technique\nToday, we explored the\nSliding Window technique\n, a powerful optimization method that helps solve array, string, and matrix problems efficiently.\n🔍 What We Covered:\n✅\nIntroduction & Basic Concepts\n•\nSliding Window is a method used to process\nsubarrays\nor\nsubstrings\nefficiently\nby maintaining a \"window\" and adjusting its size as needed.\n✅\nOne-Dimensional Problems\n– Problems that can be solved using the sliding window technique by creating a\nfixed-size window\nthat moves over the array one element at a time.\n✅\nTwo-Dimensional Problems\n– These can be solved using the sliding window technique by moving a window over the matrix\none row or column at a time\n.\n✅\nSliding Window Variants:\n🔹\nFixed-Size Window\n– Used when the window size is\nconstant\n, like finding the sum of k consecutive elements.\n🔹\nDynamic Sliding Window\n– Adjusts based on conditions, such as\nshrinking or expanding\nbased on constraints.\n✅\nApplications of Sliding Window\n•\nFinding max/min values in subarrays\n•\nCounting elements in a window\n•\nPattern detection in strings\n📌 Problems of the Day\n:\n•\nMaximum Average Subarray I\n•\nMinimum Size Subarray Sum\n•\nLongest Repeating Character Replacement\nsolve\nthem and\nshare\nyour solutions in\nthe group\n.\n📌\nLecture slides will be shared in\nthe\nDSA with A2SV\ngroup\n.\n🔥\nQuote of the Day:\n\"Your big opportunity may be right where you are now. Open your eyes, and you'll find it in your windows.\" – Napoleon Hill\nLet’s keep practicing and\nsliding our way to success!\n🚀💪\n#A2SV\n#DSA\n#Day18\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/maximum-average-subarray-i/description/",
+        "text": "Maximum Average Subarray I"
+      },
+      {
+        "href": "https://leetcode.com/problems/minimum-size-subarray-sum/description/",
+        "text": "Minimum Size Subarray Sum"
+      },
+      {
+        "href": "https://leetcode.com/problems/longest-repeating-character-replacement/description/",
+        "text": "Longest Repeating Character Replacement"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSA with A2SV"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day18"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "id": "message45",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_G6_Remote_Education_Education_Phase_I_Sliding_Window_Lecture.pdf",
+        "text": "A2SV_G6_Remote_Education_Education_Phase_I_Sliding_Window_Lecture.pdf2.2 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 18 Lecture slide",
+    "links": []
+  },
+  {
+    "index": 39,
+    "id": "message46",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 19: Lecture on Prefix Sum Technique\nToday, we explored the\nPrefix Sum technique\n, a powerful tool that helps\noptimize range sum queries, subarray problems, and dynamic programming\nsolutions. Instead of recalculating sums repeatedly,\nprefix sum precomputes them in O(n) time\n, making queries super fast! 🔥\n🔍 What We Covered:\n✅\nDefinition\n– Prefix Sum (a.k.a\ncumulative sum\n) precomputes the sum of elements from the start of an array up to each index and stores the results in a separate array for efficient queries.\n✅\nVariants:\n🔹\nRunning Sum\n– Running total as numbers are added.\n🔹\n1D Prefix Sum\n– Stores cumulative sums in a 1D array for fast range sum queries.\n🔹\nInclusive Prefix Sum\n– Includes the current element in the sum.\n🔹\nExclusive Prefix Sum\n– Excludes the current element in the sum.\n🔹\nRange Updates\n– Efficiently updating a range of values.\n🔹\n2D Prefix Sum\n– Extends prefix sum logic to matrices for sub rectangle queries.\n✅\nComplexity Analysis\n– Prefix Sum allows\nO(1) query time\nafter an\nO(n) preprocessing step\n.\n✅\nApplications of Prefix Sum:\n•\nComputing subarray sums\n•\nRange updates and queries\n•\nComputing running averages\n•\nCounting occurrences\n•\nDynamic programming\n📌 You can read more from the\nLecture slide\nwhich will be shared in the\nDSA with A2SV\ngroup.\n📌\nProblems of the day:\n•\nRunning Sum of 1d Array\n•\nRange Sum Query - Immutable\n•\nShifting Letters II\nsolve\nthem and\nshare\nyour solutions in\nthe group\n.\n🔥\nQuote of the Day:\n\"By failing to prepare, you are preparing to fail.\" – Benjamin Franklin\n#A2SV\n#DSA\n#Day19\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSA with A2SV"
+      },
+      {
+        "href": "https://leetcode.com/problems/running-sum-of-1d-array/description/",
+        "text": "Running Sum of 1d Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/range-sum-query-immutable/description/",
+        "text": "Range Sum Query - Immutable"
+      },
+      {
+        "href": "https://leetcode.com/problems/shifting-letters-ii/description/",
+        "text": "Shifting Letters II"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day19"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "id": "message47",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_G6_Remote_Education_Education_Phase_I_Prefix_Sum_no_code.pdf",
+        "text": "A2SV_G6_Remote_Education_Education_Phase_I_Prefix_Sum_no_code.pdf2.4 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 19 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 41,
+    "id": "message48",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 20: Linked List Lecture I\nYesterday we began our deep dive into one of the most important data structures in programming:\nLinked Lists\n. Understanding how they work and how they compare to arrays is key to mastering more advanced topics.\n🔍 What We Covered:\n✅\nDefinition & Introduction\n–\nA linked list\nis a linear data structure where elements (nodes) point to the next node in the list, allowing dynamic memory use and flexible structure.\n✅\nTypes of Linked Lists\n•\nSingly Linked List\n(each node points to the next)\n•\nDoubly Linked List\n(nodes point to both next and previous nodes)\n✅\nWhy Linked Lists over Arrays?\n•\nArrays have\nfixed size\nand\ncostly insertions/deletions\n•\nLinked lists allow\ndynamic memory, efficient insertions, and no wasted space\n✅\nCommon Operations on Linked Lists\n•\nTraversal\n•\nInsertion\n(at beginning or any position)\n•\nDeletion\n(from beginning or any position)\n•\nIntroduction to the concept of\nDummy Nodes\nfor simplifying edge cases\n📌\nProblems of the Day:\n•\nPrint the Elements of a Linked List\n•\nInsert a Node at the Tail of a Linked List\n•\nRemove Linked List Elements\n•\nDesign Linked List\n📌 Lecture slides will be shared in the\ngroup\n.\n🔥\nQuote of the Day:\n\"If you fell down yesterday, stand up today.\" – H. G. Wells\nLet’s keep building strong foundations—\none node at a time!\n💪🔗\n#A2SV\n#DSA\n#Day20\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem",
+        "text": "Print the Elements of a Linked List"
+      },
+      {
+        "href": "https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem",
+        "text": "Insert a Node at the Tail of a Linked List"
+      },
+      {
+        "href": "https://leetcode.com/problems/remove-linked-list-elements/description/",
+        "text": "Remove Linked List Elements"
+      },
+      {
+        "href": "https://leetcode.com/problems/design-linked-list/description/",
+        "text": "Design Linked List"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day20"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 42,
+    "id": "message49",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:25:38 UTC+03:00",
+    "date_text": "10:25",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV G6 Linked List Lecture I.pdf",
+        "text": "A2SV G6 Linked List Lecture I.pdf3.0 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 20 Lecture slide",
+    "links": []
+  },
+  {
+    "index": 43,
+    "id": "message50",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 21: Linked List Lecture II\nwe continued our journey through linked lists with a focus on\nadvanced techniques and pitfalls\n. Things are getting deeper—and way more interesting! 🔗🔥\n🔍\nWhat We Covered:\n✅\nTwo Pointer Technique in Linked List\n•\nUsed to solve problems like\nfinding the nth node from the end\nand the\nmiddle of a linked list.\n•\nApproaches involved\nfast and slow pointers\n, and pointers that lag a specific number of steps behind.\n✅\nFloyd’s Cycle Finding Algorithm (a.k.a Tortoise & rabbit)\n•\nDetects\ncycles in a linked list\nusing two pointers moving at different speeds.\n•\nPhase I: Detect if a cycle exists\n•\nPhase II: Determine the\nentry\npoint\nof the cycle\n✅\nCommon Pitfalls\n•\nForgetting to check for\nNone\nbefore accessing\n.next\n•\nLosing the reference to the original head\n•\nSkipping boundary checks and crashing with null pointer errors\n📌\nProblems of the Day:\n•\nReverse Linked List\n•\nPalindrome Linked List\n•\nMerge Two Sorted Lists\n•\nLinked List Cycle II\n📌 Lecture slide will be shared in the\ngroup\n.\n🔥 Quote of the Day:\n\"If you fell down yesterday, stand up today.\" – H. G. Wells\nKeep pushing.\nOne pointer at a time\n! 💪🐢🐇\n#A2SV\n#DSA\n#Day21\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/reverse-linked-list/description/",
+        "text": "Reverse Linked List"
+      },
+      {
+        "href": "https://leetcode.com/problems/palindrome-linked-list/",
+        "text": "Palindrome Linked List"
+      },
+      {
+        "href": "https://leetcode.com/problems/merge-two-sorted-lists",
+        "text": "Merge Two Sorted Lists"
+      },
+      {
+        "href": "https://leetcode.com/problems/linked-list-cycle-ii/",
+        "text": "Linked List Cycle II"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day21"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "id": "message51",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV final __ Linked List Lecture II.pdf",
+        "text": "A2SV final __ Linked List Lecture II.pdf3.4 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 21 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 45,
+    "id": "message52",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 22: Stacks, Queues & Monotonicity – Part I\nYesterday’s session introduced us to two essential data structures—\nStacks\nand\nQueues\n—plus their real-world use cases, implementations, and common pitfalls.\n🔍\nWhat We Covered:\n✅\nIntroduction to Stack\n– A\nLIFO (Last In, First Out)\ndata structure.\n✅\nStack Operations\n–\npush()\n,\npop()\n,\npeek()\n, and\nisEmpty()\n✅\nImplementation using Linked List\n– How to simulate a stack using custom nodes and pointers.\n✅\nIntroduction to Queue\n– A\nFIFO (First In, First Out)\ndata structure.\n✅\nQueue Operations\n–\nappend()\n(enqueue),\npopleft()\n(dequeue), and peeking.\n✅\nQueue Implementation\n– Covered both list-based and\ndeque()\nimplementations for optimized performance.\nWe also discussed the\ntime complexity\nof each operation (all O(1) when done right!),\nreal-world applications\n, and\ncommon pitfalls\nlike popping from an empty stack/queue.\n📌\nPractice Problems:\n•\nValid Parentheses\n•\nRemoving Stars From a String\n•\nNumber of Recent Calls\n•\nBackspace String Compare\n📌 Lecture slide will be shared in the\ngroup\n.\n🔥\nQuote of the Day:\n\"Be the one for the Queue not in the Queue\"  - Kanika Sarna\nLet’s keep\nstacking\nknowledge and\nqueuing\nup progress! 💪🚀\n#A2SV\n#DSA\n#Day22\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/valid-parentheses",
+        "text": "Valid Parentheses"
+      },
+      {
+        "href": "https://leetcode.com/problems/removing-stars-from-a-string",
+        "text": "Removing Stars From a String"
+      },
+      {
+        "href": "https://leetcode.com/problems/number-of-recent-calls/",
+        "text": "Number of Recent Calls"
+      },
+      {
+        "href": "https://leetcode.com/problems/backspace-string-compare",
+        "text": "Backspace String Compare"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day22"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "id": "message53",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_Remote_Stacks,_Queues_and_Monotonicity_Lecture_Part_I.pdf",
+        "text": "A2SV_Remote_Stacks,_Queues_and_Monotonicity_Lecture_Part_I.pdf1.0 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 22 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 47,
+    "id": "message54",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 23: Stacks, Queues & Monotonicity – Part II\nYesterday we wrapped up our deep dive into\nmonotonic data structures\n—a game-changer for solving a wide range of array and subarray problems\nefficiently\n. 💡🔥\n🔍\nWhat We Covered:\n✅\nMonotonic Stack\n– A stack that maintains elements in\nincreasing or decreasing order\n.\n– Ideal for problems like\nfinding the next greater/smaller element\n.\n✅\nMonotonic Stack Applications\n– Helps determine how far a value spans as a\nmax or min\nin a given array.\n– Optimizes problems like\nstock span, temperatures, and subarray minimums.\n✅\nMonotonic Queue\n– A queue with elements maintained in a\nmonotonic order\n(e.g., decreasing).\n– Used in sliding window problems to keep track of\nmax/min efficiently\n.\n✅\nTime and Space Complexity\n– Time and space complexity is\nsimilar to regular stacks/queues\n:\nMost operations are\nO(1) amortized\nand\nO(n)\ntotal for full traversal.\n✅\nPitfalls & Opportunities\n– Handle\nequality carefully\n—should you pop equal elements or not?\n– Always\ncheck for empty stack/queue\nbefore accessing.\n– Use\nmono-increasing stacks\nfor \"next greater\" problems, and\nmono-decreasing\nfor \"next smaller\" problems.\n📌\nProblems of the Day:\n•\nNext Greater Element I\n•\nDaily Temperatures\n•\nCar Fleet\n•\nSum of Subarray Minimums\n•\nRemove K Digits\n📌 Lecture slide in the\ngroup\n.\n🔥\nQuote of the Day:\n\"Be the one for the Queue not in the Queue\"  - Kanika Sarna\n#A2SV\n#DSA\n#Day23\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/next-greater-element-i/",
+        "text": "Next Greater Element I"
+      },
+      {
+        "href": "https://leetcode.com/problems/daily-temperatures/",
+        "text": "Daily Temperatures"
+      },
+      {
+        "href": "https://leetcode.com/problems/car-fleet/",
+        "text": "Car Fleet"
+      },
+      {
+        "href": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+        "text": "Sum of Subarray Minimums"
+      },
+      {
+        "href": "https://leetcode.com/problems/remove-k-digits/",
+        "text": "Remove K Digits"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day23"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 48,
+    "id": "message55",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/A2SV_Remote_G6_Stacks,_Queues_and_Monotonicity_Lecture_Part_II_without.pdf",
+        "text": "A2SV_Remote_G6_Stacks,_Queues_and_Monotonicity_Lecture_Part_II_without.pdf544.0 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 23 Lecture slide",
+    "links": []
+  },
+  {
+    "index": 49,
+    "id": "message56",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 24: Recursion I\nYesterday, we took our first big step into the world of\nRecursion—\na foundational concept that allows us to solve complex problems by breaking them down into\nsimpler subproblems\n. 🧠🔁\n🔍\nWhat We Covered:\n✅\nBasic Concepts\n– What is recursion and why it matters\n– Thinking recursively using real-life examples (queues, nested dolls, etc.)\n– The 3 core components:\nBase Case, Recurrence Relation,\nand\nState\n✅\nHow Recursion Works\n–\nCall Stack\nexecution model\n–\nExecution Tree\nand how to simulate recursive calls step-by-step\n– How the system handles function calls and returns\n✅\nComplexity Analysis\n– Time complexity = number of recursive calls × cost per call\n– Space complexity = max depth of the call stack + state size\n✅\nRecursion vs Iteration\n– Recursion is more intuitive for problems with repeating substructure\n– Iteration is generally more\nefficient\nin time and space\n✅\nThings to Pay Attention To\n– Avoiding stack overflow errors\n– Correctly defining base cases and recurrence relations\n– Handling states carefully (especially with mutable types like lists)\n📌\nProblems of the Day:\n•\nPower of Four\n•\nFibonacci Number\n•\nReverse String\n•\nPascal’s Triangle II\n•\nDecode String\n📌 Lecture slide will be shared in\nthe group\n.\n🔥\nQuote of the Day:\n\"In order to understand recursion, one must first understand recursion.\" – Unknown\nLet's keep solving—\none base case at a time\n! 🌀💪\n#A2SV\n#DSA\n#Day24\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/power-of-four/",
+        "text": "Power of Four"
+      },
+      {
+        "href": "https://leetcode.com/problems/fibonacci-number/description/",
+        "text": "Fibonacci Number"
+      },
+      {
+        "href": "https://leetcode.com/problems/reverse-string/",
+        "text": "Reverse String"
+      },
+      {
+        "href": "https://leetcode.com/problems/pascals-triangle-ii/",
+        "text": "Pascal’s Triangle II"
+      },
+      {
+        "href": "https://leetcode.com/problems/decode-string/",
+        "text": "Decode String"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day24"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 50,
+    "id": "message57",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/_A2SV __ Recursion I.pdf",
+        "text": "_A2SV __ Recursion I.pdf2.7 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 24 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 51,
+    "id": "message58",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 25: Binary Search Lecture\nYesterday, we tackled one of the most powerful and elegant algorithms —\nBinary Search\n. It's not just about searching for an element; it’s about\nsearching smartly and efficiently\n. 🧠⚡️\n🔍\nWhat We Covered:\n✅\nIntroduction\n– Binary Search works by repeatedly dividing the search space in half. It's only applicable when the data is\nsorted\n.\n✅\nTime and Space Complexity\n•\nTime Complexity\n: O(log n)\n•\nSpace Complexity\n: O(1) for iterative, O(log n) for recursive implementations\n✅\nVariants of Binary Search:\n🔹\nVariant 1 – Over an Input Space\n: Search directly over elements of the array\n🔹\nVariant 2 – Over an Output Space\n: Search over possible answers (e.g., minimum capacity to ship packages in D days)\n✅\nPython\nbisect\nLibrary\n•\nFunctions like\nbisect_left\n,\nbisect_right\n,\ninsort\nfor binary search-based operations on sorted lists\n•\nGreat for maintaining sorted order without implementing custom logic\n✅\nCommon Pitfalls\n•\nInfinite loops from incorrect\nmid\nupdate\n•\nMissing the case for\nleft == right\n•\nOff-by-one errors when using\nmid = (left + right) // 2\n•\nAssuming unsorted data can be binary searched\n📌\nProblems of the Day:\n•\nBinary Search\n•\nFirst Bad Version\n•\nFind First and Last Position of Element in Sorted Array\n•\nCapacity To Ship Packages Within D Days\n•\nKoko Eating Bananas\n📌 Lecture slide will be shared in\nthe group\n.\n🔥\nQuote of the Day:\n“Believe you can and you're halfway there.” – Theodore Roosevelt\nLet’s keep dividing and conquering—\none half at a time\n! 💪🔍\n#A2SV\n#DSA\n#Day25\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/binary-search/",
+        "text": "Binary Search"
+      },
+      {
+        "href": "https://leetcode.com/problems/first-bad-version/",
+        "text": "First Bad Version"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+        "text": "Find First and Last Position of Element in Sorted Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+        "text": "Capacity To Ship Packages Within D Days"
+      },
+      {
+        "href": "https://leetcode.com/problems/koko-eating-bananas/",
+        "text": "Koko Eating Bananas"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day25"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "id": "message59",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Binary Search.pdf",
+        "text": "Binary Search.pdf534.5 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 25 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 53,
+    "id": "message60",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 26: Trees I – Introduction to Trees 🌳\nYesterday, we branched out into a new topic—\nTrees\n, one of the most powerful and widely used data structures. Whether it's\nfile systems\n,\ncompilers\n, or\nbinary search\n, trees are everywhere!\n🔍 What We Covered:\n✅\nDefinition\n– A\nhierarchical, non-linear data structure\nmade up of nodes connected by edges. Unlike arrays or linked lists, trees allow branching in multiple directions.\n✅\nTerminologies\n–\n•\nNode\n: Basic building block (holds data)\n•\nRoot\n: Topmost node (no parent)\n•\nLeaf\n: Node with no children\n•\nParent, Child, Sibling, Ancestor, Descendant, Subtree\n•\nDepth\n,\nHeight\n,\nLevel\n– Key metrics to understand the structure\n✅\nTypes of Trees –\n•\nBinary Tree\n– Each node has ≤ 2 children\n•\nFull, Complete, Perfect, Balanced Binary Trees\n•\nBinary Search Tree (BST)\n– Left subtree < root ≤ right subtree\n✅\nTree Traversal\n–\nDepth First Search (DFS)\n•\nPreorder\n: Root → Left → Right\n•\nInorder\n: Left → Root → Right (sorted order in BST)\n•\nPostorder\n: Left → Right → Root\n📌\nPractice Problems:\n•\nBinary Tree Preorder Traversal\n•\nBinary Tree Inorder Traversal\n•\nBinary Tree Postorder Traversal\n•\nMaximum Depth of Binary Tree\n📌 Lecture slides will be shared in\nthe group\n.\nLet’s root ourselves in the fundamentals and grow upwards—\njust like trees\n! 🌱🚀\n#A2SV\n#DSA\n#Day26\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+        "text": "Binary Tree Preorder Traversal"
+      },
+      {
+        "href": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "text": "Binary Tree Inorder Traversal"
+      },
+      {
+        "href": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+        "text": "Binary Tree Postorder Traversal"
+      },
+      {
+        "href": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "text": "Maximum Depth of Binary Tree"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day26"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "id": "message61",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Trees_I.pdf",
+        "text": "Trees_I.pdf1.1 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 26 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 55,
+    "id": "message62",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:40 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 27: Trees II – Binary Search Trees in Action\n🌳\nYesterday, we leveled up our understanding of trees by diving deep into\nBinary Search Trees (BSTs)\n—one of the most important tree structures in programming and interview prep.💡\n🔍 What We Covered:\n✅\nBasic BST Operations\n•\nSearching\n: Navigate left or right based on the target value\n•\nInsertion\n: Insert at the correct position while maintaining BST rules\n•\nDeletion\n: Handle leaf, one-child, or two-child node deletions carefully\n✅\nTime and Space Complexity\n•\nBST Time Complexity\n•\nSearch, Insert, Delete: O(h) → where h is the height\n•\nTraversal: O(n)\n•\nBinary Tree Time Complexity\n•\nAll major operations: O(n)\n•\nSpace Complexity\n: O(n) due to recursion stack and structure\n✅\nCommon Pitfalls\n•\nForgetting null pointer checks\n•\nAssuming the tree is balanced\n•\nUsing incorrect traversal for the task\n•\nStack overflow from deep recursion\n✅\nApplications of Trees\n•\nFile system structure (N-ary Trees)\n•\nSearch engines (Tries for autocomplete)\n•\nDecision trees in Machine Learning\n•\nBSTs in database indexing and sorting\n•\nFoundations for Heaps, Priority Queues, Spanning Trees\n📌\nPractice Problems:\n•\nSearch in a Binary Search Tree\n•\nInsert into a Binary Search Tree\n•\nDelete Node in a BST\n•\nMerge Two Binary Trees\n📌 Lecture slides will be shared in\nthe group\n.\n🌟 Quote of the Day:\n\"A tree with strong roots laughs at storms.\" – Malay Proverb\nKeep growing your roots in DSA—\nthe fruit will come with time and consistency\n! 💪🌿\n#A2SV\n#DSA\n#Day27\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/search-in-a-binary-search-tree/description/",
+        "text": "Search in a Binary Search Tree"
+      },
+      {
+        "href": "https://leetcode.com/problems/insert-into-a-binary-search-tree/description/",
+        "text": "Insert into a Binary Search Tree"
+      },
+      {
+        "href": "https://leetcode.com/problems/delete-node-in-a-bst/description/",
+        "text": "Delete Node in a BST"
+      },
+      {
+        "href": "https://leetcode.com/problems/merge-two-binary-trees/description/",
+        "text": "Merge Two Binary Trees"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day27"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "id": "message63",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:41 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Trees_II.pdf",
+        "text": "Trees_II.pdf916.9 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 27 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 57,
+    "id": "message64",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:41 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 28: Recursion II – Backtracking & Divide and Conquer🌀\nYesterday's session took recursion to the next level, focusing on\nbacktracking\n,\noptimization\nstrategies\n, and the classic\ndivide and conquer\ntechnique.\n🔍 What We Covered:\n✅\nBacktracking\n– A technique for\nexploring all paths\nin a search space, and “backtracking” when you hit a dead end.\n– We used real-world analogies like\nleaving peanuts\nto mark visited paths in a maze 🥜\n✅\nTypes of Backtracking Problems\n1\n.\nDecision Problems\n– e.g., \"Is there a valid path?\"\n2\n.\nOptimization Problems\n– e.g., \"What is the best solution?\"\n3\n.\nEnumeration Problems\n– e.g., \"List all valid combinations\"\n✅\nTime & Space Complexity\n– Often exponential due to branching:\n•\ne.g.,\nO(2^n)\nfor subset generation\n•\nSpace = depth of recursion tree + extra state tracking\n✅\nPruning the Execution Tree\n– Stopping early when the current path can’t yield a valid or optimal solution\n– Reduces unnecessary recursion calls and boosts performance\n✅\nDivide and Conquer\n– Break down the problem into smaller, similar subproblems\n– Solve independently and combine results\n– Commonly seen in\ntree problems\nlike Convert Sorted Array to BST and Maximum Binary Tree\n✅\nThings to Watch For\n– Incorrect state handling, modifying lists during iteration\n– Forgetting to clone state (e.g., shallow copying lists)\n📌 Practice Problems:\n•\nCombinations\n•\nSubsets\n•\nPermutation\n•\nSudoku Solver\n•\nMajority Element\n📌 Lecture slides will be shared in\nthe group\n.\n✨ Quote of the Day:\n“The bad news is time flies. The good news is you’re the pilot.” – Michael Altshuler\nKeep experimenting, pruning, and optimizing—you’re in control of your learning path! 🧠💪\n#A2SV\n#DSA\n#Day28\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/combinations/",
+        "text": "Combinations"
+      },
+      {
+        "href": "https://leetcode.com/problems/subsets/",
+        "text": "Subsets"
+      },
+      {
+        "href": "https://leetcode.com/problems/permutations/",
+        "text": "Permutation"
+      },
+      {
+        "href": "https://leetcode.com/problems/sudoku-solver/",
+        "text": "Sudoku Solver"
+      },
+      {
+        "href": "https://leetcode.com/problems/majority-element/",
+        "text": "Majority Element"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day28"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 58,
+    "id": "message65",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:41 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Recursion_II.pdf",
+        "text": "Recursion_II.pdf1.7 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 28 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 59,
+    "id": "message66",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:41 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 29: Introduction to Graphs🌐\nYesterday we unlocked a\nnew dimension of data structures — Graphs\n, where relationships between entities take center stage. From social networks to maps and web crawlers, graphs power it all! 🕸⚡️\n🔍 What We Covered:\n✅ Definition of Graphs\n–\nA graph\nis a collection of nodes (or vertices) and edges representing relationships or connections between them.\n✅\nTypes of Graphs:\n• Undirected vs Directed\n• Weighted vs Unweighted\n• Complete Graphs\n• Trees as special graphs (\nconnected & acyclic\n)\n✅\nGraph Terminologies:\n•\nNode / Vertex\n– Entities in the graph\n• Edge\n– Connections between nodes\n•\nDegree, In-degree, Out-degree\n– Number of connections\n• Path, Cycle, Connectivity, Components\n✅\nGraph Representations:\n🔹\nAdjacency Matrix\n– Fast edge lookup, high space usage (O(n²))\n🔹\nAdjacency List\n– Space-efficient, good for sparse graphs\n🔹\nEdge List\n– Simplest form, useful for edge-focused algorithms\n🔹\nGrids as Graphs\n– Used in problems like shortest path in matrices\n✅\nReceiving Input on Graph Problems:\n– How to read inputs for\ndirected/undirected\n,\nweighted/unweighted\n, and\nmatrix-based graphs\nusing Python templates.\n📌 Practice Problems:\n•\nOperations on Graph\n•\nCities and Roads\n•\nFrom adjacency matrix to adjacency list\n•\nSources and Sinks\n📌 Lecture slide will be shared in\nthe group\n.\n🌟 Quote of the Day:\n\"You can always recognize truth by its beauty and simplicity.\" – Richard P. Feynman\n#A2SV\n#DSA\n#Day29\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://www.eolymp.com/en/problems/2472",
+        "text": "Operations on Graph"
+      },
+      {
+        "href": "https://basecamp.eolymp.com/en/problems/992",
+        "text": "Cities and Roads"
+      },
+      {
+        "href": "https://basecamp.eolymp.com/en/problems/3981",
+        "text": "From adjacency matrix to adjacency list"
+      },
+      {
+        "href": "https://basecamp.eolymp.com/en/problems/3986",
+        "text": "Sources and Sinks"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day29"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 60,
+    "id": "message67",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:41 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Graph.pdf",
+        "text": "Graph.pdf4.3 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 29 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 61,
+    "id": "message68",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:41 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 30: DFS (Depth First Search) Lecture🔍\nYesterday, we explored\nDFS (Depth First Search)\n—a powerful graph traversal tool for problems like mazes, cycles, and more. A must-have in your algorithmic toolbox! 🧠🌐\n🔍\nWhat We Covered:\n✅\nDefinition\nDFS\nis a traversal algorithm that starts from a source node and explores as far as possible along each branch before backtracking.\n✅\nImplementation Approaches\n:\n🔹\nRecursive DFS\n– Easy to write but limited by recursion depth\n– Follows three recursive rules: track state, define base case, apply recurrence\n🔹\nIterative DFS\n– Uses an explicit stack (to simulate the call stack)\n– Safer for deep or complex graphs\n– Follows the same logic as recursive DFS\n✅\nTime & Space Complexity:\nTime\n: O(V + E), where V = vertices, E = edges\nSpace\n: O(V) for visited + recursion stack (recursive) or explicit stack (iterative)\n✅\nDFS on Grid\n:\n– Treat each cell as a node\n– Explore 4 directions (up, down, left, right)\n– Used in problems like number of islands, flood fill, and pathfinding in 2D matrices\n✅\nApplications of DFS\n:\n•\nFinding paths\n•\nDetecting cycles\n•\nColoring graphs (bipartite check)\n•\nCounting islands and connected components\n•\nDFS on trees and grids\n•\nGraph traversal for simulations\n📌\nPractice Problems:\n•\nFind if Path Exists in Graph\n•\nNumber of Islands\n•\nIs Graph Bipartite?\n•\nEvaluate Division\n•\nRecover Binary Search Tree\n📌 Lecture slide will be shared in\nthe group\n.\n📌 More practice problems\nhere\n🌟 Quote of the Day:\n\"Turn your face to the sun and the shadows fall behind you.\" – Maori Proverb\n#A2SV\n#DSA\n#Day30\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/find-if-path-exists-in-graph/description/",
+        "text": "Find if Path Exists in Graph"
+      },
+      {
+        "href": "https://leetcode.com/problems/number-of-islands/description/",
+        "text": "Number of Islands"
+      },
+      {
+        "href": "https://leetcode.com/problems/is-graph-bipartite/description/",
+        "text": "Is Graph Bipartite?"
+      },
+      {
+        "href": "https://leetcode.com/problems/evaluate-division/description/",
+        "text": "Evaluate Division"
+      },
+      {
+        "href": "https://leetcode.com/problems/recover-binary-search-tree/description/",
+        "text": "Recover Binary Search Tree"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "the group"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/267",
+        "text": "here"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day30"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "id": "message69",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:26:41 UTC+03:00",
+    "date_text": "10:26",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/DFS Lecture .pdf",
+        "text": "DFS Lecture .pdf2.5 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 30 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 63,
+    "id": "message70",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀Day 31: BFS (Breadth-First Search) Lecture🌊\nYesterday, we explored\nBreadth-First Search (BFS)\n— a graph traversal algorithm that explores nodes\nlevel by level\n. Whether you're solving shortest paths or simulating real-world spread (like viruses or rotten oranges 🍊), BFS is the go-to strategy! 🚀\n🔍 What We Covered:\n✅\nIntroduction\n– BFS starts at the root and visits all neighboring nodes before going deeper.\n– Ideal for\nshortest path problems\nin\nunweighted graphs\n.\n✅\nTime & Space Complexity\n•\nTime\n: O(V + E), where V = number of nodes, E = number of edges\n•\nSpace\n: O(V), where V = number of nodes(not always)\n✅\nApplications\n:\n•\nLevel Order Traversal\n– Traverse a tree or graph one level at a time\n•\nFinding Shortest Path in Unweighted Graphs\n– Stop BFS once destination is reached\n✅\nBFS Variations:\n🔹\nMulti-Source BFS\n– Initialize the queue with multiple starting points (e.g., Rotting Oranges)\n🔹\nBFS with State Storing\n– For problems where the same node can be revisited with different info (e.g., Shortest Path with Alternating Colors)\n📌 Practice Problems:\n•\nUnivalued Binary Tree\n•\nBinary Tree Level Order Traversal\n•\nShortest Path in Binary Matrix\n•\nAll Nodes Distance K in Binary Tree\n•\nRotting Oranges\n📌 Lecture slides will be shared in the\ngroup\n.\n📌 More practice problems\nhere\n✨\nQuote of the Day:\n\"Exploration is really the essence of the human spirit.\" – Frank Borman\nKeep exploring—\none level at a time\n! 💪🌐\n#A2SV\n#DSA\n#Day31\n@codewithbaka",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/univalued-binary-tree/description/",
+        "text": "Univalued Binary Tree"
+      },
+      {
+        "href": "https://leetcode.com/problems/binary-tree-level-order-traversal/description/",
+        "text": "Binary Tree Level Order Traversal"
+      },
+      {
+        "href": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+        "text": "Shortest Path in Binary Matrix"
+      },
+      {
+        "href": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
+        "text": "All Nodes Distance K in Binary Tree"
+      },
+      {
+        "href": "https://leetcode.com/problems/rotting-oranges/description/",
+        "text": "Rotting Oranges"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/267",
+        "text": "here"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day31"
+      },
+      {
+        "href": "https://t.me/codewithbaka",
+        "text": "@codewithbaka"
+      }
+    ]
+  },
+  {
+    "index": 64,
+    "id": "message71",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/BFS Lecture.pdf",
+        "text": "BFS Lecture.pdf1.8 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 31 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 65,
+    "id": "message72",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 32: Heap Lecture – Priority-Powered Problem Solving\nYesterday, we explored\nHeaps\n—special tree-based data structures that let us prioritize like pros. Whether it’s for sorting, scheduling, or finding the top K of anything, heaps get the job done with blazing efficiency. 🔥📊\n🔍 What We Covered:\n✅\nDefinition\nA\nheap\nis a\ncomplete binary tree\nthat satisfies the\nheap-order property\n(min-heap or max-heap).\n✅\nTypes of Heaps\n•\nMin Heap\n: Parent ≤ Children\n•\nMax Heap\n: Parent ≥ Children\n✅\nCore Operations\n•\nInsertion\n(up-heap bubbling)\n•\nRemove Min/Max\n(down-heap bubbling)\n•\nPeek\n– Get top element without removing\n✅\nHeap Construction Methods\n•\nMethod 1\n: Insert elements one by one → O(n log n)\n•\nMethod 2\n: Bottom-up heapify → O(n)\n✅\nHeap Sort\n•\nTurn array into a max-heap and repeatedly extract max\n•\nTime complexity\n: O(n log n)\n•\nSpace complexity\n: O(1)\n•\nEfficient, but\nunstable\n✅\nHeap Problem Patterns\n•\nTop-K Pattern\n– Keep k largest/smallest\n•\nMerge K Sorted Lists\n– Combine using heap\n•\nTwo Heaps Pattern\n– Maintain two heaps to balance data (e.g., median tracker)\n✅ Real-World Applications\n•\nPriority queues\n•\nProcess scheduling\n•\nDijkstra’s & Prim’s algorithms\n•\nSearch autocomplete\n•\nReal-time data streaming\n📌\nProblems of the Day:\n•\nKth Largest Element in an Array\n•\nMerge K Sorted Lists\n•\nKth Largest in Stream\n•\nTop K Frequent Elements\n•\nFind Median from Data Stream\n📌 Lecture slides and heap template codes will be shared in the\ngroup\n📌 More practice problems\nhere\n🌟 Quote of the Day:\n\"Actions express priorities.\" – Mahatma Gandhi\nLet’s keep prioritizing learning—one heap at a time. 💪🔼\n#A2SV\n#DSA\n#Day32\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/kth-largest-element-in-an-array/description/",
+        "text": "Kth Largest Element in an Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "text": "Merge K Sorted Lists"
+      },
+      {
+        "href": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+        "text": "Kth Largest in Stream"
+      },
+      {
+        "href": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "text": "Top K Frequent Elements"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-median-from-data-stream/",
+        "text": "Find Median from Data Stream"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/267",
+        "text": "here"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day32"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 66,
+    "id": "message73",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Heap Lecture.pdf",
+        "text": "Heap Lecture.pdf1.7 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 32 lecture slide",
+    "links": []
+  },
+  {
+    "index": 67,
+    "id": "message74",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "💡\nDay 33: Greedy Algorithm Lecture\nYesterday's session focused on mastering the\nGreedy Approach\n—one of the most intuitive yet powerful problem-solving strategies. Greedy algorithms are all about making\nthe best local choice at every step\nwith the hope of reaching a globally optimal solution. 🚀\n🔍 What We Covered:\n✅\nFeasible vs. Optimal Solution\n•\nFeasible\n: Meets requirements, not necessarily optimal\n•\nOptimal\n: Best possible solution\n✅\nComponents of an Optimization Problem:\n1\n.\nObjective Function\n– What we aim to maximize or minimize\n2\n.\nDecision Variables\n– Elements we control or choose\n3\n.\nConstraints\n– Rules that limit decisions\n✅\nGreedy Approach:\n•\nMake the\nbest choice at each step\nwithout considering future consequences\n•\nTrust that this leads to the global optimum in specific problem types\n✅\nKey Terms:\n•\nSubproblem\n: A smaller version of the original problem\n•\nLocal Optimum\n: Best choice in a small scope\n•\nGlobal Optimum\n: Best overall solution\n✅\nProperties of Greedy Algorithms:\n•\nGreedy Choice Property\n: Locally optimal choices lead to the global optimum\n•\nOptimal Substructure\n: Optimal solutions build from smaller optimal solutions\n✅\nSelection Rule & Heuristics\n:\n•\nRules that guide which option to pick\n•\nHeuristics help make practical choices when exhaustive search is too costly\n✅\nProofing Mechanisms:\n1\n. Proof by Induction\n2\n. Proof by Contradiction\n3\n. Exchange Argument\n✅\nCommon Pitfalls:\n•\nGreedy doesn’t always guarantee global optimality\n•\nBe careful with sorting and problem-specific choices\n📌 Practice Problems:\n•\nLemonade Change\n•\nMinimum Number of Arrows to Burst Balloons\n•\nRabbits in Forest\n•\nMinimum Moves to Reach Target Score\n•\nMinimum Replacements to Sort the Array\n📌 Lecture slides will be shared in the\ngroup\n.\n✨ Quote of the Day:\n\"A problem well stated is a problem half solved.\" — John Dewey\n#A2SV\n#DSA\n#Day33\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/lemonade-change/",
+        "text": "Lemonade Change"
+      },
+      {
+        "href": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/",
+        "text": "Minimum Number of Arrows to Burst Balloons"
+      },
+      {
+        "href": "https://leetcode.com/problems/rabbits-in-forest/",
+        "text": "Rabbits in Forest"
+      },
+      {
+        "href": "https://leetcode.com/problems/minimum-moves-to-reach-target-score/",
+        "text": "Minimum Moves to Reach Target Score"
+      },
+      {
+        "href": "https://leetcode.com/problems/minimum-replacements-to-sort-the-array/description/",
+        "text": "Minimum Replacements to Sort the Array"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day33"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 68,
+    "id": "message75",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Greedy Lecture.pdf",
+        "text": "Greedy Lecture.pdf1.8 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 33 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 69,
+    "id": "message76",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 34: Topological Sort\nLast weeks lecture was all about\nTopological Sorting\n—a key algorithm used when solving problems involving dependencies, especially in\nDirected Acyclic Graphs (DAGs)\n.\n📚 What We Covered:\n✅ Introduction & Motivation\n•\nTopological sort arranges tasks so each task appears before those that depend on it.\n•\nOnly possible on DAGs (Directed Acyclic Graphs)—no cycles allowed!\n✅ Two Main Implementations:\n1. BFS (Kahn’s Algorithm)\n•\nStarts with nodes having no incoming edges.\n•\nRemoves nodes level by level while tracking dependencies.\n•\nEfficient and intuitive.\n2. DFS-Based Approach\n•\nRecursively explores paths and builds the order in reverse.\n•\nUses a color system (White, Gray, Black) to track cycles.\n•\nGreat for sparse graphs.\n✅\nTime & Space Complexity:\n•\nBoth BFS and DFS take\nO(V + E)\n, where\nV = vertices\nand\nE = edges\n.\n✅\nReal-Life Applications:\n•\nCourse scheduling 🏫\n•\nTask automation 🛠\n•\nDependency resolution (e.g., compilers, package managers)\n•\nDetecting deadlocks 🧠\n•\nGit commit history & Airflow workflows 🌐\n✅\nCommon Pitfalls:\n•\nForgetting to check all components in the graph\n•\nCycle detection mistakes using vanilla BFS/DFS\n•\nIncorrect assumption of node ordering when dependencies exist\n🧠 Practice Problems:\n•\nCourse Schedule II\n•\nAlien Dictionary\n•\nAll Ancestors of a Node\n•\nSort Items by Groups\n•\nBuild a Matrix With Conditions\n📌 Lecture slides will be shared in the\ngroup\n.\n💬 Quote of the Day\n\"Order is the shape upon which beauty depends.\" — Pearl S. Buck\n#A2SV\n#DSA\n#Day34\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/course-schedule-ii/",
+        "text": "Course Schedule II"
+      },
+      {
+        "href": "https://practice.geeksforgeeks.org/problems/alien-dictionary/1",
+        "text": "Alien Dictionary"
+      },
+      {
+        "href": "https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/",
+        "text": "All Ancestors of a Node"
+      },
+      {
+        "href": "https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/",
+        "text": "Sort Items by Groups"
+      },
+      {
+        "href": "https://leetcode.com/problems/build-a-matrix-with-conditions/",
+        "text": "Build a Matrix With Conditions"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day34"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 70,
+    "id": "message77",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Topological Sort Lecture.pdf",
+        "text": "Topological Sort Lecture.pdf7.0 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 34 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 71,
+    "id": "message78",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 35: Dynamic Programming🔁\nYesterday we officially entered the land of Dynamic Programming—the technique every problem solver fears at first... until they fall in love with its elegance! ❤️‍🔥\n🧠 What We Covered:\n✅\nIntro to DP\n:\nDynamic Programming (DP)\nsolves complex problems by breaking them into simpler overlapping subproblems and storing their results to avoid redundant work.\nTop-down DP =\nRecursion\n+\nMemoization\n.\n✅\nMemoization\n:\nStoring results of expensive recursive calls in a data structure (like a dictionary) so we don’t recompute them again. Huge time-saver!\n✅\nTwo Essential Conditions:\n1.\nOptimal Substructure\n– An optimal solution depends on optimal solutions of its subproblems.\n2.\nOverlapping Subproblems\n– The problem can be broken into smaller, repeated subproblems.\n✅\nCommon DP Applications:\n•\nEnumeration (e.g. Climbing stairs)\n•\nOptimizations (e.g. House Robber)\n•\nYes/No decisions (e.g. Partition Equal Subset Sum)\n✅\nImportant Reminders:\n•\nAlways define the state of your subproblem.\n•\nHave a base case to stop recursion.\n•\nWatch out for missing parameters when memoizing.\n💡\nPractice Problems of the Day:\n•\nClimbing Stairs\n•\nPartition Equal Subset Sum\n•\nTarget Sum\n•\nHouse Robber III\n•\nCoin Change\n📌 Slides will be shared in the\ngroup\n.\n💬\nQuote of the Day\n“Those who cannot remember the past are condemned to repeat it.”\n— George Santayana\n#A2SV\n#DSA\n#Day35\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/climbing-stairs/",
+        "text": "Climbing Stairs"
+      },
+      {
+        "href": "https://leetcode.com/problems/partition-equal-subset-sum/",
+        "text": "Partition Equal Subset Sum"
+      },
+      {
+        "href": "https://leetcode.com/problems/target-sum/",
+        "text": "Target Sum"
+      },
+      {
+        "href": "https://leetcode.com/problems/house-robber-iii/description/",
+        "text": "House Robber III"
+      },
+      {
+        "href": "https://leetcode.com/problems/coin-change/description/",
+        "text": "Coin Change"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day35"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 72,
+    "id": "message79",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Top-Down DP.pdf",
+        "text": "Top-Down DP.pdf968.1 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 35 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 73,
+    "id": "message80",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 36: DP II – Bottom-Up Approach\nYesterday, we explored the\nbottom-up (tabulation)\napproach to dynamic programming. Unlike top-down, which starts with the big picture and breaks things down, bottom-up builds solutions from smaller subproblems up to the full solution.\n🧠 What We Covered:\n✅\nWhat is Bottom-Up DP?\n•\nA technique that solves smaller subproblems first and combines them to solve larger ones. It avoids recursion and improves time efficiency.\n✅\nWhy use it?\n•\nNo recursion overhead\n•\nBetter memory optimization\n•\nSometimes easier to debug and iterate\n✅\nTop-down to Bottom-up Conversion Recipe\n1. Represent your\nstate-space\n2. Initialize\nbase cases\n3.Define\nstate transitions\n4. Respect the\ndependency order\n5.Return the answer for the\ninitial state\n✅\nCommon Variants\n•\nCounting\n(e.g., number of ways)\n•\nOptimization\n(min/max problems)\n•\nDecision\n(yes/no answers)\n✅\nCommon Pitfalls\n•\nAssuming it’s always faster than top-down\n•\nIncorrect initialization\n•\nOverlooking edge cases\n📌\nPractice Problems\n•\nN-th Tribonacci Number\n•\nPerfect Squares\n•\nTriangle\n•\nChampagne Tower\n📌 Slides will be shared in the\ngroup\n.\n💬 Quote of the Day\n“We worry top-down, but we invest bottom-up.”    — Seth Klarman\n#A2SV\n#DSA\n#Day36\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/n-th-tribonacci-number/",
+        "text": "N-th Tribonacci Number"
+      },
+      {
+        "href": "https://leetcode.com/problems/perfect-squares/",
+        "text": "Perfect Squares"
+      },
+      {
+        "href": "https://leetcode.com/problems/triangle/",
+        "text": "Triangle"
+      },
+      {
+        "href": "https://leetcode.com/problems/champagne-tower/",
+        "text": "Champagne Tower"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day36"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 74,
+    "id": "message81",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Bottom Up DP.pdf",
+        "text": "Bottom Up DP.pdf1.7 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 36 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 75,
+    "id": "message82",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 37: Bitwise Operations\nYesterday, we jumped into the\nworld of bits\n— the foundation of everything computers do! 💻\n🧠\nWhat We Covered\n✅\nWhat are Bits?\n•\nThe smallest unit of data in a computer system: either\n0\nor\n1\n.\n✅\nWhy Bits?\n•\nEfficient, low-level manipulations that can simplify and optimize solutions. Many DSA tricks come from bit hacks! 🔥\n✅\nBit Operators\n:\n•\n~\nNOT\n•\n&\nAND\n•\n|\nOR\n•\n^\nXOR\n•\n<<\n,\n>>\nShifts\n✅\nProperties of Operators:\n•\nCommutative, Associative, Identity, and Inverse rules make them powerful for optimization.\n✅\nBit Masking\n:\n•\nStore multiple pieces of info in a single integer, test or flip specific bits using masks like\n1 << k\n.\n✅\nPython Built-in Functions:\n•\nbin(x)\n→ integer to binary string\n•\nint(s, 2)\n→ binary string to integer\n•\nx.bit_length()\n→ number of bits to represent x\n•\nx.bit_count()\n→ number of set bits in x\n📌\nPractice Problems\n•\nNumber Complement\n•\nHamming Distance\n•\nCirno’s Perfect Bitmasks Classroom\n•\nSubsets\n•\nAdd Binary\n•\nSingle Number II\n📌 Slides will be shared in the\ngroup\n.\n💬\nQuote of the Day\n“The greatest glory in living lies not in never falling, but in rising every time we fall.”\n— Nelson Mandela\n#A2SV\n#DSA\n#Day37\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/number-complement/",
+        "text": "Number Complement"
+      },
+      {
+        "href": "https://leetcode.com/problems/hamming-distance/",
+        "text": "Hamming Distance"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/1688/A",
+        "text": "Cirno’s Perfect Bitmasks Classroom"
+      },
+      {
+        "href": "https://leetcode.com/problems/subsets/",
+        "text": "Subsets"
+      },
+      {
+        "href": "https://leetcode.com/problems/add-binary/",
+        "text": "Add Binary"
+      },
+      {
+        "href": "https://leetcode.com/problems/single-number-ii/",
+        "text": "Single Number II"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day37"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 76,
+    "id": "message83",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Bitwise Operations.pdf",
+        "text": "Bitwise Operations.pdf3.0 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 37 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 77,
+    "id": "message84",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 38: Union-Find (Disjoint Set Union)\nYesterday, we explored the\nUnion-Find\ndata structure — a powerful tool to group elements and quickly determine if they belong to the same set. ⚡️\n🧠\nWhat We Covered\n✅\nMotivation Problem\n• Checking if two cities in a road network are connected efficiently.\n✅\nDefinition\n•\nUnion-Find (Disjoint Set Union, DSU)\nhelps manage groups of connected elements with two main operations:\n-\nFind\n→ Identify the representative (root) of a set\n-\nUnion\n→ Merge two sets into one\n✅\nProblems Solved Using Union-Find\n• Check if a path exists in a graph\n• Count connected components\n• Detect cycles in an undirected graph\n• Kruskal’s Minimum Spanning Tree (MST)\n• Efficient set merging\n✅\nOptimizations\n•\nQuick Find & Quick Union\nbasics\n•\nUnion by Size / Rank\n→ attach smaller tree to larger one to reduce depth\n•\nPath Compression\n→ flatten trees for near O(1) amortized operations\n📌 Practice Problems\n•\nCheck if There is a Valid Path in a Grid\n•\nRedundant Connection\n•\nRegions Cut by Slashes\n•\nAccounts Merge\n•\nMost Stones Removed with Same Row or Column\n•\nMinimize Malware Spread\n📌 Slides will be shared in the\ngroup\n.\n💬 Quote of the Day\n\"In Union there is strength.\"  — Aesop\n#A2SV\n#DSA\n#Day38\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/?utm_source=chatgpt.com",
+        "text": "Check if There is a Valid Path in a Grid"
+      },
+      {
+        "href": "https://leetcode.com/problems/redundant-connection/description/",
+        "text": "Redundant Connection"
+      },
+      {
+        "href": "https://leetcode.com/problems/regions-cut-by-slashes/description/",
+        "text": "Regions Cut by Slashes"
+      },
+      {
+        "href": "https://leetcode.com/problems/accounts-merge/description/",
+        "text": "Accounts Merge"
+      },
+      {
+        "href": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/",
+        "text": "Most Stones Removed with Same Row or Column"
+      },
+      {
+        "href": "https://leetcode.com/problems/minimize-malware-spread/description/",
+        "text": "Minimize Malware Spread"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day38"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 78,
+    "id": "message85",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Union Find.pdf",
+        "text": "Union Find.pdf860.1 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 38 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 79,
+    "id": "message86",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 39: Sorting II – Advanced Sorting Algorithms\nWe expanded our toolbox of sorting algorithms, going beyond the basics and diving into more advanced, efficient, and specialized techniques⚡️\n🧠\nWhat We Covered\n✅\nRevision\n•\nBubble Sort, Selection Sort, Insertion Sort, Counting Sort (recap on time/space complexities)\n✅\nMerge Sort\n•\nDivide-and-conquer: split → sort → merge\n•\nStable, O(n log n), but not in-place\n✅\nBucket Sort\n•\nDistributes values into “buckets” and sorts within them\n•\nGreat for uniformly distributed data (like floating-point values)\n✅\nQuick Sort\n•\nDivide-and-conquer using a pivot and partitioning\n•\nAverage O(n log n), but worst-case O(n²) if pivot choice is poor\n•\nIn-place but unstable\n✅ Cycle Sort (a.k.a Cyclic Sort)\n•\nUsed when array values are in range [1…n]\n•\nLinear time O(n) when applicable\n•\nCommon in problems like finding missing or duplicate numbers\n💻\nPractice Problems\n•\nSort an Array\n•\nSort List\n•\nTop K Frequent Elements\n•\nCreate Sorted Array through Instructions\n•\nKth Largest Element in an Array\n•\nFind All Duplicates in an Array\n•\nMissing Number\n📌\nSlides will be shared in the\nDSA with A2SV group\n.\n✨ Quote of the Day\n“The first law of success is concentration — to bend all the energies to one point, and to go directly to that point, looking neither to the right nor to the left.”\n— William Matthews\n#A2SV\n#DSA\n#Day39\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/sort-an-array/",
+        "text": "Sort an Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/sort-list/",
+        "text": "Sort List"
+      },
+      {
+        "href": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "text": "Top K Frequent Elements"
+      },
+      {
+        "href": "https://leetcode.com/problems/create-sorted-array-through-instructions/",
+        "text": "Create Sorted Array through Instructions"
+      },
+      {
+        "href": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+        "text": "Kth Largest Element in an Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-all-duplicates-in-an-array/",
+        "text": "Find All Duplicates in an Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/missing-number/",
+        "text": "Missing Number"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "DSA with A2SV group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day39"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 80,
+    "id": "message87",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:06 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [],
+    "text": "Day 39 Lecture Slides",
+    "links": []
+  },
+  {
+    "index": 81,
+    "id": "message88",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": null,
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "Sorting II - Part I.pdf1.6 MB",
+    "media_files": [
+      {
+        "href": "files/Sorting II - Part I.pdf",
+        "text": "Sorting II - Part I.pdf1.6 MB",
+        "title": ""
+      }
+    ],
+    "text": "10:28\nSorting II - Part I.pdf\n1.6 MB",
+    "links": []
+  },
+  {
+    "index": 82,
+    "id": "message89",
+    "classes": [
+      "message",
+      "default",
+      "clearfix",
+      "joined"
+    ],
+    "author": null,
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "Sorting II - Part II.pdf757.5 KB",
+    "media_files": [
+      {
+        "href": "files/Sorting II - Part II.pdf",
+        "text": "Sorting II - Part II.pdf757.5 KB",
+        "title": ""
+      }
+    ],
+    "text": "10:28\nSorting II - Part II.pdf\n757.5 KB",
+    "links": []
+  },
+  {
+    "index": 83,
+    "id": "message90",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 40: Numerics\nwe dived into the core of number theory — the mathematics that powers so many algorithms in problem-solving! 🔢✨\n🧠 What We Covered\n✅\nDivisibility & Modular Arithmetic\n✅\nPrime Numbers & Primality Test\n• Trial division for primality check\n✅\nPrime Factorization\n• Every integer can be uniquely expressed as product of primes\n• Trial division algorithm for factorization\n✅\nSieve of Eratosthenes\n• Efficiently generate primes in range [2, n]\n• Optimized version: start marking from\n𝑖^2\n, sieve till\nsqrt(n)\n​  • Complexity: O(𝑛loglog𝑛)\n✅\nGCD & LCM\n•\nEuclid’s Algorithm\n→\nO(log n)\n•\nRelation\n:\nLCM(a,b) ⋅ GCD(a,b) = a⋅b\n✅ I\nnclusion-Exclusion Principle\n• Counting elements in unions of sets\n📌 Practice Problems\n•\nComplicated GCD\n•\nFind GCD of Array\n•\nNumber of Subarrays With GCD Equal to K\n•\nCount Primes\n•\nBlock Game\n•\nDivide and Equalize\n📌 Slides will be shared in the\ngroup\n.\n💬 Quote of the Day\n“The enchanting charms of this sublime science reveal only to those who have the courage to go deeply into it.”  — Carl Friedrich Gauss\n#A2SV\n#DSA\n#Day40\n@bakacodes",
+    "links": [
+      {
+        "href": "https://codeforces.com/contest/664/problem/A",
+        "text": "Complicated GCD"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+        "text": "Find GCD of Array"
+      },
+      {
+        "href": "https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/description/",
+        "text": "Number of Subarrays With GCD Equal to K"
+      },
+      {
+        "href": "https://leetcode.com/problems/count-primes/",
+        "text": "Count Primes"
+      },
+      {
+        "href": "https://open.kattis.com/problems/blockgame2",
+        "text": "Block Game"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/1881/D",
+        "text": "Divide and Equalize"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day40"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 84,
+    "id": "message91",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Numerics Lecture.pdf",
+        "text": "Numerics Lecture.pdf431.5 KB",
+        "title": ""
+      }
+    ],
+    "text": "Day 40 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 85,
+    "id": "message92",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 41: Tries (Prefix Trees)\nYesterday, we explored\nTries\n— a powerful tree-based data structure for efficient string storage and retrieval. 🌳🔡\n🧠\nWhat We Covered\n✅\nWhat are Tries?\n• A tree structure used to store strings where each node represents a character.\n• Also called prefix tree or digital tree.\n✅\nWhy Trie?\n• Fast prefix and word lookups (like in dictionaries, autocomplete, or spell checkers).\n• Saves space when many words share prefixes.\n✅\nOperations on Tries\n•\nInsertion\n→ add words character by character, marking the end node.\n•\nSearch Prefix\n→ check if a given prefix exists by traversing nodes.\n•\nSearch Word\n→ same as prefix search, but also check is_end flag.\n•\nDeletion\n→ carefully remove nodes depending on whether the word is unique, prefix of another, or has prefixes itself.\n✅\nTime & Space Complexity\n• Insertion: O(n)\n• Search: O(n)\n• Deletion: O(n)\n(where n = length of word)\n• Space: O(M × N) in worst case (M = number of words, N = length of longest word), but often less in practice thanks to shared prefixes.\n📌 Practice Problems\n•\nImplement Trie (Prefix Tree)\n•\nLongest Common Prefix\n•\nSearch Suggestions System\n•\nLongest Word in Dictionary\n•\nDesign Add and Search Words Data Structure\n•\nWord Break\n📌 Lecture Slide will be shared in the\ngroup\n.\n💬\nQuote of the Day\n\"If you can't do great things, do small things in a great way\"  — Napoleon Hill\n#A2SV\n#DSA\n#Day42\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        "text": "Implement Trie (Prefix Tree)"
+      },
+      {
+        "href": "https://leetcode.com/problems/longest-common-prefix/description/",
+        "text": "Longest Common Prefix"
+      },
+      {
+        "href": "https://leetcode.com/problems/search-suggestions-system/description/",
+        "text": "Search Suggestions System"
+      },
+      {
+        "href": "https://leetcode.com/problems/longest-word-in-dictionary/description/",
+        "text": "Longest Word in Dictionary"
+      },
+      {
+        "href": "https://leetcode.com/problems/design-add-and-search-words-data-structure/description/",
+        "text": "Design Add and Search Words Data Structure"
+      },
+      {
+        "href": "https://leetcode.com/problems/word-break/description/",
+        "text": "Word Break"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day42"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 86,
+    "id": "message93",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Trie Lecture.pdf",
+        "text": "Trie Lecture.pdf1.5 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 41 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 87,
+    "id": "message94",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀\nDay 42: Shortest Path Algorithms\nIn this session, we explored the core algorithms that power\nnavigation systems\n,\ngraph optimization\n, and\nroute planning\n! 🗺✨\n🧠\nWhat We Covered\n✅\nDijkstra’s Algorithm\n•\nFinds the shortest path from a single source to all other nodes in a weighted graph (no negative edges).\n•\nUses a min-heap to pick the closest unvisited node.\n•\nTime Complexity: O((V + E) * logV)\n•\nSpace Complexity: O(V)\n✅\nBellman–Ford Algorithm\n•\nWorks even with negative weights.\n•\nRepeatedly relaxes all edges up to V−1 times.\n•\nDetects negative weight cycles if a distance decreases after the Vth iteration.\n•\nTime Complexity: O(V * E)\n•\nSpace Complexity: O(V)\n✅\nShortest Path Faster Algorithm (SPFA)\n•\nAn optimization of Bellman–Ford using a queue.\n•\nOnly processes vertices whose distances were updated.\n•\nCan detect negative cycles using edge count tracking.\n•\nAverage Time: O(E), Worst Case: O(V * E)\n•\nSpace Complexity: O(V)\n✅\nFloyd–Warshall Algorithm\n•\nComputes shortest paths between all pairs of nodes.\n•\nDynamic programming approach using intermediate nodes.\n•\nTime Complexity: O(V³)\n•\nSpace Complexity: O(V²)\n📌\nPractice Problems\n•\nPath with Maximum Probability\n•\nNetwork Delay Time\n•\nFind the City with the Smallest Number of Neighbors\n•\nTwo Routes\n•\nCourse Schedule IV\n•\nDijkstra?\n📌 Slides will be shared in the\ngroup\n.\n💬\nQuote of the Day\n\"To find the shortest path, sometimes you have to be willing to take the longer journey.\"\n— Unknown\n#A2SV\n#DSA\n#Day42\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/path-with-maximum-probability/description/",
+        "text": "Path with Maximum Probability"
+      },
+      {
+        "href": "https://leetcode.com/problems/network-delay-time/",
+        "text": "Network Delay Time"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/",
+        "text": "Find the City with the Smallest Number of Neighbors"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/601/A",
+        "text": "Two Routes"
+      },
+      {
+        "href": "https://leetcode.com/problems/course-schedule-iv/",
+        "text": "Course Schedule IV"
+      },
+      {
+        "href": "https://codeforces.com/problemset/problem/20/C",
+        "text": "Dijkstra?"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day42"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 88,
+    "id": "message95",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Shortest Path Lecture.pdf",
+        "text": "Shortest Path Lecture.pdf2.1 MB",
+        "title": ""
+      }
+    ],
+    "text": "Day 42 Lecture Slide",
+    "links": []
+  },
+  {
+    "index": 89,
+    "id": "message96",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "b",
+    "media_files": [],
+    "text": "🚀 Day 43: Advanced String Algorithms\nwe wrapped up the DSA journey with the fascinating world of\nsubstring search algorithms\n, learning how to find patterns efficiently within strings — the foundation of search engines, DNA analysis, and text editors! 🧬✨\n🧠 What We Covered\n✅\nWhat is a Substring Search? (Naive Method)\n• The simplest approach — slide the pattern over the text one by one and compare.\n• Time Complexity:\nO(n × m)\n, where n = length of text and m = length of pattern.\n✅\nRabin–Karp Algorithm (Rolling Hash)\n• Uses\nhashing\nto compare substrings efficiently.\n• Converts strings to numerical values using polynomial rolling hash.\n• Average Time Complexity:\nO(n + m)\n• Handles substring comparisons with modular arithmetic and base powers.\n✅\nKnuth–Morris–Pratt (KMP) Algorithm\n• Guarantees\nO(n + m)\ntime complexity.\n• Avoids re-checking characters by building an LPS (Longest Prefix Suffix) array.\n• Two stages:\n- Preprocessing: Build the LPS table in O(m).\n- Matching: Use LPS to skip unnecessary comparisons in O(n).\n✅\nAdditional String Algorithms\n• Z Algorithm: Finds all occurrences of a substring; efficient for multiple pattern matches.\n• Manacher’s Algorithm: Finds the longest palindromic substring in O(n).\n• Suffix Array: Solves problems related to lexicographic order, substring search, and LCP   (Longest Common Prefix).\n📌 Practice Problems\n•\nRepeated String Match\n•\nLongest Happy Prefix\n•\nFind the Index of the First Occurrence in a String\n•\nPermutation in String\n•\nFind Substring with Given Hash Value\n•\nDivision + LCP\n📌 Slides will be shared in the\ngroup\n.\n💬 Quote of the Day\n“It is not enough to be in the right place at the right time. You should also have an open mind at the right time.” — Paul Erdos\n#A2SV\n#DSA\n#Day43\n@bakacodes",
+    "links": [
+      {
+        "href": "https://leetcode.com/problems/repeated-string-match/description/",
+        "text": "Repeated String Match"
+      },
+      {
+        "href": "https://leetcode.com/problems/longest-happy-prefix/description/",
+        "text": "Longest Happy Prefix"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+        "text": "Find the Index of the First Occurrence in a String"
+      },
+      {
+        "href": "https://leetcode.com/problems/permutation-in-string/description/",
+        "text": "Permutation in String"
+      },
+      {
+        "href": "https://leetcode.com/problems/find-substring-with-given-hash-value/description/",
+        "text": "Find Substring with Given Hash Value"
+      },
+      {
+        "href": "https://codeforces.com/contest/1968/problem/G1",
+        "text": "Division + LCP"
+      },
+      {
+        "href": "https://t.me/codewithbakacommunity/6",
+        "text": "group"
+      },
+      {
+        "href": "",
+        "text": "#A2SV"
+      },
+      {
+        "href": "",
+        "text": "#DSA"
+      },
+      {
+        "href": "",
+        "text": "#Day43"
+      },
+      {
+        "href": "https://t.me/bakacodes",
+        "text": "@bakacodes"
+      }
+    ]
+  },
+  {
+    "index": 90,
+    "id": "message97",
+    "classes": [
+      "message",
+      "default",
+      "clearfix"
+    ],
+    "author": "Test",
+    "date_title": "14.08.2026 10:28:07 UTC+03:00",
+    "date_text": "10:28",
+    "forwarded_from": "M",
+    "media_files": [
+      {
+        "href": "files/Advanced String Algorithms.pdf",
+        "text": "Advanced String Algorithms.pdf3.6 MB",
+        "title": ""
+      }
+    ],
+    "text": "day 43 Lecture Slide",
+    "links": []
+  }
+]

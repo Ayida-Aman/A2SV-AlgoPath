@@ -1,0 +1,3128 @@
+[
+  {
+    "title": "Smallest even multiple",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/smallest-even-multiple/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 2,
+    "weekNumber": 2,
+    "occurrences": [
+      {
+        "sourceDay": 2,
+        "weekNumber": 2,
+        "sourceMsgId": "message14",
+        "rawTitle": "Smallest even multiple"
+      }
+    ]
+  },
+  {
+    "title": "Weird",
+    "platform": "HackerRank",
+    "url": "https://www.hackerrank.com/challenges/py-if-else/problem",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 2,
+    "weekNumber": 2,
+    "occurrences": [
+      {
+        "sourceDay": 2,
+        "weekNumber": 2,
+        "sourceMsgId": "message14",
+        "rawTitle": "Weird"
+      }
+    ]
+  },
+  {
+    "title": "Powers",
+    "platform": "HackerRank",
+    "url": "https://www.hackerrank.com/challenges/python-loops/problem",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 2,
+    "weekNumber": 2,
+    "occurrences": [
+      {
+        "sourceDay": 2,
+        "weekNumber": 2,
+        "sourceMsgId": "message14",
+        "rawTitle": "Powers"
+      }
+    ]
+  },
+  {
+    "title": "Mod Power",
+    "platform": "HackerRank",
+    "url": "https://www.hackerrank.com/challenges/python-power-mod-power/problem",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 2,
+    "weekNumber": 2,
+    "occurrences": [
+      {
+        "sourceDay": 2,
+        "weekNumber": 2,
+        "sourceMsgId": "message14",
+        "rawTitle": "Mod Power"
+      }
+    ]
+  },
+  {
+    "title": "Longest Common Prefix",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/longest-common-prefix/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 2,
+    "weekNumber": 2,
+    "occurrences": [
+      {
+        "sourceDay": 2,
+        "weekNumber": 2,
+        "sourceMsgId": "message14",
+        "rawTitle": "Longest Common Prefix"
+      },
+      {
+        "sourceDay": 41,
+        "weekNumber": 41,
+        "sourceMsgId": "message92",
+        "rawTitle": "Longest Common Prefix"
+      }
+    ]
+  },
+  {
+    "title": "Find Common Characters",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-common-characters/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 3,
+    "weekNumber": 3,
+    "occurrences": [
+      {
+        "sourceDay": 3,
+        "weekNumber": 3,
+        "sourceMsgId": "message16",
+        "rawTitle": "Find Common Characters"
+      }
+    ]
+  },
+  {
+    "title": "Reverse String",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/reverse-string/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 3,
+    "weekNumber": 3,
+    "occurrences": [
+      {
+        "sourceDay": 3,
+        "weekNumber": 3,
+        "sourceMsgId": "message16",
+        "rawTitle": "Reverse String"
+      },
+      {
+        "sourceDay": 24,
+        "weekNumber": 24,
+        "sourceMsgId": "message56",
+        "rawTitle": "Reverse String"
+      }
+    ]
+  },
+  {
+    "title": "Concatenation of Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/concatenation-of-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 3,
+    "weekNumber": 3,
+    "occurrences": [
+      {
+        "sourceDay": 3,
+        "weekNumber": 3,
+        "sourceMsgId": "message16",
+        "rawTitle": "Concatenation of Array"
+      }
+    ]
+  },
+  {
+    "title": "Keyboard Row",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/keyboard-row/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 4,
+    "weekNumber": 4,
+    "occurrences": [
+      {
+        "sourceDay": 4,
+        "weekNumber": 4,
+        "sourceMsgId": "message18",
+        "rawTitle": "Keyboard Row"
+      }
+    ]
+  },
+  {
+    "title": "Non-decreasing Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/non-decreasing-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 4,
+    "weekNumber": 4,
+    "occurrences": [
+      {
+        "sourceDay": 4,
+        "weekNumber": 4,
+        "sourceMsgId": "message18",
+        "rawTitle": "Non-decreasing Array"
+      }
+    ]
+  },
+  {
+    "title": "Team",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/contest/231/problem/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 4,
+    "weekNumber": 4,
+    "occurrences": [
+      {
+        "sourceDay": 4,
+        "weekNumber": 4,
+        "sourceMsgId": "message18",
+        "rawTitle": "Team"
+      }
+    ]
+  },
+  {
+    "title": "Way Too Long Words",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/71/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 4,
+    "weekNumber": 4,
+    "occurrences": [
+      {
+        "sourceDay": 4,
+        "weekNumber": 4,
+        "sourceMsgId": "message18",
+        "rawTitle": "Way Too Long Words"
+      }
+    ]
+  },
+  {
+    "title": "Lists",
+    "platform": "HackerRank",
+    "url": "https://www.hackerrank.com/challenges/python-lists/problem",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 5,
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": 5,
+        "weekNumber": 5,
+        "sourceMsgId": "message19",
+        "rawTitle": "Lists"
+      }
+    ]
+  },
+  {
+    "title": "Build Array from Permutation",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/build-array-from-permutation/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 5,
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": 5,
+        "weekNumber": 5,
+        "sourceMsgId": "message19",
+        "rawTitle": "Build Array from Permutation"
+      }
+    ]
+  },
+  {
+    "title": "Presents",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/136/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 5,
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": 5,
+        "weekNumber": 5,
+        "sourceMsgId": "message19",
+        "rawTitle": "Presents"
+      }
+    ]
+  },
+  {
+    "title": "Maximum Product Of Three Numbers",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 5,
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": 5,
+        "weekNumber": 5,
+        "sourceMsgId": "message19",
+        "rawTitle": ""
+      },
+      {
+        "sourceDay": 5,
+        "weekNumber": 5,
+        "sourceMsgId": "message19",
+        "rawTitle": "Maximum Product of Three Numbers"
+      }
+    ]
+  },
+  {
+    "title": "Division?",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/1669/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_1",
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_1",
+        "weekNumber": 5,
+        "sourceMsgId": "message21",
+        "rawTitle": "Division"
+      }
+    ]
+  },
+  {
+    "title": "Word Capitalization",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/281/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_1",
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_1",
+        "weekNumber": 5,
+        "sourceMsgId": "message21",
+        "rawTitle": "Word Capitalization"
+      }
+    ]
+  },
+  {
+    "title": "Petya and Strings",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/112/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_1",
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_1",
+        "weekNumber": 5,
+        "sourceMsgId": "message21",
+        "rawTitle": "Petya and Strings"
+      }
+    ]
+  },
+  {
+    "title": "Stones on the Table",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/266/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_1",
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_1",
+        "weekNumber": 5,
+        "sourceMsgId": "message21",
+        "rawTitle": "Stones on the Table"
+      }
+    ]
+  },
+  {
+    "title": "Only Pluses",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/1992/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_1",
+    "weekNumber": 5,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_1",
+        "weekNumber": 5,
+        "sourceMsgId": "message21",
+        "rawTitle": "Only Pluses"
+      }
+    ]
+  },
+  {
+    "title": "Sum of Even Numbers After Queries",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sum-of-even-numbers-after-queries/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 6,
+    "weekNumber": 6,
+    "occurrences": [
+      {
+        "sourceDay": 6,
+        "weekNumber": 6,
+        "sourceMsgId": "message22",
+        "rawTitle": "Sum of Even Numbers After Queries"
+      }
+    ]
+  },
+  {
+    "title": "Remove Comments",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/remove-comments/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 6,
+    "weekNumber": 6,
+    "occurrences": [
+      {
+        "sourceDay": 6,
+        "weekNumber": 6,
+        "sourceMsgId": "message22",
+        "rawTitle": "Remove Comments"
+      }
+    ]
+  },
+  {
+    "title": "Contains Duplicate",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/contains-duplicate/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 7,
+    "weekNumber": 7,
+    "occurrences": [
+      {
+        "sourceDay": 7,
+        "weekNumber": 7,
+        "sourceMsgId": "message24",
+        "rawTitle": "•"
+      },
+      {
+        "sourceDay": 7,
+        "weekNumber": 7,
+        "sourceMsgId": "message24",
+        "rawTitle": "Contains Duplicate"
+      }
+    ]
+  },
+  {
+    "title": "Missing Number",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/missing-number/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 7,
+    "weekNumber": 7,
+    "occurrences": [
+      {
+        "sourceDay": 7,
+        "weekNumber": 7,
+        "sourceMsgId": "message24",
+        "rawTitle": "• Missing Number"
+      },
+      {
+        "sourceDay": 39,
+        "weekNumber": 39,
+        "sourceMsgId": "message86",
+        "rawTitle": "Missing Number"
+      }
+    ]
+  },
+  {
+    "title": "Dictionaries and Maps",
+    "platform": "HackerRank",
+    "url": "https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 7,
+    "weekNumber": 7,
+    "occurrences": [
+      {
+        "sourceDay": 7,
+        "weekNumber": 7,
+        "sourceMsgId": "message24",
+        "rawTitle": "• Dictionaries and Maps"
+      }
+    ]
+  },
+  {
+    "title": "Same Differences",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/1520/D",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 7,
+    "weekNumber": 7,
+    "occurrences": [
+      {
+        "sourceDay": 7,
+        "weekNumber": 7,
+        "sourceMsgId": "message24",
+        "rawTitle": "• Same Differences"
+      }
+    ]
+  },
+  {
+    "title": "Find Words That Can Be Formed by Characters",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 8,
+    "weekNumber": 8,
+    "occurrences": [
+      {
+        "sourceDay": 8,
+        "weekNumber": 8,
+        "sourceMsgId": "message26",
+        "rawTitle": "• Find Words That Can Be Formed by Characters"
+      }
+    ]
+  },
+  {
+    "title": "Group Anagrams",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/group-anagrams/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 8,
+    "weekNumber": 8,
+    "occurrences": [
+      {
+        "sourceDay": 8,
+        "weekNumber": 8,
+        "sourceMsgId": "message26",
+        "rawTitle": "Group Anagrams"
+      }
+    ]
+  },
+  {
+    "title": "4Sum II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/4sum-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 8,
+    "weekNumber": 8,
+    "occurrences": [
+      {
+        "sourceDay": 8,
+        "weekNumber": 8,
+        "sourceMsgId": "message26",
+        "rawTitle": "4Sum II"
+      }
+    ]
+  },
+  {
+    "title": "Two Sum",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/two-sum/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 9,
+    "weekNumber": 9,
+    "occurrences": [
+      {
+        "sourceDay": 9,
+        "weekNumber": 9,
+        "sourceMsgId": "message27",
+        "rawTitle": "Two Sum"
+      }
+    ]
+  },
+  {
+    "title": "Majority Element",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/majority-element/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 9,
+    "weekNumber": 9,
+    "occurrences": [
+      {
+        "sourceDay": 9,
+        "weekNumber": 9,
+        "sourceMsgId": "message27",
+        "rawTitle": "Majority Element"
+      },
+      {
+        "sourceDay": 28,
+        "weekNumber": 28,
+        "sourceMsgId": "message64",
+        "rawTitle": "Majority Element"
+      }
+    ]
+  },
+  {
+    "title": "Maximum Number of Pairs in Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-number-of-pairs-in-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 9,
+    "weekNumber": 9,
+    "occurrences": [
+      {
+        "sourceDay": 9,
+        "weekNumber": 9,
+        "sourceMsgId": "message27",
+        "rawTitle": "Maximum Number of Pairs in Array"
+      }
+    ]
+  },
+  {
+    "title": "Roman to Integer",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/roman-to-integer/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 10,
+    "weekNumber": 10,
+    "occurrences": [
+      {
+        "sourceDay": 10,
+        "weekNumber": 10,
+        "sourceMsgId": "message29",
+        "rawTitle": "Roman to Integer"
+      }
+    ]
+  },
+  {
+    "title": "Find All Duplicates in an Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-all-duplicates-in-an-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 10,
+    "weekNumber": 10,
+    "occurrences": [
+      {
+        "sourceDay": 10,
+        "weekNumber": 10,
+        "sourceMsgId": "message29",
+        "rawTitle": "Find All Duplicates in an Array"
+      },
+      {
+        "sourceDay": 39,
+        "weekNumber": 39,
+        "sourceMsgId": "message86",
+        "rawTitle": "Find All Duplicates in an Array"
+      }
+    ]
+  },
+  {
+    "title": "Isomorphic Strings",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/isomorphic-strings/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 10,
+    "weekNumber": 10,
+    "occurrences": [
+      {
+        "sourceDay": 10,
+        "weekNumber": 10,
+        "sourceMsgId": "message29",
+        "rawTitle": "Isomorphic Strings"
+      }
+    ]
+  },
+  {
+    "title": "Frequency Tracker",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/frequency-tracker/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 10,
+    "weekNumber": 10,
+    "occurrences": [
+      {
+        "sourceDay": 10,
+        "weekNumber": 10,
+        "sourceMsgId": "message29",
+        "rawTitle": "Frequency Tracker"
+      }
+    ]
+  },
+  {
+    "title": "Check if All the Integers in a Range Are Covered",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 11,
+    "weekNumber": 11,
+    "occurrences": [
+      {
+        "sourceDay": 11,
+        "weekNumber": 11,
+        "sourceMsgId": "message31",
+        "rawTitle": "Check if All the Integers in a Range Are Covered"
+      }
+    ]
+  },
+  {
+    "title": "Rabbits in Forest",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/rabbits-in-forest/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 11,
+    "weekNumber": 11,
+    "occurrences": [
+      {
+        "sourceDay": 11,
+        "weekNumber": 11,
+        "sourceMsgId": "message31",
+        "rawTitle": "Rabbits in Forest"
+      },
+      {
+        "sourceDay": 33,
+        "weekNumber": 33,
+        "sourceMsgId": "message74",
+        "rawTitle": "Rabbits in Forest"
+      }
+    ]
+  },
+  {
+    "title": "Majority Element II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/majority-element-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 11,
+    "weekNumber": 11,
+    "occurrences": [
+      {
+        "sourceDay": 11,
+        "weekNumber": 11,
+        "sourceMsgId": "message31",
+        "rawTitle": "Majority Element II"
+      }
+    ]
+  },
+  {
+    "title": "The Two Sneaky Numbers of Digitville",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 11,
+    "weekNumber": 11,
+    "occurrences": [
+      {
+        "sourceDay": 11,
+        "weekNumber": 11,
+        "sourceMsgId": "message31",
+        "rawTitle": "The Two Sneaky Numbers of Digitville"
+      }
+    ]
+  },
+  {
+    "title": "Longest Consecutive Sequence",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 12,
+    "weekNumber": 12,
+    "occurrences": [
+      {
+        "sourceDay": 12,
+        "weekNumber": 12,
+        "sourceMsgId": "message33",
+        "rawTitle": "Longest Consecutive Sequence"
+      }
+    ]
+  },
+  {
+    "title": "Integer to Roman",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/integer-to-roman/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 12,
+    "weekNumber": 12,
+    "occurrences": [
+      {
+        "sourceDay": 12,
+        "weekNumber": 12,
+        "sourceMsgId": "message33",
+        "rawTitle": "Integer to Roman"
+      }
+    ]
+  },
+  {
+    "title": "Replace Elements in an Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/replace-elements-in-an-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 12,
+    "weekNumber": 12,
+    "occurrences": [
+      {
+        "sourceDay": 12,
+        "weekNumber": 12,
+        "sourceMsgId": "message33",
+        "rawTitle": "Replace Elements in an Array"
+      }
+    ]
+  },
+  {
+    "title": "Apply Operations to an Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/apply-operations-to-an-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 13,
+    "weekNumber": 13,
+    "occurrences": [
+      {
+        "sourceDay": 13,
+        "weekNumber": 13,
+        "sourceMsgId": "message34",
+        "rawTitle": "Apply Operations to an Array"
+      }
+    ]
+  },
+  {
+    "title": "Find the Winner of the Circular Game",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-the-winner-of-the-circular-game/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 13,
+    "weekNumber": 13,
+    "occurrences": [
+      {
+        "sourceDay": 13,
+        "weekNumber": 13,
+        "sourceMsgId": "message34",
+        "rawTitle": "Find the Winner of the Circular Game"
+      }
+    ]
+  },
+  {
+    "title": "Chat Order",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/637/B",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 13,
+    "weekNumber": 13,
+    "occurrences": [
+      {
+        "sourceDay": 13,
+        "weekNumber": 13,
+        "sourceMsgId": "message34",
+        "rawTitle": "Chat Order"
+      }
+    ]
+  },
+  {
+    "title": "Happy Number",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/happy-number/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_2",
+    "weekNumber": 13,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_2",
+        "weekNumber": 13,
+        "sourceMsgId": "message36",
+        "rawTitle": "Happy Number"
+      }
+    ]
+  },
+  {
+    "title": "Gas Station",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/gas-station/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_2",
+    "weekNumber": 13,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_2",
+        "weekNumber": 13,
+        "sourceMsgId": "message36",
+        "rawTitle": "Gas Station"
+      }
+    ]
+  },
+  {
+    "title": "Maximum Product of Word Lengths",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-product-of-word-lengths/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": "Contest_2",
+    "weekNumber": 13,
+    "occurrences": [
+      {
+        "sourceDay": "Contest_2",
+        "weekNumber": 13,
+        "sourceMsgId": "message36",
+        "rawTitle": "Maximum Product of Word Lengths"
+      }
+    ]
+  },
+  {
+    "title": "Image Smoother",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/image-smoother/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 14,
+    "weekNumber": 14,
+    "occurrences": [
+      {
+        "sourceDay": 14,
+        "weekNumber": 14,
+        "sourceMsgId": "message37",
+        "rawTitle": "Image Smoother"
+      }
+    ]
+  },
+  {
+    "title": "Transpose Matrix",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/transpose-matrix/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 14,
+    "weekNumber": 14,
+    "occurrences": [
+      {
+        "sourceDay": 14,
+        "weekNumber": 14,
+        "sourceMsgId": "message37",
+        "rawTitle": "Transpose Matrix"
+      }
+    ]
+  },
+  {
+    "title": "Rotate Image",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/rotate-image/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 14,
+    "weekNumber": 14,
+    "occurrences": [
+      {
+        "sourceDay": 14,
+        "weekNumber": 14,
+        "sourceMsgId": "message37",
+        "rawTitle": "Rotate Image"
+      }
+    ]
+  },
+  {
+    "title": "Find Target Indices After Sorting Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 15,
+    "weekNumber": 15,
+    "occurrences": [
+      {
+        "sourceDay": 15,
+        "weekNumber": 15,
+        "sourceMsgId": "message39",
+        "rawTitle": "Find Target Indices After Sorting Array"
+      }
+    ]
+  },
+  {
+    "title": "Pancake Sorting",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/pancake-sorting/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 15,
+    "weekNumber": 15,
+    "occurrences": [
+      {
+        "sourceDay": 15,
+        "weekNumber": 15,
+        "sourceMsgId": "message39",
+        "rawTitle": "Pancake Sorting"
+      }
+    ]
+  },
+  {
+    "title": "Sort Colors",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sort-colors/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 15,
+    "weekNumber": 15,
+    "occurrences": [
+      {
+        "sourceDay": 15,
+        "weekNumber": 15,
+        "sourceMsgId": "message39",
+        "rawTitle": "Sort Colors"
+      }
+    ]
+  },
+  {
+    "title": "Third Maximum Number",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/third-maximum-number/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 16,
+    "weekNumber": 16,
+    "occurrences": [
+      {
+        "sourceDay": 16,
+        "weekNumber": 16,
+        "sourceMsgId": "message41",
+        "rawTitle": "Third Maximum Number"
+      }
+    ]
+  },
+  {
+    "title": "Less or Equal",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/977/C",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 16,
+    "weekNumber": 16,
+    "occurrences": [
+      {
+        "sourceDay": 16,
+        "weekNumber": 16,
+        "sourceMsgId": "message41",
+        "rawTitle": "Less or Equal"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Processing Time",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-processing-time/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 16,
+    "weekNumber": 16,
+    "occurrences": [
+      {
+        "sourceDay": 16,
+        "weekNumber": 16,
+        "sourceMsgId": "message41",
+        "rawTitle": "Minimum Processing Time"
+      }
+    ]
+  },
+  {
+    "title": "Valid Palindrome II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 17,
+    "weekNumber": 17,
+    "occurrences": [
+      {
+        "sourceDay": 17,
+        "weekNumber": 17,
+        "sourceMsgId": "message42",
+        "rawTitle": "Valid Palindrome II"
+      }
+    ]
+  },
+  {
+    "title": "String Compression",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/string-compression/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 17,
+    "weekNumber": 17,
+    "occurrences": [
+      {
+        "sourceDay": 17,
+        "weekNumber": 17,
+        "sourceMsgId": "message42",
+        "rawTitle": "String Compression"
+      }
+    ]
+  },
+  {
+    "title": "Container With Most Water",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/container-with-most-water/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 17,
+    "weekNumber": 17,
+    "occurrences": [
+      {
+        "sourceDay": 17,
+        "weekNumber": 17,
+        "sourceMsgId": "message42",
+        "rawTitle": "Container With Most Water"
+      }
+    ]
+  },
+  {
+    "title": "Maximum Average Subarray I",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 18,
+    "weekNumber": 18,
+    "occurrences": [
+      {
+        "sourceDay": 18,
+        "weekNumber": 18,
+        "sourceMsgId": "message44",
+        "rawTitle": "Maximum Average Subarray I"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Size Subarray Sum",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 18,
+    "weekNumber": 18,
+    "occurrences": [
+      {
+        "sourceDay": 18,
+        "weekNumber": 18,
+        "sourceMsgId": "message44",
+        "rawTitle": "Minimum Size Subarray Sum"
+      }
+    ]
+  },
+  {
+    "title": "Longest Repeating Character Replacement",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 18,
+    "weekNumber": 18,
+    "occurrences": [
+      {
+        "sourceDay": 18,
+        "weekNumber": 18,
+        "sourceMsgId": "message44",
+        "rawTitle": "Longest Repeating Character Replacement"
+      }
+    ]
+  },
+  {
+    "title": "Running Sum of 1d Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/running-sum-of-1d-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 19,
+    "weekNumber": 19,
+    "occurrences": [
+      {
+        "sourceDay": 19,
+        "weekNumber": 19,
+        "sourceMsgId": "message46",
+        "rawTitle": "Running Sum of 1d Array"
+      }
+    ]
+  },
+  {
+    "title": "Range Sum Query - Immutable",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/range-sum-query-immutable/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 19,
+    "weekNumber": 19,
+    "occurrences": [
+      {
+        "sourceDay": 19,
+        "weekNumber": 19,
+        "sourceMsgId": "message46",
+        "rawTitle": "Range Sum Query - Immutable"
+      }
+    ]
+  },
+  {
+    "title": "Shifting Letters II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/shifting-letters-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 19,
+    "weekNumber": 19,
+    "occurrences": [
+      {
+        "sourceDay": 19,
+        "weekNumber": 19,
+        "sourceMsgId": "message46",
+        "rawTitle": "Shifting Letters II"
+      }
+    ]
+  },
+  {
+    "title": "Print the Elements of a Linked List",
+    "platform": "HackerRank",
+    "url": "https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 20,
+    "weekNumber": 20,
+    "occurrences": [
+      {
+        "sourceDay": 20,
+        "weekNumber": 20,
+        "sourceMsgId": "message48",
+        "rawTitle": "Print the Elements of a Linked List"
+      }
+    ]
+  },
+  {
+    "title": "Insert a Node at the Tail of a Linked List",
+    "platform": "HackerRank",
+    "url": "https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 20,
+    "weekNumber": 20,
+    "occurrences": [
+      {
+        "sourceDay": 20,
+        "weekNumber": 20,
+        "sourceMsgId": "message48",
+        "rawTitle": "Insert a Node at the Tail of a Linked List"
+      }
+    ]
+  },
+  {
+    "title": "Remove Linked List Elements",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/remove-linked-list-elements/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 20,
+    "weekNumber": 20,
+    "occurrences": [
+      {
+        "sourceDay": 20,
+        "weekNumber": 20,
+        "sourceMsgId": "message48",
+        "rawTitle": "Remove Linked List Elements"
+      }
+    ]
+  },
+  {
+    "title": "Design Linked List",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/design-linked-list/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 20,
+    "weekNumber": 20,
+    "occurrences": [
+      {
+        "sourceDay": 20,
+        "weekNumber": 20,
+        "sourceMsgId": "message48",
+        "rawTitle": "Design Linked List"
+      }
+    ]
+  },
+  {
+    "title": "Reverse Linked List",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/reverse-linked-list/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 21,
+    "weekNumber": 21,
+    "occurrences": [
+      {
+        "sourceDay": 21,
+        "weekNumber": 21,
+        "sourceMsgId": "message50",
+        "rawTitle": "Reverse Linked List"
+      }
+    ]
+  },
+  {
+    "title": "Palindrome Linked List",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/palindrome-linked-list/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 21,
+    "weekNumber": 21,
+    "occurrences": [
+      {
+        "sourceDay": 21,
+        "weekNumber": 21,
+        "sourceMsgId": "message50",
+        "rawTitle": "Palindrome Linked List"
+      }
+    ]
+  },
+  {
+    "title": "Merge Two Sorted Lists",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 21,
+    "weekNumber": 21,
+    "occurrences": [
+      {
+        "sourceDay": 21,
+        "weekNumber": 21,
+        "sourceMsgId": "message50",
+        "rawTitle": "Merge Two Sorted Lists"
+      }
+    ]
+  },
+  {
+    "title": "Linked List Cycle II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/linked-list-cycle-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 21,
+    "weekNumber": 21,
+    "occurrences": [
+      {
+        "sourceDay": 21,
+        "weekNumber": 21,
+        "sourceMsgId": "message50",
+        "rawTitle": "Linked List Cycle II"
+      }
+    ]
+  },
+  {
+    "title": "Valid Parentheses",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/valid-parentheses/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 22,
+    "weekNumber": 22,
+    "occurrences": [
+      {
+        "sourceDay": 22,
+        "weekNumber": 22,
+        "sourceMsgId": "message52",
+        "rawTitle": "Valid Parentheses"
+      }
+    ]
+  },
+  {
+    "title": "Removing Stars From a String",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/removing-stars-from-a-string/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 22,
+    "weekNumber": 22,
+    "occurrences": [
+      {
+        "sourceDay": 22,
+        "weekNumber": 22,
+        "sourceMsgId": "message52",
+        "rawTitle": "Removing Stars From a String"
+      }
+    ]
+  },
+  {
+    "title": "Number of Recent Calls",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/number-of-recent-calls/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 22,
+    "weekNumber": 22,
+    "occurrences": [
+      {
+        "sourceDay": 22,
+        "weekNumber": 22,
+        "sourceMsgId": "message52",
+        "rawTitle": "Number of Recent Calls"
+      }
+    ]
+  },
+  {
+    "title": "Backspace String Compare",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/backspace-string-compare/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 22,
+    "weekNumber": 22,
+    "occurrences": [
+      {
+        "sourceDay": 22,
+        "weekNumber": 22,
+        "sourceMsgId": "message52",
+        "rawTitle": "Backspace String Compare"
+      }
+    ]
+  },
+  {
+    "title": "Next Greater Element I",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/next-greater-element-i/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 23,
+    "weekNumber": 23,
+    "occurrences": [
+      {
+        "sourceDay": 23,
+        "weekNumber": 23,
+        "sourceMsgId": "message54",
+        "rawTitle": "Next Greater Element I"
+      }
+    ]
+  },
+  {
+    "title": "Daily Temperatures",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/daily-temperatures/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 23,
+    "weekNumber": 23,
+    "occurrences": [
+      {
+        "sourceDay": 23,
+        "weekNumber": 23,
+        "sourceMsgId": "message54",
+        "rawTitle": "Daily Temperatures"
+      }
+    ]
+  },
+  {
+    "title": "Car Fleet",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/car-fleet/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 23,
+    "weekNumber": 23,
+    "occurrences": [
+      {
+        "sourceDay": 23,
+        "weekNumber": 23,
+        "sourceMsgId": "message54",
+        "rawTitle": "Car Fleet"
+      }
+    ]
+  },
+  {
+    "title": "Sum of Subarray Minimums",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 23,
+    "weekNumber": 23,
+    "occurrences": [
+      {
+        "sourceDay": 23,
+        "weekNumber": 23,
+        "sourceMsgId": "message54",
+        "rawTitle": "Sum of Subarray Minimums"
+      }
+    ]
+  },
+  {
+    "title": "Remove K Digits",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/remove-k-digits/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 23,
+    "weekNumber": 23,
+    "occurrences": [
+      {
+        "sourceDay": 23,
+        "weekNumber": 23,
+        "sourceMsgId": "message54",
+        "rawTitle": "Remove K Digits"
+      }
+    ]
+  },
+  {
+    "title": "Power of Four",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/power-of-four/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 24,
+    "weekNumber": 24,
+    "occurrences": [
+      {
+        "sourceDay": 24,
+        "weekNumber": 24,
+        "sourceMsgId": "message56",
+        "rawTitle": "Power of Four"
+      }
+    ]
+  },
+  {
+    "title": "Fibonacci Number",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/fibonacci-number/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 24,
+    "weekNumber": 24,
+    "occurrences": [
+      {
+        "sourceDay": 24,
+        "weekNumber": 24,
+        "sourceMsgId": "message56",
+        "rawTitle": "Fibonacci Number"
+      }
+    ]
+  },
+  {
+    "title": "Pascal’s Triangle II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/pascals-triangle-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 24,
+    "weekNumber": 24,
+    "occurrences": [
+      {
+        "sourceDay": 24,
+        "weekNumber": 24,
+        "sourceMsgId": "message56",
+        "rawTitle": "Pascal’s Triangle II"
+      }
+    ]
+  },
+  {
+    "title": "Decode String",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/decode-string/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 24,
+    "weekNumber": 24,
+    "occurrences": [
+      {
+        "sourceDay": 24,
+        "weekNumber": 24,
+        "sourceMsgId": "message56",
+        "rawTitle": "Decode String"
+      }
+    ]
+  },
+  {
+    "title": "Binary Search",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/binary-search/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 25,
+    "weekNumber": 25,
+    "occurrences": [
+      {
+        "sourceDay": 25,
+        "weekNumber": 25,
+        "sourceMsgId": "message58",
+        "rawTitle": "Binary Search"
+      }
+    ]
+  },
+  {
+    "title": "First Bad Version",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/first-bad-version/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 25,
+    "weekNumber": 25,
+    "occurrences": [
+      {
+        "sourceDay": 25,
+        "weekNumber": 25,
+        "sourceMsgId": "message58",
+        "rawTitle": "First Bad Version"
+      }
+    ]
+  },
+  {
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 25,
+    "weekNumber": 25,
+    "occurrences": [
+      {
+        "sourceDay": 25,
+        "weekNumber": 25,
+        "sourceMsgId": "message58",
+        "rawTitle": "Find First and Last Position of Element in Sorted Array"
+      }
+    ]
+  },
+  {
+    "title": "Capacity To Ship Packages Within D Days",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 25,
+    "weekNumber": 25,
+    "occurrences": [
+      {
+        "sourceDay": 25,
+        "weekNumber": 25,
+        "sourceMsgId": "message58",
+        "rawTitle": "Capacity To Ship Packages Within D Days"
+      }
+    ]
+  },
+  {
+    "title": "Koko Eating Bananas",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/koko-eating-bananas/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 25,
+    "weekNumber": 25,
+    "occurrences": [
+      {
+        "sourceDay": 25,
+        "weekNumber": 25,
+        "sourceMsgId": "message58",
+        "rawTitle": "Koko Eating Bananas"
+      }
+    ]
+  },
+  {
+    "title": "Binary Tree Preorder Traversal",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 26,
+    "weekNumber": 26,
+    "occurrences": [
+      {
+        "sourceDay": 26,
+        "weekNumber": 26,
+        "sourceMsgId": "message60",
+        "rawTitle": "Binary Tree Preorder Traversal"
+      }
+    ]
+  },
+  {
+    "title": "Binary Tree Inorder Traversal",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 26,
+    "weekNumber": 26,
+    "occurrences": [
+      {
+        "sourceDay": 26,
+        "weekNumber": 26,
+        "sourceMsgId": "message60",
+        "rawTitle": "Binary Tree Inorder Traversal"
+      }
+    ]
+  },
+  {
+    "title": "Binary Tree Postorder Traversal",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 26,
+    "weekNumber": 26,
+    "occurrences": [
+      {
+        "sourceDay": 26,
+        "weekNumber": 26,
+        "sourceMsgId": "message60",
+        "rawTitle": "Binary Tree Postorder Traversal"
+      }
+    ]
+  },
+  {
+    "title": "Maximum Depth of Binary Tree",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 26,
+    "weekNumber": 26,
+    "occurrences": [
+      {
+        "sourceDay": 26,
+        "weekNumber": 26,
+        "sourceMsgId": "message60",
+        "rawTitle": "Maximum Depth of Binary Tree"
+      }
+    ]
+  },
+  {
+    "title": "Search in a Binary Search Tree",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 27,
+    "weekNumber": 27,
+    "occurrences": [
+      {
+        "sourceDay": 27,
+        "weekNumber": 27,
+        "sourceMsgId": "message62",
+        "rawTitle": "Search in a Binary Search Tree"
+      }
+    ]
+  },
+  {
+    "title": "Insert into a Binary Search Tree",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 27,
+    "weekNumber": 27,
+    "occurrences": [
+      {
+        "sourceDay": 27,
+        "weekNumber": 27,
+        "sourceMsgId": "message62",
+        "rawTitle": "Insert into a Binary Search Tree"
+      }
+    ]
+  },
+  {
+    "title": "Delete Node in a BST",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 27,
+    "weekNumber": 27,
+    "occurrences": [
+      {
+        "sourceDay": 27,
+        "weekNumber": 27,
+        "sourceMsgId": "message62",
+        "rawTitle": "Delete Node in a BST"
+      }
+    ]
+  },
+  {
+    "title": "Merge Two Binary Trees",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/merge-two-binary-trees/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 27,
+    "weekNumber": 27,
+    "occurrences": [
+      {
+        "sourceDay": 27,
+        "weekNumber": 27,
+        "sourceMsgId": "message62",
+        "rawTitle": "Merge Two Binary Trees"
+      }
+    ]
+  },
+  {
+    "title": "Combinations",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/combinations/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 28,
+    "weekNumber": 28,
+    "occurrences": [
+      {
+        "sourceDay": 28,
+        "weekNumber": 28,
+        "sourceMsgId": "message64",
+        "rawTitle": "Combinations"
+      }
+    ]
+  },
+  {
+    "title": "Subsets",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/subsets/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 28,
+    "weekNumber": 28,
+    "occurrences": [
+      {
+        "sourceDay": 28,
+        "weekNumber": 28,
+        "sourceMsgId": "message64",
+        "rawTitle": "Subsets"
+      },
+      {
+        "sourceDay": 37,
+        "weekNumber": 37,
+        "sourceMsgId": "message82",
+        "rawTitle": "Subsets"
+      }
+    ]
+  },
+  {
+    "title": "Permutation",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/permutations/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 28,
+    "weekNumber": 28,
+    "occurrences": [
+      {
+        "sourceDay": 28,
+        "weekNumber": 28,
+        "sourceMsgId": "message64",
+        "rawTitle": "Permutation"
+      }
+    ]
+  },
+  {
+    "title": "Sudoku Solver",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sudoku-solver/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 28,
+    "weekNumber": 28,
+    "occurrences": [
+      {
+        "sourceDay": 28,
+        "weekNumber": 28,
+        "sourceMsgId": "message64",
+        "rawTitle": "Sudoku Solver"
+      }
+    ]
+  },
+  {
+    "title": "Operations on Graph",
+    "platform": "Eolymp",
+    "url": "https://www.eolymp.com/en/problems/2472",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 29,
+    "weekNumber": 29,
+    "occurrences": [
+      {
+        "sourceDay": 29,
+        "weekNumber": 29,
+        "sourceMsgId": "message66",
+        "rawTitle": "Operations on Graph"
+      }
+    ]
+  },
+  {
+    "title": "Cities and Roads",
+    "platform": "Eolymp",
+    "url": "https://www.eolymp.com/en/problems/992",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 29,
+    "weekNumber": 29,
+    "occurrences": [
+      {
+        "sourceDay": 29,
+        "weekNumber": 29,
+        "sourceMsgId": "message66",
+        "rawTitle": "Cities and Roads"
+      }
+    ]
+  },
+  {
+    "title": "From adjacency matrix to adjacency list",
+    "platform": "Eolymp",
+    "url": "https://www.eolymp.com/en/problems/3981",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 29,
+    "weekNumber": 29,
+    "occurrences": [
+      {
+        "sourceDay": 29,
+        "weekNumber": 29,
+        "sourceMsgId": "message66",
+        "rawTitle": "From adjacency matrix to adjacency list"
+      }
+    ]
+  },
+  {
+    "title": "Sources and Sinks",
+    "platform": "Eolymp",
+    "url": "https://www.eolymp.com/en/problems/3986",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 29,
+    "weekNumber": 29,
+    "occurrences": [
+      {
+        "sourceDay": 29,
+        "weekNumber": 29,
+        "sourceMsgId": "message66",
+        "rawTitle": "Sources and Sinks"
+      }
+    ]
+  },
+  {
+    "title": "Find if Path Exists in Graph",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 30,
+    "weekNumber": 30,
+    "occurrences": [
+      {
+        "sourceDay": 30,
+        "weekNumber": 30,
+        "sourceMsgId": "message68",
+        "rawTitle": "Find if Path Exists in Graph"
+      }
+    ]
+  },
+  {
+    "title": "Number of Islands",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/number-of-islands/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 30,
+    "weekNumber": 30,
+    "occurrences": [
+      {
+        "sourceDay": 30,
+        "weekNumber": 30,
+        "sourceMsgId": "message68",
+        "rawTitle": "Number of Islands"
+      }
+    ]
+  },
+  {
+    "title": "Is Graph Bipartite?",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/is-graph-bipartite/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 30,
+    "weekNumber": 30,
+    "occurrences": [
+      {
+        "sourceDay": 30,
+        "weekNumber": 30,
+        "sourceMsgId": "message68",
+        "rawTitle": "Is Graph Bipartite?"
+      }
+    ]
+  },
+  {
+    "title": "Evaluate Division",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/evaluate-division/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 30,
+    "weekNumber": 30,
+    "occurrences": [
+      {
+        "sourceDay": 30,
+        "weekNumber": 30,
+        "sourceMsgId": "message68",
+        "rawTitle": "Evaluate Division"
+      }
+    ]
+  },
+  {
+    "title": "Recover Binary Search Tree",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/recover-binary-search-tree/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 30,
+    "weekNumber": 30,
+    "occurrences": [
+      {
+        "sourceDay": 30,
+        "weekNumber": 30,
+        "sourceMsgId": "message68",
+        "rawTitle": "Recover Binary Search Tree"
+      }
+    ]
+  },
+  {
+    "title": "Univalued Binary Tree",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/univalued-binary-tree/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 31,
+    "weekNumber": 31,
+    "occurrences": [
+      {
+        "sourceDay": 31,
+        "weekNumber": 31,
+        "sourceMsgId": "message70",
+        "rawTitle": "Univalued Binary Tree"
+      }
+    ]
+  },
+  {
+    "title": "Binary Tree Level Order Traversal",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 31,
+    "weekNumber": 31,
+    "occurrences": [
+      {
+        "sourceDay": 31,
+        "weekNumber": 31,
+        "sourceMsgId": "message70",
+        "rawTitle": "Binary Tree Level Order Traversal"
+      }
+    ]
+  },
+  {
+    "title": "Shortest Path in Binary Matrix",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 31,
+    "weekNumber": 31,
+    "occurrences": [
+      {
+        "sourceDay": 31,
+        "weekNumber": 31,
+        "sourceMsgId": "message70",
+        "rawTitle": "Shortest Path in Binary Matrix"
+      }
+    ]
+  },
+  {
+    "title": "All Nodes Distance K in Binary Tree",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 31,
+    "weekNumber": 31,
+    "occurrences": [
+      {
+        "sourceDay": 31,
+        "weekNumber": 31,
+        "sourceMsgId": "message70",
+        "rawTitle": "All Nodes Distance K in Binary Tree"
+      }
+    ]
+  },
+  {
+    "title": "Rotting Oranges",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/rotting-oranges/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 31,
+    "weekNumber": 31,
+    "occurrences": [
+      {
+        "sourceDay": 31,
+        "weekNumber": 31,
+        "sourceMsgId": "message70",
+        "rawTitle": "Rotting Oranges"
+      }
+    ]
+  },
+  {
+    "title": "Kth Largest Element in an Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 32,
+    "weekNumber": 32,
+    "occurrences": [
+      {
+        "sourceDay": 32,
+        "weekNumber": 32,
+        "sourceMsgId": "message72",
+        "rawTitle": "Kth Largest Element in an Array"
+      },
+      {
+        "sourceDay": 39,
+        "weekNumber": 39,
+        "sourceMsgId": "message86",
+        "rawTitle": "Kth Largest Element in an Array"
+      }
+    ]
+  },
+  {
+    "title": "Merge K Sorted Lists",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 32,
+    "weekNumber": 32,
+    "occurrences": [
+      {
+        "sourceDay": 32,
+        "weekNumber": 32,
+        "sourceMsgId": "message72",
+        "rawTitle": "Merge K Sorted Lists"
+      }
+    ]
+  },
+  {
+    "title": "Kth Largest in Stream",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 32,
+    "weekNumber": 32,
+    "occurrences": [
+      {
+        "sourceDay": 32,
+        "weekNumber": 32,
+        "sourceMsgId": "message72",
+        "rawTitle": "Kth Largest in Stream"
+      }
+    ]
+  },
+  {
+    "title": "Top K Frequent Elements",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 32,
+    "weekNumber": 32,
+    "occurrences": [
+      {
+        "sourceDay": 32,
+        "weekNumber": 32,
+        "sourceMsgId": "message72",
+        "rawTitle": "Top K Frequent Elements"
+      },
+      {
+        "sourceDay": 39,
+        "weekNumber": 39,
+        "sourceMsgId": "message86",
+        "rawTitle": "Top K Frequent Elements"
+      }
+    ]
+  },
+  {
+    "title": "Find Median from Data Stream",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 32,
+    "weekNumber": 32,
+    "occurrences": [
+      {
+        "sourceDay": 32,
+        "weekNumber": 32,
+        "sourceMsgId": "message72",
+        "rawTitle": "Find Median from Data Stream"
+      }
+    ]
+  },
+  {
+    "title": "Lemonade Change",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/lemonade-change/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 33,
+    "weekNumber": 33,
+    "occurrences": [
+      {
+        "sourceDay": 33,
+        "weekNumber": 33,
+        "sourceMsgId": "message74",
+        "rawTitle": "Lemonade Change"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 33,
+    "weekNumber": 33,
+    "occurrences": [
+      {
+        "sourceDay": 33,
+        "weekNumber": 33,
+        "sourceMsgId": "message74",
+        "rawTitle": "Minimum Number of Arrows to Burst Balloons"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Moves to Reach Target Score",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-moves-to-reach-target-score/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 33,
+    "weekNumber": 33,
+    "occurrences": [
+      {
+        "sourceDay": 33,
+        "weekNumber": 33,
+        "sourceMsgId": "message74",
+        "rawTitle": "Minimum Moves to Reach Target Score"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Replacements to Sort the Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-replacements-to-sort-the-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 33,
+    "weekNumber": 33,
+    "occurrences": [
+      {
+        "sourceDay": 33,
+        "weekNumber": 33,
+        "sourceMsgId": "message74",
+        "rawTitle": "Minimum Replacements to Sort the Array"
+      }
+    ]
+  },
+  {
+    "title": "Course Schedule II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/course-schedule-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 34,
+    "weekNumber": 34,
+    "occurrences": [
+      {
+        "sourceDay": 34,
+        "weekNumber": 34,
+        "sourceMsgId": "message76",
+        "rawTitle": "Course Schedule II"
+      }
+    ]
+  },
+  {
+    "title": "Alien Dictionary",
+    "platform": "GeeksforGeeks",
+    "url": "https://practice.geeksforgeeks.org/problems/alien-dictionary",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 34,
+    "weekNumber": 34,
+    "occurrences": [
+      {
+        "sourceDay": 34,
+        "weekNumber": 34,
+        "sourceMsgId": "message76",
+        "rawTitle": "Alien Dictionary"
+      }
+    ]
+  },
+  {
+    "title": "All Ancestors of a Node",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 34,
+    "weekNumber": 34,
+    "occurrences": [
+      {
+        "sourceDay": 34,
+        "weekNumber": 34,
+        "sourceMsgId": "message76",
+        "rawTitle": "All Ancestors of a Node"
+      }
+    ]
+  },
+  {
+    "title": "Sort Items by Groups",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 34,
+    "weekNumber": 34,
+    "occurrences": [
+      {
+        "sourceDay": 34,
+        "weekNumber": 34,
+        "sourceMsgId": "message76",
+        "rawTitle": "Sort Items by Groups"
+      }
+    ]
+  },
+  {
+    "title": "Build a Matrix With Conditions",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/build-a-matrix-with-conditions/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 34,
+    "weekNumber": 34,
+    "occurrences": [
+      {
+        "sourceDay": 34,
+        "weekNumber": 34,
+        "sourceMsgId": "message76",
+        "rawTitle": "Build a Matrix With Conditions"
+      }
+    ]
+  },
+  {
+    "title": "Climbing Stairs",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/climbing-stairs/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 35,
+    "weekNumber": 35,
+    "occurrences": [
+      {
+        "sourceDay": 35,
+        "weekNumber": 35,
+        "sourceMsgId": "message78",
+        "rawTitle": "Climbing Stairs"
+      }
+    ]
+  },
+  {
+    "title": "Partition Equal Subset Sum",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/partition-equal-subset-sum/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 35,
+    "weekNumber": 35,
+    "occurrences": [
+      {
+        "sourceDay": 35,
+        "weekNumber": 35,
+        "sourceMsgId": "message78",
+        "rawTitle": "Partition Equal Subset Sum"
+      }
+    ]
+  },
+  {
+    "title": "Target Sum",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/target-sum/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 35,
+    "weekNumber": 35,
+    "occurrences": [
+      {
+        "sourceDay": 35,
+        "weekNumber": 35,
+        "sourceMsgId": "message78",
+        "rawTitle": "Target Sum"
+      }
+    ]
+  },
+  {
+    "title": "House Robber III",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/house-robber-iii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 35,
+    "weekNumber": 35,
+    "occurrences": [
+      {
+        "sourceDay": 35,
+        "weekNumber": 35,
+        "sourceMsgId": "message78",
+        "rawTitle": "House Robber III"
+      }
+    ]
+  },
+  {
+    "title": "Coin Change",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/coin-change/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 35,
+    "weekNumber": 35,
+    "occurrences": [
+      {
+        "sourceDay": 35,
+        "weekNumber": 35,
+        "sourceMsgId": "message78",
+        "rawTitle": "Coin Change"
+      }
+    ]
+  },
+  {
+    "title": "N-th Tribonacci Number",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/n-th-tribonacci-number/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 36,
+    "weekNumber": 36,
+    "occurrences": [
+      {
+        "sourceDay": 36,
+        "weekNumber": 36,
+        "sourceMsgId": "message80",
+        "rawTitle": "N-th Tribonacci Number"
+      }
+    ]
+  },
+  {
+    "title": "Perfect Squares",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/perfect-squares/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 36,
+    "weekNumber": 36,
+    "occurrences": [
+      {
+        "sourceDay": 36,
+        "weekNumber": 36,
+        "sourceMsgId": "message80",
+        "rawTitle": "Perfect Squares"
+      }
+    ]
+  },
+  {
+    "title": "Triangle",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/triangle/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 36,
+    "weekNumber": 36,
+    "occurrences": [
+      {
+        "sourceDay": 36,
+        "weekNumber": 36,
+        "sourceMsgId": "message80",
+        "rawTitle": "Triangle"
+      }
+    ]
+  },
+  {
+    "title": "Champagne Tower",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/champagne-tower/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 36,
+    "weekNumber": 36,
+    "occurrences": [
+      {
+        "sourceDay": 36,
+        "weekNumber": 36,
+        "sourceMsgId": "message80",
+        "rawTitle": "Champagne Tower"
+      }
+    ]
+  },
+  {
+    "title": "Number Complement",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/number-complement/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 37,
+    "weekNumber": 37,
+    "occurrences": [
+      {
+        "sourceDay": 37,
+        "weekNumber": 37,
+        "sourceMsgId": "message82",
+        "rawTitle": "Number Complement"
+      }
+    ]
+  },
+  {
+    "title": "Hamming Distance",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/hamming-distance/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 37,
+    "weekNumber": 37,
+    "occurrences": [
+      {
+        "sourceDay": 37,
+        "weekNumber": 37,
+        "sourceMsgId": "message82",
+        "rawTitle": "Hamming Distance"
+      }
+    ]
+  },
+  {
+    "title": "Cirno's Perfect Bitmasks Classroom",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/1688/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 37,
+    "weekNumber": 37,
+    "occurrences": [
+      {
+        "sourceDay": 37,
+        "weekNumber": 37,
+        "sourceMsgId": "message82",
+        "rawTitle": "Cirno’s Perfect Bitmasks Classroom"
+      }
+    ]
+  },
+  {
+    "title": "Add Binary",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/add-binary/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 37,
+    "weekNumber": 37,
+    "occurrences": [
+      {
+        "sourceDay": 37,
+        "weekNumber": 37,
+        "sourceMsgId": "message82",
+        "rawTitle": "Add Binary"
+      }
+    ]
+  },
+  {
+    "title": "Single Number II",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/single-number-ii/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 37,
+    "weekNumber": 37,
+    "occurrences": [
+      {
+        "sourceDay": 37,
+        "weekNumber": 37,
+        "sourceMsgId": "message82",
+        "rawTitle": "Single Number II"
+      }
+    ]
+  },
+  {
+    "title": "Check if There is a Valid Path in a Grid",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 38,
+    "weekNumber": 38,
+    "occurrences": [
+      {
+        "sourceDay": 38,
+        "weekNumber": 38,
+        "sourceMsgId": "message84",
+        "rawTitle": "Check if There is a Valid Path in a Grid"
+      }
+    ]
+  },
+  {
+    "title": "Redundant Connection",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/redundant-connection/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 38,
+    "weekNumber": 38,
+    "occurrences": [
+      {
+        "sourceDay": 38,
+        "weekNumber": 38,
+        "sourceMsgId": "message84",
+        "rawTitle": "Redundant Connection"
+      }
+    ]
+  },
+  {
+    "title": "Regions Cut by Slashes",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/regions-cut-by-slashes/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 38,
+    "weekNumber": 38,
+    "occurrences": [
+      {
+        "sourceDay": 38,
+        "weekNumber": 38,
+        "sourceMsgId": "message84",
+        "rawTitle": "Regions Cut by Slashes"
+      }
+    ]
+  },
+  {
+    "title": "Accounts Merge",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/accounts-merge/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 38,
+    "weekNumber": 38,
+    "occurrences": [
+      {
+        "sourceDay": 38,
+        "weekNumber": 38,
+        "sourceMsgId": "message84",
+        "rawTitle": "Accounts Merge"
+      }
+    ]
+  },
+  {
+    "title": "Most Stones Removed with Same Row or Column",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 38,
+    "weekNumber": 38,
+    "occurrences": [
+      {
+        "sourceDay": 38,
+        "weekNumber": 38,
+        "sourceMsgId": "message84",
+        "rawTitle": "Most Stones Removed with Same Row or Column"
+      }
+    ]
+  },
+  {
+    "title": "Minimize Malware Spread",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/minimize-malware-spread/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 38,
+    "weekNumber": 38,
+    "occurrences": [
+      {
+        "sourceDay": 38,
+        "weekNumber": 38,
+        "sourceMsgId": "message84",
+        "rawTitle": "Minimize Malware Spread"
+      }
+    ]
+  },
+  {
+    "title": "Sort an Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sort-an-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 39,
+    "weekNumber": 39,
+    "occurrences": [
+      {
+        "sourceDay": 39,
+        "weekNumber": 39,
+        "sourceMsgId": "message86",
+        "rawTitle": "Sort an Array"
+      }
+    ]
+  },
+  {
+    "title": "Sort List",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sort-list/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 39,
+    "weekNumber": 39,
+    "occurrences": [
+      {
+        "sourceDay": 39,
+        "weekNumber": 39,
+        "sourceMsgId": "message86",
+        "rawTitle": "Sort List"
+      }
+    ]
+  },
+  {
+    "title": "Create Sorted Array through Instructions",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/create-sorted-array-through-instructions/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 39,
+    "weekNumber": 39,
+    "occurrences": [
+      {
+        "sourceDay": 39,
+        "weekNumber": 39,
+        "sourceMsgId": "message86",
+        "rawTitle": "Create Sorted Array through Instructions"
+      }
+    ]
+  },
+  {
+    "title": "Complicated GCD",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/contest/664/problem/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 40,
+    "weekNumber": 40,
+    "occurrences": [
+      {
+        "sourceDay": 40,
+        "weekNumber": 40,
+        "sourceMsgId": "message90",
+        "rawTitle": "Complicated GCD"
+      }
+    ]
+  },
+  {
+    "title": "Find GCD of Array",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 40,
+    "weekNumber": 40,
+    "occurrences": [
+      {
+        "sourceDay": 40,
+        "weekNumber": 40,
+        "sourceMsgId": "message90",
+        "rawTitle": "Find GCD of Array"
+      }
+    ]
+  },
+  {
+    "title": "Number of Subarrays With GCD Equal to K",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 40,
+    "weekNumber": 40,
+    "occurrences": [
+      {
+        "sourceDay": 40,
+        "weekNumber": 40,
+        "sourceMsgId": "message90",
+        "rawTitle": "Number of Subarrays With GCD Equal to K"
+      }
+    ]
+  },
+  {
+    "title": "Count Primes",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/count-primes/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 40,
+    "weekNumber": 40,
+    "occurrences": [
+      {
+        "sourceDay": 40,
+        "weekNumber": 40,
+        "sourceMsgId": "message90",
+        "rawTitle": "Count Primes"
+      }
+    ]
+  },
+  {
+    "title": "Block Game 2",
+    "platform": "Kattis",
+    "url": "https://open.kattis.com/problems/blockgame2",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 40,
+    "weekNumber": 40,
+    "occurrences": [
+      {
+        "sourceDay": 40,
+        "weekNumber": 40,
+        "sourceMsgId": "message90",
+        "rawTitle": "Block Game"
+      }
+    ]
+  },
+  {
+    "title": "Divide and Equalize",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/1881/D",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 40,
+    "weekNumber": 40,
+    "occurrences": [
+      {
+        "sourceDay": 40,
+        "weekNumber": 40,
+        "sourceMsgId": "message90",
+        "rawTitle": "Divide and Equalize"
+      }
+    ]
+  },
+  {
+    "title": "Implement Trie (Prefix Tree)",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 41,
+    "weekNumber": 41,
+    "occurrences": [
+      {
+        "sourceDay": 41,
+        "weekNumber": 41,
+        "sourceMsgId": "message92",
+        "rawTitle": "Implement Trie (Prefix Tree)"
+      }
+    ]
+  },
+  {
+    "title": "Search Suggestions System",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/search-suggestions-system/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 41,
+    "weekNumber": 41,
+    "occurrences": [
+      {
+        "sourceDay": 41,
+        "weekNumber": 41,
+        "sourceMsgId": "message92",
+        "rawTitle": "Search Suggestions System"
+      }
+    ]
+  },
+  {
+    "title": "Longest Word in Dictionary",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/longest-word-in-dictionary/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 41,
+    "weekNumber": 41,
+    "occurrences": [
+      {
+        "sourceDay": 41,
+        "weekNumber": 41,
+        "sourceMsgId": "message92",
+        "rawTitle": "Longest Word in Dictionary"
+      }
+    ]
+  },
+  {
+    "title": "Design Add and Search Words Data Structure",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 41,
+    "weekNumber": 41,
+    "occurrences": [
+      {
+        "sourceDay": 41,
+        "weekNumber": 41,
+        "sourceMsgId": "message92",
+        "rawTitle": "Design Add and Search Words Data Structure"
+      }
+    ]
+  },
+  {
+    "title": "Word Break",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/word-break/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 41,
+    "weekNumber": 41,
+    "occurrences": [
+      {
+        "sourceDay": 41,
+        "weekNumber": 41,
+        "sourceMsgId": "message92",
+        "rawTitle": "Word Break"
+      }
+    ]
+  },
+  {
+    "title": "Path with Maximum Probability",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/path-with-maximum-probability/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 42,
+    "weekNumber": 42,
+    "occurrences": [
+      {
+        "sourceDay": 42,
+        "weekNumber": 42,
+        "sourceMsgId": "message94",
+        "rawTitle": "Path with Maximum Probability"
+      }
+    ]
+  },
+  {
+    "title": "Network Delay Time",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/network-delay-time/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 42,
+    "weekNumber": 42,
+    "occurrences": [
+      {
+        "sourceDay": 42,
+        "weekNumber": 42,
+        "sourceMsgId": "message94",
+        "rawTitle": "Network Delay Time"
+      }
+    ]
+  },
+  {
+    "title": "Find the City with the Smallest Number of Neighbors",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 42,
+    "weekNumber": 42,
+    "occurrences": [
+      {
+        "sourceDay": 42,
+        "weekNumber": 42,
+        "sourceMsgId": "message94",
+        "rawTitle": "Find the City with the Smallest Number of Neighbors"
+      }
+    ]
+  },
+  {
+    "title": "The Two Routes",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/601/A",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 42,
+    "weekNumber": 42,
+    "occurrences": [
+      {
+        "sourceDay": 42,
+        "weekNumber": 42,
+        "sourceMsgId": "message94",
+        "rawTitle": "Two Routes"
+      }
+    ]
+  },
+  {
+    "title": "Course Schedule IV",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/course-schedule-iv/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 42,
+    "weekNumber": 42,
+    "occurrences": [
+      {
+        "sourceDay": 42,
+        "weekNumber": 42,
+        "sourceMsgId": "message94",
+        "rawTitle": "Course Schedule IV"
+      }
+    ]
+  },
+  {
+    "title": "Dijkstra?",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/problemset/problem/20/C",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 42,
+    "weekNumber": 42,
+    "occurrences": [
+      {
+        "sourceDay": 42,
+        "weekNumber": 42,
+        "sourceMsgId": "message94",
+        "rawTitle": "Dijkstra?"
+      }
+    ]
+  },
+  {
+    "title": "Repeated String Match",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/repeated-string-match/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 43,
+    "weekNumber": 43,
+    "occurrences": [
+      {
+        "sourceDay": 43,
+        "weekNumber": 43,
+        "sourceMsgId": "message96",
+        "rawTitle": "Repeated String Match"
+      }
+    ]
+  },
+  {
+    "title": "Longest Happy Prefix",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/longest-happy-prefix/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 43,
+    "weekNumber": 43,
+    "occurrences": [
+      {
+        "sourceDay": 43,
+        "weekNumber": 43,
+        "sourceMsgId": "message96",
+        "rawTitle": "Longest Happy Prefix"
+      }
+    ]
+  },
+  {
+    "title": "Find the Index of the First Occurrence in a String",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 43,
+    "weekNumber": 43,
+    "occurrences": [
+      {
+        "sourceDay": 43,
+        "weekNumber": 43,
+        "sourceMsgId": "message96",
+        "rawTitle": "Find the Index of the First Occurrence in a String"
+      }
+    ]
+  },
+  {
+    "title": "Permutation in String",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/permutation-in-string/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 43,
+    "weekNumber": 43,
+    "occurrences": [
+      {
+        "sourceDay": 43,
+        "weekNumber": 43,
+        "sourceMsgId": "message96",
+        "rawTitle": "Permutation in String"
+      }
+    ]
+  },
+  {
+    "title": "Find Substring with Given Hash Value",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/find-substring-with-given-hash-value/",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 43,
+    "weekNumber": 43,
+    "occurrences": [
+      {
+        "sourceDay": 43,
+        "weekNumber": 43,
+        "sourceMsgId": "message96",
+        "rawTitle": "Find Substring with Given Hash Value"
+      }
+    ]
+  },
+  {
+    "title": "Division + LCP (easy version)",
+    "platform": "Codeforces",
+    "url": "https://codeforces.com/contest/1968/problem/G1",
+    "difficulty": null,
+    "topics": [],
+    "sourceDay": 43,
+    "weekNumber": 43,
+    "occurrences": [
+      {
+        "sourceDay": 43,
+        "weekNumber": 43,
+        "sourceMsgId": "message96",
+        "rawTitle": "Division + LCP"
+      }
+    ]
+  }
+]

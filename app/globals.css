@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --card-subtle: 210 40% 96.5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --primary-hover: 224 76% 48%;
+    --primary-muted: 217 91% 95%;
+
+    --secondary: 215 28% 93%;
+    --secondary-foreground: 222 47% 11%;
+    --secondary-hover: 215 25% 88%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 91% 95%;
+    --accent-foreground: 221 83% 53%;
+    --accent-electric: 199 89% 48%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+    --success-muted: 142 76% 95%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
+    --warning-muted: 48 96% 95%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.625rem;
+
+    --phase-foundation: 158 64% 42%;
+    --phase-foundation-subtle: 158 64% 95%;
+    --phase-core: 221 83% 53%;
+    --phase-core-subtle: 217 91% 95%;
+    --phase-advanced: 250 84% 60%;
+    --phase-advanced-subtle: 250 84% 96%;
+    --phase-cp: 24 95% 53%;
+    --phase-cp-subtle: 24 95% 96%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 7.5%;
+    --card-foreground: 210 40% 98%;
+    --card-subtle: 222 47% 10%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --primary-hover: 217 91% 68%;
+    --primary-muted: 221 83% 14%;
+
+    --secondary: 217 33% 14%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-hover: 217 33% 18%;
+
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 14%;
+    --accent-foreground: 210 40% 98%;
+    --accent-electric: 199 89% 48%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 222 47% 11%;
+    --success-muted: 142 71% 12%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+    --warning-muted: 38 92% 12%;
+
+    --border: 217 33% 15%;
+    --input: 217 33% 15%;
+    --ring: 217 91% 60%;
+
+    --phase-foundation: 158 64% 52%;
+    --phase-foundation-subtle: 158 64% 12%;
+    --phase-core: 217 91% 60%;
+    --phase-core-subtle: 217 91% 14%;
+    --phase-advanced: 250 84% 67%;
+    --phase-advanced-subtle: 250 84% 14%;
+    --phase-cp: 32 95% 54%;
+    --phase-cp-subtle: 32 95% 14%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom utility styles */
+.gradient-mask-b {
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.glow-blue {
+  box-shadow: 0 0 30px -5px rgba(37, 99, 235, 0.25);
+}
+
+.dark .glow-blue {
+  box-shadow: 0 0 35px -5px rgba(56, 189, 248, 0.2);
+}
