@@ -26,22 +26,22 @@ export function PublicFooter() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/learn" className="hover:text-foreground transition-colors">
+                <Link href="/roadmap#phase-foundation" className="hover:text-foreground transition-colors">
                   Foundation (Weeks 1–12)
                 </Link>
               </li>
               <li>
-                <Link href="/learn" className="hover:text-foreground transition-colors">
+                <Link href="/roadmap#phase-phase_1" className="hover:text-foreground transition-colors">
                   Phase 1 — Core DSA (Weeks 13–25)
                 </Link>
               </li>
               <li>
-                <Link href="/learn" className="hover:text-foreground transition-colors">
+                <Link href="/roadmap#phase-phase_2" className="hover:text-foreground transition-colors">
                   Phase 2 — Advanced DSA (Weeks 26–36)
                 </Link>
               </li>
               <li>
-                <Link href="/learn" className="hover:text-foreground transition-colors">
+                <Link href="/roadmap#phase-phase_3" className="hover:text-foreground transition-colors">
                   Phase 3 — CP (Weeks 37–43)
                 </Link>
               </li>
@@ -55,8 +55,8 @@ export function PublicFooter() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/learn" className="hover:text-foreground transition-colors">
-                  Roadmap
+                <Link href="/roadmap" className="hover:text-foreground transition-colors">
+                  Full Roadmap (43 Weeks)
                 </Link>
               </li>
               <li>
@@ -90,7 +90,7 @@ export function PublicFooter() {
         <div className="mt-8 border-t border-border/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <p>© {new Date().getFullYear()} A2SV Legacy. Build the skills. Continue the legacy.</p>
           <div className="flex items-center gap-4">
-            <Link href="/learn" className="hover:text-foreground transition-colors">
+            <Link href="/roadmap" className="hover:text-foreground transition-colors">
               Roadmap
             </Link>
             <Link href="/practice" className="hover:text-foreground transition-colors">

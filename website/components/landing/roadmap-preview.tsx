@@ -62,7 +62,7 @@ export function RoadmapPreview() {
               Every phase is carefully sequenced to build theoretical depth, algorithmic speed, and intuitive pattern recognition.
             </p>
           </div>
-          <Link href="/learn">
+          <Link href="/roadmap">
             <Button
               variant="outline"
               size="md"
@@ -141,7 +141,7 @@ export function RoadmapPreview() {
 
         {/* Bottom CTA Bar */}
         <div className="mt-12 text-center">
-          <Link href="/learn">
+          <Link href="/roadmap">
             <Button variant="primary" size="lg" endIcon={<ArrowRight className="h-4 w-4" />}>
               Explore the full roadmap →
             </Button>

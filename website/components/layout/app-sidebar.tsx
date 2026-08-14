@@ -27,8 +27,8 @@ const mainNavItems = [
     icon: LayoutDashboard,
   },
   {
-    title: "Learn",
-    href: "/learn",
+    title: "Roadmap",
+    href: "/roadmap",
     icon: BookOpen,
     badge: "43 W",
   },
@@ -65,39 +65,45 @@ export function AppSidebar() {
   return (
     <aside
       className={cn(
-        "hidden md:flex flex-col border-r border-border/70 bg-card/60 backdrop-blur-md transition-all duration-300 z-30 sticky top-0 h-screen",
+        "hidden md:flex flex-col border-r border-border/70 bg-card/80 backdrop-blur-md transition-all duration-300 z-30 sticky top-0 h-screen self-start shrink-0",
         collapsed ? "w-20" : "w-64"
       )}
     >
-      {/* Header / Brand */}
-      <div className="flex h-16 items-center justify-between px-4 border-b border-border/60">
-        {!collapsed ? (
-          <Logo size="sm" showTagline={false} />
+      {/* Floating Border Expand/Collapse Toggle Button */}
+      <button
+        onClick={() => setCollapsed(!collapsed)}
+        className="absolute -right-3.5 top-5 z-40 flex h-7 w-7 items-center justify-center rounded-full border border-border/80 bg-background text-muted-foreground shadow-sm hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 cursor-pointer"
+        title={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+        aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+      >
+        {collapsed ? (
+          <ChevronRight className="h-4 w-4" />
         ) : (
-          <div className="mx-auto">
-            <Logo size="sm" showTagline={false} className="gap-0" />
-          </div>
+          <ChevronLeft className="h-4 w-4" />
         )}
-        <button
-          onClick={() => setCollapsed(!collapsed)}
-          className="hidden lg:flex h-7 w-7 items-center justify-center rounded-lg border border-border/60 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-          title={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-          aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-        >
-          {collapsed ? (
-            <ChevronRight className="h-4 w-4" />
-          ) : (
-            <ChevronLeft className="h-4 w-4" />
-          )}
-        </button>
+      </button>
+
+      {/* Header / Brand */}
+      <div
+        className={cn(
+          "flex h-16 items-center border-b border-border/60 transition-all shrink-0",
+          collapsed ? "justify-center px-2" : "justify-start px-5"
+        )}
+      >
+        <Logo
+          size="sm"
+          showTagline={false}
+          showText={!collapsed}
+          className={collapsed ? "justify-center" : undefined}
+        />
       </div>
 
       {/* Main Navigation Items */}
-      <div className="flex-1 overflow-y-auto px-3 py-4 space-y-6">
+      <div className="flex-1 overflow-y-auto px-3 py-4 space-y-6 no-scrollbar">
         <div>
           {!collapsed && (
             <p className="px-3 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/70 mb-2">
-              Learning
+              Curriculum
             </p>
           )}
           <nav className="space-y-1">
@@ -113,6 +119,7 @@ export function AppSidebar() {
                   href={item.href}
                   className={cn(
                     "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all group relative",
+                    collapsed && "justify-center px-2",
                     isActive
                       ? "bg-primary text-primary-foreground shadow-sm shadow-blue-500/10 dark:shadow-blue-500/20"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted/60"
@@ -163,6 +170,7 @@ export function AppSidebar() {
                   href={item.href}
                   className={cn(
                     "flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium transition-colors",
+                    collapsed && "justify-center px-2",
                     isActive
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
@@ -179,7 +187,12 @@ export function AppSidebar() {
       </div>
 
       {/* Footer / User Profile & Theme Toggle */}
-      <div className="p-3 border-t border-border/60 flex items-center justify-between gap-2">
+      <div
+        className={cn(
+          "p-3 border-t border-border/60 flex items-center transition-all shrink-0",
+          collapsed ? "justify-center" : "justify-between gap-2"
+        )}
+      >
         <div className="flex items-center gap-2.5 overflow-hidden">
           <Avatar name="A2SV Scholar" size="sm" status="online" />
           {!collapsed && (

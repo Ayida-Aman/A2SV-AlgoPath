@@ -49,7 +49,7 @@ export function Hero() {
 
             {/* Call to Actions */}
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
-              <Link href="/learn" className="w-full sm:w-auto">
+              <Link href="/roadmap" className="w-full sm:w-auto">
                 <Button
                   variant="primary"
                   size="lg"
@@ -59,7 +59,7 @@ export function Hero() {
                   Start Your Journey →
                 </Button>
               </Link>
-              <Link href="/learn" className="w-full sm:w-auto">
+              <Link href="/roadmap" className="w-full sm:w-auto">
                 <Button
                   variant="outline"
                   size="lg"

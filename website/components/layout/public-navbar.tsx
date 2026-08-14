@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ArrowRight, Home, BookOpen, Code2, Map } from "lucide-react";
+import { Menu, X, ArrowRight, Home, BookOpen, Code2 } from "lucide-react";
 import { Logo } from "@/components/layout/logo";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 const publicNavLinks = [
   { title: "Home", href: "/", icon: Home },
-  { title: "Roadmap", href: "/learn", icon: BookOpen },
+  { title: "Roadmap", href: "/roadmap", icon: BookOpen },
   { title: "Practice", href: "/practice", icon: Code2 },
 ];
 
@@ -59,7 +59,7 @@ export function PublicNavbar() {
               Log in
             </Button>
           </Link>
-          <Link href="/learn">
+          <Link href="/roadmap">
             <Button
               variant="primary"
               size="sm"
@@ -79,55 +79,61 @@ export function PublicNavbar() {
             size="icon"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
+            className="text-foreground transition-transform active:scale-95"
           >
             {mobileMenuOpen ? (
-              <X className="h-5 w-5" />
+              <X className="h-5 w-5 transition-transform rotate-90" />
             ) : (
-              <Menu className="h-5 w-5" />
+              <Menu className="h-5 w-5 transition-transform" />
             )}
           </Button>
         </div>
       </div>
 
-      {/* Mobile Menu Drawer */}
-      {mobileMenuOpen && (
-        <div className="sm:hidden border-b border-border/80 bg-background px-4 py-4 space-y-3 animate-in slide-in-from-top-2 duration-200">
-          <div className="flex flex-col space-y-1">
-            {publicNavLinks.map((item) => {
-              const Icon = item.icon;
-              const isActive =
-                item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={cn(
-                    "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
-                    isActive
-                      ? "bg-muted text-foreground font-semibold"
-                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
-                  )}
-                >
-                  <Icon className="h-4 w-4 text-primary" />
-                  <span>{item.title}</span>
-                </Link>
-              );
-            })}
-          </div>
-          <div className="pt-3 border-t border-border flex flex-col gap-2">
-            <Link href="/login" className="w-full">
-              <Button variant="outline" className="w-full justify-center">
-                Log in
-              </Button>
-            </Link>
-            <Link href="/learn" className="w-full">
-              <Button variant="primary" className="w-full justify-center">
-                Start Learning
-              </Button>
-            </Link>
-          </div>
+      {/* Smooth Mobile Menu Drawer */}
+      <div
+        className={cn(
+          "sm:hidden overflow-hidden transition-all duration-300 ease-in-out border-b border-border/80 bg-background/95 backdrop-blur-xl",
+          mobileMenuOpen
+            ? "max-h-80 opacity-100 py-4 px-4 shadow-xl border-t border-border/40"
+            : "max-h-0 opacity-0 py-0 px-4 pointer-events-none border-t-0"
+        )}
+      >
+        <div className="flex flex-col space-y-1">
+          {publicNavLinks.map((item) => {
+            const Icon = item.icon;
+            const isActive =
+              item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                  isActive
+                    ? "bg-muted text-foreground font-semibold"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                )}
+              >
+                <Icon className="h-4 w-4 text-primary" />
+                <span>{item.title}</span>
+              </Link>
+            );
+          })}
         </div>
-      )}
+        <div className="pt-3 mt-3 border-t border-border flex flex-col gap-2">
+          <Link href="/login" className="w-full">
+            <Button variant="outline" className="w-full justify-center">
+              Log in
+            </Button>
+          </Link>
+          <Link href="/roadmap" className="w-full">
+            <Button variant="primary" className="w-full justify-center">
+              Start Learning
+            </Button>
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }

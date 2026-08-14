@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { PhaseId } from "@/types";
 
 const badgeVariants = cva(
-  "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+  "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold whitespace-nowrap transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
   {
     variants: {
       variant: {
@@ -53,7 +53,7 @@ function Badge({ className, variant, dot = false, children, ...props }: BadgePro
       {dot && (
         <span
           className={cn(
-            "mr-1.5 h-1.5 w-1.5 rounded-full",
+            "mr-1.5 h-1.5 w-1.5 rounded-full shrink-0",
             variant === "success" && "bg-emerald-500",
             variant === "warning" && "bg-amber-500",
             variant === "destructive" && "bg-red-500",
@@ -82,34 +82,34 @@ export function PhaseBadge({
 
   if (phaseNormalized === "foundation") {
     return (
-      <Badge variant="foundation" dot className={className}>
+      <Badge variant="foundation" dot className={cn("shrink-0", className)}>
         Foundation
       </Badge>
     );
   }
   if (phaseNormalized === "phase_1" || phaseNormalized === "core") {
     return (
-      <Badge variant="core" dot className={className}>
-        Phase 1 — Core
+      <Badge variant="core" dot className={cn("shrink-0", className)}>
+        Core DSA
       </Badge>
     );
   }
   if (phaseNormalized === "phase_2" || phaseNormalized === "advanced") {
     return (
-      <Badge variant="advanced" dot className={className}>
-        Phase 2 — Advanced
+      <Badge variant="advanced" dot className={cn("shrink-0", className)}>
+        Advanced DSA
       </Badge>
     );
   }
   if (phaseNormalized === "phase_3" || phaseNormalized === "cp") {
     return (
-      <Badge variant="cp" dot className={className}>
-        Phase 3 — CP
+      <Badge variant="cp" dot className={cn("shrink-0", className)}>
+        CP Track
       </Badge>
     );
   }
 
-  return <Badge variant="secondary" className={className}>{phase}</Badge>;
+  return <Badge variant="secondary" className={cn("shrink-0", className)}>{phase}</Badge>;
 }
 
 export function StatusBadge({

@@ -20,8 +20,8 @@ const mobileNavItems = [
     icon: LayoutDashboard,
   },
   {
-    title: "Learn",
-    href: "/learn",
+    title: "Roadmap",
+    href: "/roadmap",
     icon: BookOpen,
   },
   {

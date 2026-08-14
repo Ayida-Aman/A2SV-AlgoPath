@@ -35,7 +35,7 @@ export function FinalCTA() {
 
           {/* Action Buttons */}
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-md mx-auto">
-            <Link href="/learn" className="w-full sm:w-auto">
+            <Link href="/roadmap" className="w-full sm:w-auto">
               <Button
                 variant="primary"
                 size="lg"
@@ -45,7 +45,7 @@ export function FinalCTA() {
                 Start Your Journey →
               </Button>
             </Link>
-            <Link href="/learn" className="w-full sm:w-auto">
+            <Link href="/roadmap" className="w-full sm:w-auto">
               <Button variant="outline" size="lg" className="w-full sm:w-auto">
                 Explore the Roadmap
               </Button>
@@ -54,7 +54,7 @@ export function FinalCTA() {
 
           {/* Trust badge note */}
           <p className="text-xs text-muted-foreground pt-4">
-            Zero paywalls · Fully documented · Independent community curriculum
+            An independent community project shared publicly by A2SV students.
           </p>
         </Card>
       </div>

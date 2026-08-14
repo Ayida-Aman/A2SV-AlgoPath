@@ -13,7 +13,11 @@ export function AppNavbar() {
   // Compute readable breadcrumb / title
   const getPageTitle = (path: string) => {
     if (path.startsWith("/dashboard")) return "Dashboard";
-    if (path.startsWith("/learn")) return "Curriculum Roadmap";
+    if (path.startsWith("/roadmap/week/")) {
+      const match = path.match(/\/roadmap\/week\/(\d+)/);
+      return match ? `Week ${match[1]} Module` : "Week Detail";
+    }
+    if (path.startsWith("/roadmap") || path.startsWith("/learn")) return "Curriculum Roadmap";
     if (path.startsWith("/practice")) return "Problem Catalog";
     if (path.startsWith("/leaderboard")) return "Leaderboard";
     if (path.startsWith("/grind")) return "Grind Rooms";
