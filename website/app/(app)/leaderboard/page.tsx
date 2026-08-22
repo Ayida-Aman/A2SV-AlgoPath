@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function LeaderboardPage() {
   return (
-    <AppLayout>
+    <AppLayout requireAuth>
       <div className="space-y-8">
         {/* Header */}
         <div className="space-y-2">

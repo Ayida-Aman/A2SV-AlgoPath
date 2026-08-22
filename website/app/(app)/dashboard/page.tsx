@@ -23,7 +23,7 @@ export const metadata = {
 
 export default function DashboardPage() {
   return (
-    <AppLayout>
+    <AppLayout requireAuth>
       <div className="space-y-6">
         {/* Welcome Banner */}
         <div className="rounded-2xl border border-primary/20 bg-gradient-to-r from-primary/10 via-primary-muted to-card p-6 md:p-8">

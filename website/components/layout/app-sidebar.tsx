@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
   BookOpen,
@@ -12,9 +12,10 @@ import {
   Settings,
   ChevronLeft,
   ChevronRight,
-  ExternalLink,
-  Sparkles,
+  LogOut,
+  LogIn,
 } from "lucide-react";
+import { useAuth } from "@/contexts/auth-context";
 import { Logo } from "@/components/layout/logo";
 import { Avatar } from "@/components/ui/avatar";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
@@ -60,7 +61,22 @@ const secondaryNavItems = [
 
 export function AppSidebar() {
   const pathname = usePathname();
+  const router = useRouter();
   const [collapsed, setCollapsed] = React.useState(false);
+  const { currentUser, userProfile, signOut } = useAuth();
+
+  const handleSignOut = async () => {
+    await signOut();
+    router.push("/login");
+  };
+
+  const displayName =
+    userProfile?.displayName ||
+    currentUser?.displayName ||
+    currentUser?.email?.split("@")[0] ||
+    "Guest Scholar";
+
+  const userStatus = currentUser ? "Verified Scholar" : "Guest Mode";
 
   return (
     <aside
@@ -186,27 +202,53 @@ export function AppSidebar() {
         </div>
       </div>
 
-      {/* Footer / User Profile & Theme Toggle */}
+      {/* Footer / User Profile, Logout & Theme Toggle */}
       <div
         className={cn(
           "p-3 border-t border-border/60 flex items-center transition-all shrink-0",
-          collapsed ? "justify-center" : "justify-between gap-2"
+          collapsed ? "justify-center flex-col gap-2" : "justify-between gap-2"
         )}
       >
-        <div className="flex items-center gap-2.5 overflow-hidden">
-          <Avatar name="A2SV Scholar" size="sm" status="online" />
+        <div className="flex items-center gap-2.5 overflow-hidden min-w-0">
+          <Avatar
+            name={displayName}
+            size="sm"
+            status={currentUser ? "online" : "offline"}
+          />
           {!collapsed && (
             <div className="flex flex-col min-w-0">
               <span className="text-xs font-semibold text-foreground truncate">
-                Guest Scholar
+                {displayName}
               </span>
               <span className="text-[10px] text-muted-foreground truncate">
-                Level 1 · Cohort Ready
+                {userStatus}
               </span>
             </div>
           )}
         </div>
-        {!collapsed && <ThemeToggle />}
+
+        <div className="flex items-center gap-1">
+          {!collapsed && <ThemeToggle />}
+          {currentUser ? (
+            <button
+              onClick={handleSignOut}
+              className="p-1.5 rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors"
+              title="Sign out"
+              aria-label="Sign out"
+            >
+              <LogOut className="h-4 w-4" />
+            </button>
+          ) : (
+            <Link
+              href="/login"
+              className="p-1.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+              title="Sign in"
+              aria-label="Sign in"
+            >
+              <LogIn className="h-4 w-4" />
+            </Link>
+          )}
+        </div>
       </div>
     </aside>
   );

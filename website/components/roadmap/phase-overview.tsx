@@ -7,6 +7,17 @@ import { ArrowDown } from "lucide-react";
 export function PhaseOverview() {
   const phases = getAllPhases();
 
+  const phaseDescriptions: Record<string, string> = {
+    foundation:
+      "Build strong programming fundamentals, problem-solving habits, and core Python skills.",
+    phase_1:
+      "Master essential data structures and algorithms through structured problem solving.",
+    phase_2:
+      "Explore graphs, dynamic programming, trees, greedy algorithms, and advanced problem solving.",
+    phase_3:
+      "Put your DSA skills to work through advanced techniques and competitive programming.",
+  };
+
   return (
     <div className="space-y-4 pt-4">
       <div className="flex items-center justify-between">
@@ -21,6 +32,8 @@ export function PhaseOverview() {
           const stats = getPhaseStats(phase.id);
           const startWeek = Math.min(...phase.weeks);
           const endWeek = Math.max(...phase.weeks);
+          const conciseDescription =
+            phaseDescriptions[phase.id] || phase.description;
 
           return (
             <a
@@ -32,8 +45,8 @@ export function PhaseOverview() {
                 variant="interactive"
                 className="p-5 h-full flex flex-col justify-between transition-all duration-300 hover:border-primary/50 hover:shadow-card-hover"
               >
-                <div className="space-y-3.5">
-                  {/* Top Meta Row with generous spacing */}
+                <div className="space-y-3">
+                  {/* Top Meta Row with clean non-overlapping badge and week range */}
                   <div className="flex items-center justify-between gap-2.5">
                     <PhaseBadge phase={phase.id} />
                     <span className="text-[11px] font-mono font-semibold text-muted-foreground px-2 py-0.5 rounded-md bg-muted/80 border border-border/50 shrink-0">
@@ -45,8 +58,8 @@ export function PhaseOverview() {
                     {phase.name}
                   </h3>
 
-                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
-                    {phase.description}
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {conciseDescription}
                   </p>
                 </div>
 

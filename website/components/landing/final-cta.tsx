@@ -18,7 +18,7 @@ export function FinalCTA() {
           {/* Top Tag */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary-muted text-primary text-xs font-semibold">
             <Sparkles className="h-3.5 w-3.5 text-accent-electric" />
-            <span>Open & Structured DSA Archive</span>
+            <span>Structured 43-Week Curriculum</span>
           </div>
 
           {/* Main Title */}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/lib/theme-provider";
+import { AuthProvider } from "@/contexts/auth-context";
 import "./globals.css";
 
 const sansFont = Inter({
@@ -40,7 +41,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={`${sansFont.variable} ${monoFont.variable}`}>
       <body className="min-h-screen bg-background font-sans antialiased">
         <ThemeProvider defaultTheme="dark">
-          {children}
+          <AuthProvider>
+            {children}
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>

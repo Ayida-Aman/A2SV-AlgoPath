@@ -1,11 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { Sparkles, ArrowRight, Layers, BookOpen, Code2, FileText, ChevronRight } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Sparkles, Layers, BookOpen, Code2, FileText, ChevronRight } from "lucide-react";
 
 export function RoadmapHero() {
   return (
-    <div className="space-y-6 pt-4 pb-8 border-b border-border/60">
+    <div className="space-y-6 pt-2 pb-8 border-b border-border/60">
       {/* Breadcrumb Context */}
       <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-muted-foreground">
         <Link href="/" className="hover:text-foreground transition-colors">
@@ -19,7 +18,7 @@ export function RoadmapHero() {
       <div className="space-y-3 max-w-4xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary-muted text-primary text-xs font-semibold">
           <Sparkles className="h-3.5 w-3.5 text-accent-electric" />
-          <span>THE 43-WEEK JOURNEY</span>
+          <span>A2SV LEARNING PATH</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground leading-[1.15]">
@@ -30,7 +29,7 @@ export function RoadmapHero() {
         </h1>
 
         <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl">
-          Follow a structured path through programming fundamentals, core data structures and algorithms, advanced problem solving, and competitive programming. Explore every week below or jump directly to specific phases.
+          Follow a structured path through programming fundamentals, core data structures and algorithms, advanced problem solving, and competitive programming across 43 weekly modules.
         </p>
       </div>
 

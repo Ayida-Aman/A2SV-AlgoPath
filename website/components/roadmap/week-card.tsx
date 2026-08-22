@@ -3,8 +3,7 @@ import Link from "next/link";
 import { WeekCurriculum } from "@/types";
 import { Card } from "@/components/ui/card";
 import { PhaseBadge } from "@/components/ui/badge";
-import { Code2, FileText, ChevronRight, CheckCircle2, ArrowRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Code2, FileText, ChevronRight } from "lucide-react";
 
 interface WeekCardProps {
   week: WeekCurriculum;
@@ -28,7 +27,7 @@ export function WeekCard({ week }: WeekCardProps) {
         className="p-5 sm:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-card-hover"
       >
         <div className="space-y-4">
-          {/* Top Row: Week Number, Phase Badge & Source Days */}
+          {/* Top Row: Week Number & Phase Badge */}
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-2.5">
               <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/10 text-primary font-mono text-xs font-bold border border-primary/20 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
@@ -38,7 +37,7 @@ export function WeekCard({ week }: WeekCardProps) {
             </div>
 
             <span className="text-[11px] font-mono text-muted-foreground font-medium">
-              Source Day {week.sourceDays.join(", ")}
+              Week {week.weekNumber} of 43
             </span>
           </div>
 
@@ -101,13 +100,13 @@ export function WeekCard({ week }: WeekCardProps) {
             {slideCount > 0 && (
               <span className="inline-flex items-center gap-1.5">
                 <FileText className="h-3.5 w-3.5 text-accent-electric" />
-                <span>{slideCount} Slide Deck</span>
+                <span>{slideCount} {slideCount === 1 ? "Slide Deck" : "Slide Decks"}</span>
               </span>
             )}
           </div>
 
           <div className="flex items-center gap-1 text-xs font-semibold text-primary group-hover:translate-x-1 transition-transform">
-            <span>View Week</span>
+            <span>Study Week</span>
             <ChevronRight className="h-4 w-4" />
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { ProblemItem } from "@/types";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Code2, ExternalLink, Globe } from "lucide-react";
+import { Code2, ExternalLink, Circle, CheckCircle2 } from "lucide-react";
 
 interface WeekProblemsProps {
   problems: ProblemItem[];
@@ -12,15 +12,15 @@ interface WeekProblemsProps {
 export function WeekProblems({ problems, weekNumber }: WeekProblemsProps) {
   if (!problems || problems.length === 0) {
     return (
-      <section className="space-y-4">
+      <section className="space-y-3.5">
         <div className="flex items-center gap-2">
           <Code2 className="h-5 w-5 text-primary" />
           <h2 className="text-lg font-bold text-foreground">
             Practice Problems (0)
           </h2>
         </div>
-        <Card className="p-6 text-center text-xs text-muted-foreground">
-          No practice problems assigned for this introductory or consolidation module. Focus on mastering the lecture slides and coding standards.
+        <Card variant="subtle" className="p-6 text-center text-xs text-muted-foreground border-dashed">
+          No external practice problems assigned for this foundation or consolidation week. Focus on the core coding standards and theoretical concepts.
         </Card>
       </section>
     );
@@ -46,8 +46,8 @@ export function WeekProblems({ problems, weekNumber }: WeekProblemsProps) {
   };
 
   return (
-    <section className="space-y-4">
-      <div className="flex items-center justify-between">
+    <section className="space-y-3.5">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
         <div className="flex items-center gap-2">
           <Code2 className="h-5 w-5 text-primary" />
           <h2 className="text-lg font-bold text-foreground">
@@ -55,14 +55,12 @@ export function WeekProblems({ problems, weekNumber }: WeekProblemsProps) {
           </h2>
         </div>
         <span className="text-xs text-muted-foreground">
-          Solve in original platform
+          Solve on verified coding platforms
         </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
         {problems.map((problem, idx) => {
-          const isMultiOccurrence = problem.occurrences && problem.occurrences.length > 1;
-
           return (
             <Card
               key={idx}
@@ -94,16 +92,10 @@ export function WeekProblems({ problems, weekNumber }: WeekProblemsProps) {
                     </span>
                   )}
                 </div>
-
-                {isMultiOccurrence && (
-                  <p className="text-[10px] text-muted-foreground italic">
-                    Revisited in multiple weeks for spiral learning
-                  </p>
-                )}
               </div>
 
               <div className="mt-4 pt-3 border-t border-border/40 flex items-center justify-between">
-                <span className="text-[11px] text-muted-foreground font-mono truncate max-w-[180px]">
+                <span className="text-[11px] text-muted-foreground font-mono truncate max-w-[140px]">
                   {problem.platform}
                 </span>
 
@@ -111,10 +103,10 @@ export function WeekProblems({ problems, weekNumber }: WeekProblemsProps) {
                   href={problem.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline group/link"
                 >
                   <span>Solve Problem</span>
-                  <ExternalLink className="h-3.5 w-3.5" />
+                  <ExternalLink className="h-3.5 w-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                 </a>
               </div>
             </Card>

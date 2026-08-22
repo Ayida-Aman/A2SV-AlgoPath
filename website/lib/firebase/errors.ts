@@ -1,0 +1,44 @@
+/**
+ * Maps Firebase Authentication error codes to user-friendly messages.
+ */
+export function getAuthErrorMessage(error: unknown): string {
+  if (!error || typeof error !== "object") {
+    return "An unexpected error occurred. Please try again.";
+  }
+
+  const err = error as { code?: string; message?: string };
+  const errorCode = err.code || "";
+
+  switch (errorCode) {
+    case "auth/invalid-email":
+      return "Please enter a valid email address.";
+    case "auth/user-disabled":
+      return "This account has been disabled. Please contact support.";
+    case "auth/user-not-found":
+    case "auth/wrong-password":
+    case "auth/invalid-credential":
+    case "auth/invalid-login-credentials":
+      return "Incorrect email or password. Please verify your credentials and try again.";
+    case "auth/email-already-in-use":
+      return "An account with this email address already exists. Please sign in instead.";
+    case "auth/weak-password":
+      return "Password is too weak. Please use at least 6 characters with a combination of letters and numbers.";
+    case "auth/operation-not-allowed":
+      return "Email and password authentication is currently not enabled in Firebase.";
+    case "auth/too-many-requests":
+      return "Access to this account has been temporarily disabled due to many failed login attempts. Please try again later.";
+    case "auth/network-request-failed":
+      return "Network error. Please check your internet connection and try again.";
+    case "auth/popup-closed-by-user":
+      return "The sign-in window was closed before completing.";
+    case "auth/requires-recent-login":
+      return "This action requires recent authentication. Please log in again.";
+    case "auth/user-token-expired":
+      return "Your session has expired. Please sign in again.";
+    default:
+      if (err.message && !err.message.includes("Firebase:")) {
+        return err.message;
+      }
+      return "An unexpected authentication error occurred. Please try again.";
+  }
+}

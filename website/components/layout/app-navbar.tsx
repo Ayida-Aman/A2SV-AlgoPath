@@ -2,9 +2,9 @@
 
 import * as React from "react";
 import { usePathname } from "next/navigation";
-import { Search, Flame, Bell, Sparkles } from "lucide-react";
+import { Search, Flame } from "lucide-react";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
-import { Avatar } from "@/components/ui/avatar";
+import { UserMenu } from "@/components/auth/user-menu";
 import { Badge } from "@/components/ui/badge";
 
 export function AppNavbar() {
@@ -33,11 +33,11 @@ export function AppNavbar() {
           {getPageTitle(pathname)}
         </h1>
         <Badge variant="subtle" className="hidden sm:inline-flex text-[11px]">
-          43 Weeks Archive
+          43-Week Curriculum
         </Badge>
       </div>
 
-      {/* Right: Search, Streak, Theme, Profile */}
+      {/* Right: Search, Streak, Theme, User Profile */}
       <div className="flex items-center gap-2.5 sm:gap-3.5">
         {/* Search placeholder */}
         <div className="relative hidden lg:block w-64">
@@ -59,8 +59,8 @@ export function AppNavbar() {
         {/* Theme Toggle */}
         <ThemeToggle />
 
-        {/* User Profile Avatar */}
-        <Avatar name="A2SV Scholar" size="sm" status="online" />
+        {/* Auth-Aware User Menu */}
+        <UserMenu />
       </div>
     </header>
   );

@@ -26,7 +26,7 @@ export default function PracticePage() {
   }, {} as Record<string, number>);
 
   return (
-    <AppLayout>
+    <AppLayout requireAuth>
       <div className="space-y-8">
         {/* Header */}
         <div className="space-y-2">

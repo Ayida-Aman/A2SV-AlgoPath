@@ -2,10 +2,12 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Menu, X, ArrowRight, Home, BookOpen, Code2 } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { Menu, X, ArrowRight, Home, BookOpen, Code2, LayoutDashboard, LogOut } from "lucide-react";
+import { useAuth } from "@/contexts/auth-context";
 import { Logo } from "@/components/layout/logo";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { UserMenu } from "@/components/auth/user-menu";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -18,10 +20,18 @@ const publicNavLinks = [
 export function PublicNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+  const { currentUser, signOut } = useAuth();
 
   React.useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
+
+  const handleMobileSignOut = async () => {
+    setMobileMenuOpen(false);
+    await signOut();
+    router.push("/login");
+  };
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur-md transition-colors">
@@ -51,24 +61,47 @@ export function PublicNavbar() {
           })}
         </nav>
 
-        {/* Right: Theme Toggle & Actions */}
+        {/* Right: Theme Toggle & Auth State Actions */}
         <div className="hidden sm:flex items-center gap-2.5">
           <ThemeToggle />
-          <Link href="/login">
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium">
-              Log in
-            </Button>
-          </Link>
-          <Link href="/roadmap">
-            <Button
-              variant="primary"
-              size="sm"
-              className="font-semibold shadow-sm"
-              endIcon={<ArrowRight className="h-3.5 w-3.5" />}
-            >
-              Start Learning
-            </Button>
-          </Link>
+
+          {currentUser ? (
+            <div className="flex items-center gap-2">
+              <Link href="/dashboard">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  startIcon={<LayoutDashboard className="h-3.5 w-3.5 text-primary" />}
+                  className="text-xs font-semibold"
+                >
+                  Dashboard
+                </Button>
+              </Link>
+              <UserMenu />
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <Link href="/login">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-muted-foreground hover:text-foreground font-medium text-xs"
+                >
+                  Log in
+                </Button>
+              </Link>
+              <Link href="/roadmap">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  className="font-semibold shadow-sm text-xs"
+                  endIcon={<ArrowRight className="h-3.5 w-3.5" />}
+                >
+                  Start Learning
+                </Button>
+              </Link>
+            </div>
+          )}
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -95,7 +128,7 @@ export function PublicNavbar() {
         className={cn(
           "sm:hidden overflow-hidden transition-all duration-300 ease-in-out border-b border-border/80 bg-background/95 backdrop-blur-xl",
           mobileMenuOpen
-            ? "max-h-80 opacity-100 py-4 px-4 shadow-xl border-t border-border/40"
+            ? "max-h-96 opacity-100 py-4 px-4 shadow-xl border-t border-border/40"
             : "max-h-0 opacity-0 py-0 px-4 pointer-events-none border-t-0"
         )}
       >
@@ -121,17 +154,39 @@ export function PublicNavbar() {
             );
           })}
         </div>
+
         <div className="pt-3 mt-3 border-t border-border flex flex-col gap-2">
-          <Link href="/login" className="w-full">
-            <Button variant="outline" className="w-full justify-center">
-              Log in
-            </Button>
-          </Link>
-          <Link href="/roadmap" className="w-full">
-            <Button variant="primary" className="w-full justify-center">
-              Start Learning
-            </Button>
-          </Link>
+          {currentUser ? (
+            <>
+              <Link href="/dashboard" className="w-full">
+                <Button variant="outline" className="w-full justify-center text-xs">
+                  <LayoutDashboard className="h-3.5 w-3.5 mr-2 text-primary" />
+                  Go to Dashboard
+                </Button>
+              </Link>
+              <Button
+                variant="ghost"
+                onClick={handleMobileSignOut}
+                className="w-full justify-center text-xs text-destructive hover:bg-destructive/10"
+              >
+                <LogOut className="h-3.5 w-3.5 mr-2" />
+                Sign out
+              </Button>
+            </>
+          ) : (
+            <>
+              <Link href="/login" className="w-full">
+                <Button variant="outline" className="w-full justify-center text-xs">
+                  Log in
+                </Button>
+              </Link>
+              <Link href="/roadmap" className="w-full">
+                <Button variant="primary" className="w-full justify-center text-xs">
+                  Start Learning
+                </Button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </header>

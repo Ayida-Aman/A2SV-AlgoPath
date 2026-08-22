@@ -3,6 +3,7 @@ import Link from "next/link";
 import { WeekCurriculum } from "@/types";
 import { PhaseBadge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { WeekCompletionButton } from "@/components/roadmap/week-completion-button";
 import {
   ChevronRight,
   BookOpen,
@@ -10,8 +11,7 @@ import {
   Quote,
   Zap,
   Layers,
-  Clock,
-  ExternalLink,
+  Code2,
 } from "lucide-react";
 
 interface WeekDetailProps {
@@ -24,84 +24,80 @@ export function WeekDetail({ week }: WeekDetailProps) {
   const algorithms = week.algorithms || [];
   const dataStructures = week.dataStructures || [];
   const quote = week.quote;
+  const problemCount = week.problems?.length || 0;
 
   return (
     <div className="space-y-8">
-      {/* Breadcrumb Navigation */}
-      <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
-        <Link href="/" className="hover:text-foreground transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="h-3 w-3" />
-        <Link href="/roadmap" className="hover:text-foreground transition-colors">
-          Roadmap
-        </Link>
-        <ChevronRight className="h-3 w-3" />
-        <a
-          href={`/roadmap#phase-${week.phase}`}
-          className="hover:text-foreground transition-colors"
-        >
-          {week.phaseName}
-        </a>
-        <ChevronRight className="h-3 w-3" />
-        <span className="text-foreground font-semibold">Week {week.weekNumber}</span>
-      </nav>
+      {/* Breadcrumb & Context Navigation */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2">
+        <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+          <Link href="/" className="hover:text-foreground transition-colors">
+            Home
+          </Link>
+          <ChevronRight className="h-3 w-3 shrink-0" />
+          <Link href="/roadmap" className="hover:text-foreground transition-colors">
+            Roadmap
+          </Link>
+          <ChevronRight className="h-3 w-3 shrink-0" />
+          <a
+            href={`/roadmap#phase-${week.phase}`}
+            className="hover:text-foreground transition-colors"
+          >
+            {week.phaseName}
+          </a>
+          <ChevronRight className="h-3 w-3 shrink-0" />
+          <span className="text-foreground font-semibold">Week {week.weekNumber}</span>
+        </nav>
 
-      {/* Week Title & Overview Banner */}
-      <div className="rounded-2xl border border-border/80 bg-gradient-to-r from-card via-card-subtle to-card p-6 sm:p-8 space-y-4 shadow-sm">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary text-primary-foreground font-mono text-xs font-bold shadow-sm shadow-blue-500/25">
-              {String(week.weekNumber).padStart(2, "0")}
-            </span>
-            <PhaseBadge phase={week.phase} />
-          </div>
-          <span className="text-xs font-mono font-medium text-muted-foreground px-3 py-1 rounded-full bg-secondary border border-border/60">
-            Source Day {week.sourceDays.join(", ")}
+        {/* Position Context Tag */}
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-mono font-semibold text-muted-foreground px-2.5 py-1 rounded-md bg-muted/80 border border-border/50">
+            Week {week.weekNumber} of 43
           </span>
+          <PhaseBadge phase={week.phase} />
         </div>
+      </div>
 
-        <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-primary">
-            WEEK {week.weekNumber}
-          </span>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground mt-1">
-            {week.title}
-          </h1>
+      {/* Week Hero & Action Banner */}
+      <div className="rounded-2xl border border-border/80 bg-gradient-to-r from-card via-card-subtle to-card p-6 sm:p-8 space-y-5 shadow-sm relative overflow-hidden">
+        <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary">
+                WEEK {week.weekNumber} LEARNING MODULE
+              </span>
+            </div>
+
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground leading-[1.2]">
+              {week.title}
+            </h1>
+          </div>
+
+          {/* Interactive Week Completion Control */}
+          <WeekCompletionButton weekNumber={week.weekNumber} />
         </div>
 
         <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-3xl">
           {week.description}
         </p>
 
-        {/* Source Attribution Meta */}
-        <div className="pt-2 border-t border-border/40 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-muted-foreground">
-          <span>Curriculum Source: <strong className="text-foreground">{week.source.author}</strong></span>
-          <span>Verified Status: <span className="text-emerald-600 dark:text-emerald-400 font-semibold uppercase">{week.status}</span></span>
-          <span>Confidence: <strong className="text-foreground capitalize">{week.confidence}</strong></span>
+        {/* Module Metrics Bar */}
+        <div className="pt-3 border-t border-border/40 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-muted-foreground">
+          <span className="inline-flex items-center gap-1.5 font-medium text-foreground">
+            <Code2 className="h-3.5 w-3.5 text-primary" />
+            <span>{problemCount} {problemCount === 1 ? "Practice Problem" : "Practice Problems"}</span>
+          </span>
+          <span className="inline-flex items-center gap-1.5 font-medium text-foreground">
+            <BookOpen className="h-3.5 w-3.5 text-sky-500" />
+            <span>{concepts.length} Core {concepts.length === 1 ? "Concept" : "Concepts"}</span>
+          </span>
+          <span>Verified Curriculum: <strong className="text-foreground capitalize">{week.confidence} Confidence</strong></span>
         </div>
       </div>
 
-      {/* Quote of the Day (if available) */}
-      {quote && (
-        <Card variant="subtle" className="p-5 border-l-4 border-l-primary bg-primary/5 space-y-2">
-          <div className="flex items-start gap-3">
-            <Quote className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <div className="space-y-1">
-              <p className="text-sm italic text-foreground leading-relaxed">
-                &ldquo;{quote.quote}&rdquo;
-              </p>
-              <p className="text-xs font-semibold text-primary">
-                — {quote.author}
-              </p>
-            </div>
-          </div>
-        </Card>
-      )}
-
       {/* What You'll Learn / Learning Objectives */}
       {objectives.length > 0 && (
-        <section className="space-y-4">
+        <section className="space-y-3.5">
           <div className="flex items-center gap-2">
             <CheckCircle2 className="h-5 w-5 text-primary" />
             <h2 className="text-lg font-bold text-foreground">
@@ -125,11 +121,11 @@ export function WeekDetail({ week }: WeekDetailProps) {
 
       {/* Core Concepts Grid */}
       {concepts.length > 0 && (
-        <section className="space-y-4">
+        <section className="space-y-3.5">
           <div className="flex items-center gap-2">
             <BookOpen className="h-5 w-5 text-primary" />
             <h2 className="text-lg font-bold text-foreground">
-              Core Concepts & Theoretical Framework
+              Core Concepts
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -140,7 +136,7 @@ export function WeekDetail({ week }: WeekDetailProps) {
                     {concept.name}
                   </h3>
                   {concept.complexity && (
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-primary/10 text-primary font-semibold">
+                    <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-primary/10 text-primary font-semibold shrink-0">
                       {concept.complexity}
                     </span>
                   )}
@@ -154,7 +150,7 @@ export function WeekDetail({ week }: WeekDetailProps) {
         </section>
       )}
 
-      {/* Algorithms & Data Structures Tag List */}
+      {/* Algorithms & Data Structures (Rendered only if data exists) */}
       {(algorithms.length > 0 || dataStructures.length > 0) && (
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {algorithms.length > 0 && (
@@ -195,6 +191,23 @@ export function WeekDetail({ week }: WeekDetailProps) {
             </Card>
           )}
         </section>
+      )}
+
+      {/* Quote of the Week (if available) */}
+      {quote && (
+        <Card variant="subtle" className="p-5 border-l-4 border-l-primary bg-primary/5 space-y-2">
+          <div className="flex items-start gap-3">
+            <Quote className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <div className="space-y-1">
+              <p className="text-sm italic text-foreground leading-relaxed">
+                &ldquo;{quote.quote}&rdquo;
+              </p>
+              <p className="text-xs font-semibold text-primary">
+                — {quote.author}
+              </p>
+            </div>
+          </div>
+        </Card>
       )}
     </div>
   );

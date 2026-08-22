@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function GrindPage() {
   return (
-    <AppLayout>
+    <AppLayout requireAuth>
       <div className="space-y-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">

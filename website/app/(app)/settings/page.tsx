@@ -14,7 +14,7 @@ export default function SettingsPage() {
   const { theme, resolvedTheme } = useTheme();
 
   return (
-    <AppLayout>
+    <AppLayout requireAuth>
       <div className="space-y-8 max-w-4xl">
         {/* Header */}
         <div className="space-y-2">
