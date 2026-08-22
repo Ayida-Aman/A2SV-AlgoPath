@@ -25,6 +25,7 @@ export default function DashboardPage() {
     nextIncompleteWeek,
     currentPhase,
     phaseProgress,
+    solvedProblemsCount,
     loading: progressLoading,
     error: progressError,
   } = useUserProgress();
@@ -103,7 +104,7 @@ export default function DashboardPage() {
             />
 
             {/* Static Curriculum Scope Summary */}
-            <CurriculumSnapshotCard />
+            <CurriculumSnapshotCard solvedProblemsCount={solvedProblemsCount} />
           </div>
         </div>
       </div>

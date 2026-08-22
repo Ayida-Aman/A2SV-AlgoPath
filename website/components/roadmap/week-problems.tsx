@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import { ProblemItem } from "@/types";
+import { getProblemId, getWeekByNumber } from "@/lib/curriculum";
+import { ProblemCard } from "@/components/practice/problem-card";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Code2, ExternalLink, Circle, CheckCircle2 } from "lucide-react";
+import { Code2 } from "lucide-react";
 
 interface WeekProblemsProps {
   problems: ProblemItem[];
@@ -26,24 +29,20 @@ export function WeekProblems({ problems, weekNumber }: WeekProblemsProps) {
     );
   }
 
-  const getPlatformClasses = (platform: string) => {
-    switch (platform.toLowerCase()) {
-      case "leetcode":
-        return "bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/30";
-      case "codeforces":
-        return "bg-blue-500/10 text-blue-700 dark:text-blue-400 border-blue-500/30";
-      case "hackerrank":
-        return "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/30";
-      case "eolymp":
-        return "bg-sky-500/10 text-sky-700 dark:text-sky-400 border-sky-500/30";
-      case "geeksforgeeks":
-        return "bg-green-500/10 text-green-700 dark:text-green-400 border-green-500/30";
-      case "kattis":
-        return "bg-purple-500/10 text-purple-700 dark:text-purple-400 border-purple-500/30";
-      default:
-        return "bg-secondary text-secondary-foreground border-border/60";
-    }
-  };
+  const week = getWeekByNumber(weekNumber);
+  const weekTitle = week?.title || `Week ${weekNumber}`;
+  const phaseId = week?.phase || "foundation";
+  const phaseName = week?.phaseName || "Foundation";
+
+  const enrichedProblems = problems.map((p) => ({
+    ...p,
+    id: getProblemId(p),
+    weekNumber,
+    weekTitle,
+    phaseId,
+    phaseName,
+    topicSummary: p.topics?.[0] || weekTitle,
+  }));
 
   return (
     <section className="space-y-3.5">
@@ -55,63 +54,14 @@ export function WeekProblems({ problems, weekNumber }: WeekProblemsProps) {
           </h2>
         </div>
         <span className="text-xs text-muted-foreground">
-          Solve on verified coding platforms
+          Track problem completions synced across your curriculum
         </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-        {problems.map((problem, idx) => {
-          return (
-            <Card
-              key={idx}
-              variant="interactive"
-              className="p-4 sm:p-5 flex flex-col justify-between group hover:border-primary/50"
-            >
-              <div className="space-y-3">
-                <div className="flex items-center justify-between gap-2">
-                  <span
-                    className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${getPlatformClasses(
-                      problem.platform
-                    )}`}
-                  >
-                    {problem.platform}
-                  </span>
-
-                  <span className="text-[11px] font-mono text-muted-foreground">
-                    #{idx + 1}
-                  </span>
-                </div>
-
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
-                    {problem.title}
-                  </h3>
-                  {problem.difficulty && (
-                    <span className="text-[11px] font-semibold text-muted-foreground mt-0.5 block">
-                      Difficulty: {problem.difficulty}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              <div className="mt-4 pt-3 border-t border-border/40 flex items-center justify-between">
-                <span className="text-[11px] text-muted-foreground font-mono truncate max-w-[140px]">
-                  {problem.platform}
-                </span>
-
-                <a
-                  href={problem.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline group/link"
-                >
-                  <span>Solve Problem</span>
-                  <ExternalLink className="h-3.5 w-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-                </a>
-              </div>
-            </Card>
-          );
-        })}
+        {enrichedProblems.map((problem) => (
+          <ProblemCard key={problem.id} problem={problem} />
+        ))}
       </div>
     </section>
   );

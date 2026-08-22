@@ -1,133 +1,186 @@
-import React from "react";
-import Link from "next/link";
-import {
-  Code2,
-  ExternalLink,
-  Search,
-  Filter,
-  Layers,
-  CheckCircle2,
-} from "lucide-react";
-import { AppLayout } from "@/components/layout/app-layout";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import problemsData from "@/data/problems.json";
+"use client";
 
-export const metadata = {
-  title: "Practice Problems — A2SV Legacy",
-};
+import React, { useState, useMemo } from "react";
+import { AppLayout } from "@/components/layout/app-layout";
+import { useUserProgress } from "@/lib/firebase/progress";
+import { getAllEnrichedProblems, EnrichedProblem } from "@/lib/curriculum";
+import { PracticeHeader } from "@/components/practice/practice-header";
+import { PracticeFilters } from "@/components/practice/practice-filters";
+import { ProblemCard } from "@/components/practice/problem-card";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Code2, AlertCircle, RefreshCw, Sparkles, FilterX } from "lucide-react";
 
 export default function PracticePage() {
-  const platformCounts = problemsData.reduce((acc, p) => {
-    acc[p.platform] = (acc[p.platform] || 0) + 1;
-    return acc;
-  }, {} as Record<string, number>);
+  const {
+    completedProblems,
+    solvedProblemsCount,
+    totalProblemsCount,
+    problemsPercentage,
+    loading: progressLoading,
+    error: progressError,
+  } = useUserProgress();
+
+  const allProblems = useMemo<EnrichedProblem[]>(() => {
+    return getAllEnrichedProblems();
+  }, []);
+
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [selectedPlatform, setSelectedPlatform] = useState<string>("all");
+  const [selectedPhase, setSelectedPhase] = useState<string>("all");
+  const [selectedStatus, setSelectedStatus] = useState<"all" | "solved" | "unsolved">("all");
+
+  const platforms = useMemo(() => {
+    const list = Array.from(new Set(allProblems.map((p) => p.platform)));
+    return list.sort();
+  }, [allProblems]);
+
+  const filteredProblems = useMemo(() => {
+    return allProblems.filter((problem) => {
+      // 1. Search Query filter
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        const matchTitle = problem.title.toLowerCase().includes(q);
+        const matchPlatform = problem.platform.toLowerCase().includes(q);
+        const matchWeekTitle = problem.weekTitle.toLowerCase().includes(q);
+        const matchTopics = problem.topics?.some((t) => t.toLowerCase().includes(q)) || false;
+        const matchTopicSummary = problem.topicSummary.toLowerCase().includes(q);
+        const matchDiff = problem.difficulty?.toLowerCase().includes(q) || false;
+
+        if (
+          !matchTitle &&
+          !matchPlatform &&
+          !matchWeekTitle &&
+          !matchTopics &&
+          !matchTopicSummary &&
+          !matchDiff
+        ) {
+          return false;
+        }
+      }
+
+      // 2. Platform filter
+      if (selectedPlatform !== "all") {
+        if (problem.platform.toLowerCase() !== selectedPlatform.toLowerCase()) {
+          return false;
+        }
+      }
+
+      // 3. Phase filter
+      if (selectedPhase !== "all") {
+        if (problem.phaseId !== selectedPhase) {
+          return false;
+        }
+      }
+
+      // 4. Solved Status filter
+      if (selectedStatus !== "all") {
+        const isSolved = completedProblems.includes(problem.id);
+        if (selectedStatus === "solved" && !isSolved) return false;
+        if (selectedStatus === "unsolved" && isSolved) return false;
+      }
+
+      return true;
+    });
+  }, [allProblems, searchQuery, selectedPlatform, selectedPhase, selectedStatus, completedProblems]);
+
+  const hasActiveFilters =
+    searchQuery.trim().length > 0 ||
+    selectedPlatform !== "all" ||
+    selectedPhase !== "all" ||
+    selectedStatus !== "all";
+
+  const handleClearFilters = () => {
+    setSearchQuery("");
+    setSelectedPlatform("all");
+    setSelectedPhase("all");
+    setSelectedStatus("all");
+  };
 
   return (
     <AppLayout requireAuth>
-      <div className="space-y-8">
-        {/* Header */}
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <Badge variant="subtle">Problem Catalog</Badge>
-            <span className="text-xs text-muted-foreground">180 Canonical Practice Problems</span>
-          </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground">
-            Curated Practice Problems
-          </h1>
-          <p className="text-sm text-muted-foreground max-w-2xl leading-relaxed">
-            Practice problems from LeetCode, Codeforces, HackerRank, and Eolymp aligned with each week&apos;s educational objectives.
-          </p>
-        </div>
-
-        {/* Platform Breakdown Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-          {Object.entries(platformCounts).map(([platform, count]) => (
-            <Card key={platform} variant="subtle" className="p-3 text-center">
-              <span className="text-xl font-bold text-foreground">{count}</span>
-              <p className="text-[11px] text-muted-foreground font-medium truncate mt-0.5">{platform}</p>
-            </Card>
-          ))}
-        </div>
-
-        {/* Search / Filter Shell */}
-        <div className="flex flex-col sm:flex-row gap-3 items-center justify-between">
-          <div className="w-full sm:w-80">
-            <Input
-              placeholder="Filter by problem title..."
-              startIcon={<Search className="h-4 w-4" />}
-            />
-          </div>
-          <div className="flex items-center gap-2 w-full sm:w-auto">
-            <Button variant="outline" size="sm" startIcon={<Filter className="h-3.5 w-3.5" />}>
-              Filter by Phase
-            </Button>
-            <Button variant="outline" size="sm">
-              All Platforms
+      <div className="space-y-6 max-w-7xl mx-auto pb-12">
+        {/* Error Notice */}
+        {progressError && (
+          <div className="flex items-center justify-between gap-3 p-4 rounded-xl border border-destructive/30 bg-destructive/10 text-destructive text-xs">
+            <div className="flex items-center gap-2">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              <span>{progressError}</span>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => window.location.reload()}
+              className="text-xs border-destructive/40 hover:bg-destructive/20 h-7"
+            >
+              <RefreshCw className="h-3 w-3 mr-1" />
+              Try Again
             </Button>
           </div>
-        </div>
+        )}
 
-        {/* Problem List Preview Table */}
-        <Card className="overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead className="border-b border-border/70 bg-muted/40 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                <tr>
-                  <th className="py-3 px-4">Title</th>
-                  <th className="py-3 px-4">Platform</th>
-                  <th className="py-3 px-4">Curriculum Week</th>
-                  <th className="py-3 px-4">Source Day</th>
-                  <th className="py-3 px-4 text-right">Action</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border/40">
-                {problemsData.slice(0, 25).map((problem, idx) => (
-                  <tr key={idx} className="hover:bg-muted/30 transition-colors group">
-                    <td className="py-3 px-4 font-medium text-foreground">
-                      <a
-                        href={problem.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors inline-flex items-center gap-1.5"
-                      >
-                        <span>{problem.title}</span>
-                        <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground" />
-                      </a>
-                    </td>
-                    <td className="py-3 px-4 text-xs">
-                      <span className="inline-flex px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground font-medium text-[11px]">
-                        {problem.platform}
-                      </span>
-                    </td>
-                    <td className="py-3 px-4 text-xs text-muted-foreground">
-                      Week {problem.weekNumber}
-                    </td>
-                    <td className="py-3 px-4 text-xs text-muted-foreground font-mono">
-                      Day {problem.sourceDay}
-                    </td>
-                    <td className="py-3 px-4 text-right">
-                      <a
-                        href={problem.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button variant="ghost" size="sm" className="h-7 text-xs">
-                          Solve ↗
-                        </Button>
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* Practice Header & Aggregate Progress */}
+        <PracticeHeader
+          solvedCount={solvedProblemsCount}
+          totalCount={totalProblemsCount || allProblems.length}
+          percentage={problemsPercentage}
+          loading={progressLoading}
+        />
+
+        {/* Search & Filter Suite */}
+        <PracticeFilters
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          selectedPlatform={selectedPlatform}
+          onPlatformChange={setSelectedPlatform}
+          selectedPhase={selectedPhase}
+          onPhaseChange={setSelectedPhase}
+          selectedStatus={selectedStatus}
+          onStatusChange={setSelectedStatus}
+          platforms={platforms}
+          totalResults={filteredProblems.length}
+          totalProblems={allProblems.length}
+          onClearFilters={handleClearFilters}
+          hasActiveFilters={hasActiveFilters}
+        />
+
+        {/* Problem Cards Grid or Empty State */}
+        {filteredProblems.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {filteredProblems.map((problem) => (
+              <ProblemCard key={problem.id} problem={problem} />
+            ))}
           </div>
-          <div className="p-4 border-t border-border/40 bg-muted/20 text-center text-xs text-muted-foreground">
-            Showing first 25 of 180 canonical problems. Full interactive filtering will be activated in later phases.
-          </div>
-        </Card>
+        ) : (
+          <Card
+            variant="subtle"
+            className="p-10 text-center space-y-3 border-dashed border-border/80"
+          >
+            <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-muted text-muted-foreground mx-auto">
+              <FilterX className="h-5 w-5" />
+            </div>
+            <div className="space-y-1">
+              <h3 className="text-sm font-bold text-foreground">
+                No problems found
+              </h3>
+              <p className="text-xs text-muted-foreground max-w-sm mx-auto">
+                No problems match your current search and filter criteria. Try clearing some filters or searching with different keywords.
+              </p>
+            </div>
+            {hasActiveFilters && (
+              <div className="pt-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleClearFilters}
+                  className="text-xs"
+                >
+                  Clear All Filters
+                </Button>
+              </div>
+            )}
+          </Card>
+        )}
       </div>
     </AppLayout>
   );

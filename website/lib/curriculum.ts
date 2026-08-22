@@ -4,10 +4,34 @@ import phasesData from "@/data/phases.json";
 import fileInventoryData from "@/data/file_inventory.json";
 import { WeekCurriculum, ProblemItem, PhaseInfo, MaterialItem } from "@/types";
 
+export interface EnrichedProblem extends ProblemItem {
+  id: string;
+  weekTitle: string;
+  phaseId: string;
+  phaseName: string;
+  topicSummary: string;
+}
+
 export const allWeeks: WeekCurriculum[] = curriculumData as WeekCurriculum[];
 export const allProblems: ProblemItem[] = problemsData as ProblemItem[];
 export const allPhases: PhaseInfo[] = phasesData as PhaseInfo[];
 export const allMaterials: MaterialItem[] = fileInventoryData as MaterialItem[];
+
+/**
+ * Deterministically generates a stable, unique, URL-safe problem ID from platform and title.
+ * e.g. "LeetCode" + "Smallest even multiple" -> "leetcode-smallest-even-multiple"
+ */
+export function getProblemId(problem: { platform: string; title: string }): string {
+  const platformSlug = (problem.platform || "general")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+  const titleSlug = (problem.title || "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return `${platformSlug}-${titleSlug}`;
+}
 
 export function getAllWeeks(): WeekCurriculum[] {
   return allWeeks;
@@ -38,7 +62,6 @@ export function getPhaseForWeek(weekNumber: number): PhaseInfo | null {
 export function getProblemsForWeek(weekNumber: number): ProblemItem[] {
   const week = getWeekByNumber(weekNumber);
   if (!week) return [];
-  // Use week's problems array if populated, otherwise fallback to problems catalog filter
   if (week.problems && week.problems.length > 0) {
     return week.problems;
   }
@@ -74,4 +97,30 @@ export function getPhaseStats(phaseId: string) {
     totalProblems,
     totalSlides,
   };
+}
+
+/**
+ * Returns all 180 canonical problems enriched with stable IDs, curriculum week titles, phase, and topic summaries.
+ */
+export function getAllEnrichedProblems(): EnrichedProblem[] {
+  return allProblems.map((problem) => {
+    const week = getWeekByNumber(problem.weekNumber);
+    const id = getProblemId(problem);
+    const weekTitle = week?.title || `Week ${problem.weekNumber}`;
+    const phaseId = week?.phase || "foundation";
+    const phaseName = week?.phaseName || "Foundation";
+    const topicSummary =
+      problem.topics && problem.topics.length > 0
+        ? problem.topics[0]
+        : week?.algorithms?.[0] || week?.dataStructures?.[0] || weekTitle;
+
+    return {
+      ...problem,
+      id,
+      weekTitle,
+      phaseId,
+      phaseName,
+      topicSummary,
+    };
+  });
 }
