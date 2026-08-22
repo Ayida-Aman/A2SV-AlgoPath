@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect, useCallback } from "react";
 import {
   doc,
@@ -11,10 +13,32 @@ import {
 } from "firebase/firestore";
 import { db } from "./client";
 import { useAuth } from "@/contexts/auth-context";
+import { getAllPhases, getPhaseForWeek } from "@/lib/curriculum";
+import { PhaseInfo } from "@/types";
 
 export interface UserProgress {
   completedWeeks: number[];
   updatedAt?: unknown;
+}
+
+export interface PhaseProgressSummary {
+  phase: PhaseInfo;
+  completedCount: number;
+  totalWeeks: number;
+  percentage: number;
+}
+
+export interface UserProgressSummary {
+  completedWeeks: number[];
+  completedCount: number;
+  totalWeeks: number;
+  percentage: number;
+  nextIncompleteWeek: number | null;
+  currentPhase: PhaseInfo | null;
+  phaseProgress: PhaseProgressSummary[];
+  recentlyCompletedWeeks: number[];
+  loading: boolean;
+  error: string | null;
 }
 
 /**
@@ -22,6 +46,17 @@ export interface UserProgress {
  */
 export function isValidWeekNumber(weekNumber: number): boolean {
   return Number.isInteger(weekNumber) && weekNumber >= 1 && weekNumber <= 43;
+}
+
+/**
+ * Sanitizes and deduplicates an array of week numbers, keeping only valid 1–43 integers.
+ */
+export function sanitizeCompletedWeeks(rawWeeks: unknown): number[] {
+  if (!Array.isArray(rawWeeks)) return [];
+  const valid = rawWeeks.filter(
+    (w): w is number => typeof w === "number" && isValidWeekNumber(w)
+  );
+  return Array.from(new Set(valid)).sort((a, b) => a - b);
 }
 
 /**
@@ -43,7 +78,7 @@ export async function getUserProgress(uid: string): Promise<UserProgress | null>
     if (snap.exists()) {
       const data = snap.data();
       return {
-        completedWeeks: Array.isArray(data.completedWeeks) ? data.completedWeeks : [],
+        completedWeeks: sanitizeCompletedWeeks(data.completedWeeks),
         updatedAt: data.updatedAt,
       };
     }
@@ -115,7 +150,7 @@ export function subscribeToUserProgress(
       if (snap.exists()) {
         const data = snap.data();
         onUpdate({
-          completedWeeks: Array.isArray(data.completedWeeks) ? data.completedWeeks : [],
+          completedWeeks: sanitizeCompletedWeeks(data.completedWeeks),
           updatedAt: data.updatedAt,
         });
       } else {
@@ -212,5 +247,98 @@ export function useWeekProgress(weekNumber: number) {
     error,
     isAuthenticated: Boolean(currentUser),
     toggle,
+  };
+}
+
+/**
+ * React hook to retrieve full aggregate progress for the authenticated scholar across all 43 weeks.
+ */
+export function useUserProgress(): UserProgressSummary {
+  const { currentUser, loading: authLoading } = useAuth();
+  const [completedWeeks, setCompletedWeeks] = useState<number[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (authLoading) {
+      setLoading(true);
+      return;
+    }
+
+    if (!currentUser) {
+      setCompletedWeeks([]);
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
+    const unsubscribe = subscribeToUserProgress(
+      currentUser.uid,
+      (progress) => {
+        if (progress && Array.isArray(progress.completedWeeks)) {
+          setCompletedWeeks(sanitizeCompletedWeeks(progress.completedWeeks));
+        } else {
+          setCompletedWeeks([]);
+        }
+        setLoading(false);
+      },
+      (err) => {
+        console.error("Error subscribing to user progress:", err);
+        setError("Unable to load your progress right now.");
+        setLoading(false);
+      }
+    );
+
+    return () => unsubscribe();
+  }, [currentUser, authLoading]);
+
+  const totalWeeks = 43;
+  const completedCount = completedWeeks.length;
+  const percentage = Math.round((completedCount / totalWeeks) * 100);
+
+  // Determine next incomplete week (first missing integer from 1 to 43)
+  let nextIncompleteWeek: number | null = null;
+  for (let i = 1; i <= totalWeeks; i++) {
+    if (!completedWeeks.includes(i)) {
+      nextIncompleteWeek = i;
+      break;
+    }
+  }
+
+  // Determine current phase based on next incomplete week or final phase if completed
+  const currentPhase = nextIncompleteWeek
+    ? getPhaseForWeek(nextIncompleteWeek)
+    : getAllPhases()[getAllPhases().length - 1];
+
+  // Calculate progress for each of the 4 curriculum phases
+  const phases = getAllPhases();
+  const phaseProgress: PhaseProgressSummary[] = phases.map((phase) => {
+    const completedInPhase = phase.weeks.filter((w) =>
+      completedWeeks.includes(w)
+    ).length;
+    const totalInPhase = phase.totalWeeks;
+    const phasePct = Math.round((completedInPhase / totalInPhase) * 100);
+    return {
+      phase,
+      completedCount: completedInPhase,
+      totalWeeks: totalInPhase,
+      percentage: phasePct,
+    };
+  });
+
+  // Highest completed week numbers first for recently completed list
+  const recentlyCompletedWeeks = [...completedWeeks].reverse().slice(0, 5);
+
+  return {
+    completedWeeks,
+    completedCount,
+    totalWeeks,
+    percentage,
+    nextIncompleteWeek,
+    currentPhase,
+    phaseProgress,
+    recentlyCompletedWeeks,
+    loading,
+    error,
   };
 }

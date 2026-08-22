@@ -30,7 +30,7 @@ export function PublicNavbar() {
   const handleMobileSignOut = async () => {
     setMobileMenuOpen(false);
     await signOut();
-    router.push("/login");
+    router.replace("/login");
   };
 
   return (

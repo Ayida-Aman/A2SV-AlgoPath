@@ -39,7 +39,7 @@ export function UserMenu({ compact = false }: UserMenuProps) {
   const handleSignOut = async () => {
     setIsOpen(false);
     await signOut();
-    router.push("/login");
+    router.replace("/login");
   };
 
   if (!currentUser) {
