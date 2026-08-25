@@ -1,81 +1,145 @@
-import React from "react";
-import { Trophy, Medal, Flame, Star, Sparkles } from "lucide-react";
-import { AppLayout } from "@/components/layout/app-layout";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Avatar } from "@/components/ui/avatar";
+"use client";
 
-export const metadata = {
-  title: "Leaderboard — A2SV Legacy",
-};
+import React, { useState, useMemo } from "react";
+import { AppLayout } from "@/components/layout/app-layout";
+import { useAuth } from "@/contexts/auth-context";
+import { useLeaderboard } from "@/lib/firebase/leaderboard";
+import { LeaderboardHeader } from "@/components/leaderboard/leaderboard-header";
+import {
+  LeaderboardSearch,
+  LeaderboardSortOption,
+} from "@/components/leaderboard/leaderboard-search";
+import { LeaderboardTable } from "@/components/leaderboard/leaderboard-table";
+import { LeaderboardEmptyState } from "@/components/leaderboard/leaderboard-empty-state";
+import { CurrentUserStickyBar } from "@/components/leaderboard/current-user-sticky-bar";
+import { AlertCircle, RefreshCw } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function LeaderboardPage() {
+  const { currentUser } = useAuth();
+  const {
+    entries,
+    currentUserEntry,
+    currentUserRank,
+    totalScholars,
+    isOptedIn,
+    toggleOptIn,
+    loading,
+    error,
+  } = useLeaderboard();
+
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [sortBy, setSortBy] = useState<LeaderboardSortOption>("points");
+
+  // Filter & Sort entries
+  const filteredAndSortedEntries = useMemo(() => {
+    let result = [...entries];
+
+    // 1. Search Filter
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase().trim();
+      result = result.filter((e) => e.displayName.toLowerCase().includes(q));
+    }
+
+    // 2. Custom Sort
+    if (sortBy === "problems") {
+      result.sort((a, b) => b.solvedProblems - a.solvedProblems || b.totalPoints - a.totalPoints);
+    } else if (sortBy === "weeks") {
+      result.sort((a, b) => b.completedWeeks - a.completedWeeks || b.totalPoints - a.totalPoints);
+    } else if (sortBy === "streak") {
+      result.sort((a, b) => b.currentStreak - a.currentStreak || b.totalPoints - a.totalPoints);
+    } else {
+      // Default: Total points
+      result.sort((a, b) => b.totalPoints - a.totalPoints || b.solvedProblems - a.solvedProblems);
+    }
+
+    return result;
+  }, [entries, searchQuery, sortBy]);
+
+  const handleClearFilters = () => {
+    setSearchQuery("");
+    setSortBy("points");
+  };
+
+  const showStickyBar =
+    Boolean(currentUserEntry) &&
+    Boolean(currentUserRank && currentUserRank > 5) &&
+    filteredAndSortedEntries.length > 5;
+
   return (
     <AppLayout requireAuth>
-      <div className="space-y-8">
-        {/* Header */}
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <Badge variant="subtle">Community Rankings</Badge>
-            <span className="text-xs text-muted-foreground">Cohort Streak & Solve Rankings</span>
+      <div className="space-y-6 max-w-7xl mx-auto pb-16 relative">
+        {/* Error Notification */}
+        {error && (
+          <div className="flex items-center justify-between gap-3 p-4 rounded-xl border border-destructive/30 bg-destructive/10 text-destructive text-xs">
+            <div className="flex items-center gap-2">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              <span>{error}</span>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => window.location.reload()}
+              className="text-xs border-destructive/40 hover:bg-destructive/20 h-7"
+            >
+              <RefreshCw className="h-3 w-3 mr-1" />
+              Try Again
+            </Button>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground">
-            Scholar Leaderboard
-          </h1>
-          <p className="text-sm text-muted-foreground max-w-2xl leading-relaxed">
-            Track community progress, active problem-solving streaks, and weekly challenge rankings.
-          </p>
-        </div>
+        )}
 
-        {/* Podium Preview Placeholder */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
-          <Card variant="subtle" className="p-6 text-center space-y-3 order-2 md:order-1">
-            <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-slate-400/15 text-slate-500 font-bold">
-              2
-            </div>
-            <Avatar name="Kidus Mengistu" size="lg" className="mx-auto" />
-            <div>
-              <h3 className="font-bold text-foreground">Kidus M.</h3>
-              <p className="text-xs text-muted-foreground">42 Weeks · 174 Solved</p>
-            </div>
-            <Badge variant="secondary">Rank #2</Badge>
-          </Card>
+        {/* 1. Header & Scholar's Own Stats Strip */}
+        <LeaderboardHeader
+          currentUserRank={currentUserRank}
+          totalPoints={currentUserEntry?.totalPoints || 0}
+          solvedProblems={currentUserEntry?.solvedProblems || 0}
+          completedWeeks={currentUserEntry?.completedWeeks || 0}
+          currentStreak={currentUserEntry?.currentStreak || 0}
+          totalScholars={totalScholars}
+          isOptedIn={isOptedIn}
+          onToggleOptIn={toggleOptIn}
+          loading={loading}
+        />
 
-          <Card glow className="p-6 text-center space-y-3 order-1 md:order-2 border-primary/40 bg-gradient-to-b from-primary/10 to-card">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber-500/20 text-amber-500 font-bold">
-              <Trophy className="h-6 w-6" />
-            </div>
-            <Avatar name="Baka Codes" size="xl" status="online" className="mx-auto ring-2 ring-primary" />
-            <div>
-              <h3 className="text-lg font-bold text-foreground">Baka Codes</h3>
-              <p className="text-xs text-muted-foreground">43 Weeks · 180 Solved</p>
-            </div>
-            <Badge variant="electric" dot>
-              Cohort Pioneer #1
-            </Badge>
-          </Card>
+        {/* 2. Search & Sort Bar */}
+        {entries.length > 0 && (
+          <LeaderboardSearch
+            searchQuery={searchQuery}
+            onSearchChange={setSearchQuery}
+            sortBy={sortBy}
+            onSortChange={setSortBy}
+            totalFiltered={filteredAndSortedEntries.length}
+            totalScholars={totalScholars}
+            onClearFilters={handleClearFilters}
+          />
+        )}
 
-          <Card variant="subtle" className="p-6 text-center space-y-3 order-3">
-            <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-amber-700/15 text-amber-700 font-bold">
-              3
-            </div>
-            <Avatar name="Selamawit T." size="lg" className="mx-auto" />
-            <div>
-              <h3 className="font-bold text-foreground">Selamawit T.</h3>
-              <p className="text-xs text-muted-foreground">40 Weeks · 165 Solved</p>
-            </div>
-            <Badge variant="secondary">Rank #3</Badge>
-          </Card>
-        </div>
+        {/* 3. Main Rankings Table or Empty State */}
+        {loading ? (
+          <div className="space-y-3">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div
+                key={i}
+                className="h-14 rounded-xl bg-muted/40 animate-pulse"
+              />
+            ))}
+          </div>
+        ) : entries.length === 0 ? (
+          <LeaderboardEmptyState
+            isOptedIn={isOptedIn}
+            onJoinLeaderboard={toggleOptIn}
+          />
+        ) : (
+          <LeaderboardTable
+            entries={filteredAndSortedEntries}
+            currentUserId={currentUser?.uid}
+          />
+        )}
 
-        {/* Informational Card */}
-        <Card className="p-6 text-center space-y-2 border-dashed">
-          <Sparkles className="h-5 w-5 text-primary mx-auto" />
-          <h3 className="text-base font-bold text-foreground">Live Leaderboard Shell Ready</h3>
-          <p className="text-xs text-muted-foreground max-w-md mx-auto">
-            Real-time score calculation, weekly contest submissions, and user profiles will be connected in subsequent phases when database persistence is added.
-          </p>
-        </Card>
+        {/* 4. Sticky Current Scholar Position Bar (if outside top rankings) */}
+        {showStickyBar && (
+          <CurrentUserStickyBar currentUserEntry={currentUserEntry} />
+        )}
       </div>
     </AppLayout>
   );

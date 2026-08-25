@@ -33,6 +33,26 @@ export function getProblemId(problem: { platform: string; title: string }): stri
   return `${platformSlug}-${titleSlug}`;
 }
 
+// Pre-computed canonical set of all 180 valid problem IDs
+const canonicalProblemIds: Set<string> = new Set(
+  allProblems.map((p) => getProblemId(p))
+);
+
+/**
+ * Validates whether a problem ID belongs to the canonical 180-problem curriculum dataset.
+ */
+export function isValidProblemId(problemId: string): boolean {
+  if (!problemId || typeof problemId !== "string") return false;
+  return canonicalProblemIds.has(problemId.trim());
+}
+
+/**
+ * Returns the set of all valid canonical problem IDs.
+ */
+export function getCanonicalProblemIds(): Set<string> {
+  return canonicalProblemIds;
+}
+
 export function getAllWeeks(): WeekCurriculum[] {
   return allWeeks;
 }

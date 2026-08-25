@@ -1,123 +1,87 @@
-import React from "react";
-import { Flame, Users, Clock, Sparkles, Plus, Play } from "lucide-react";
-import { AppLayout } from "@/components/layout/app-layout";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+"use client";
 
-export const metadata = {
-  title: "Grind Rooms — A2SV Legacy",
-};
+import React from "react";
+import { AppLayout } from "@/components/layout/app-layout";
+import { useGrindProgress } from "@/lib/firebase/progress";
+import { GrindHero } from "@/components/grind/grind-hero";
+import { GrindStats } from "@/components/grind/grind-stats";
+import { GrindProblemList } from "@/components/grind/grind-problem-list";
+import { GrindHistory } from "@/components/grind/grind-history";
+import { Button } from "@/components/ui/button";
+import { AlertCircle, RefreshCw } from "lucide-react";
 
 export default function GrindPage() {
+  const {
+    todayProblems,
+    todaySolvedCount,
+    dailyTarget,
+    isTodayComplete,
+    todayProgressPercentage,
+    currentStreak,
+    longestStreak,
+    recentDays,
+    solvedProblemsCount,
+    totalProblemsCount,
+    loading,
+    error,
+  } = useGrindProgress();
+
   return (
     <AppLayout requireAuth>
-      <div className="space-y-8">
-        {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="space-y-2">
+      <div className="space-y-6 max-w-7xl mx-auto pb-12">
+        {/* Error Fallback Notice */}
+        {error && (
+          <div className="flex items-center justify-between gap-3 p-4 rounded-xl border border-destructive/30 bg-destructive/10 text-destructive text-xs">
             <div className="flex items-center gap-2">
-              <Badge variant="subtle">Co-working & Focus</Badge>
-              <span className="text-xs text-muted-foreground">Peer Study Sessions</span>
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              <span>{error}</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground">
-              Grind Rooms
-            </h1>
-            <p className="text-sm text-muted-foreground max-w-xl leading-relaxed">
-              Virtual co-working spaces to solve daily DSA problems with timed Pomodoro sessions and accountability partners.
-            </p>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => window.location.reload()}
+              className="text-xs border-destructive/40 hover:bg-destructive/20 h-7"
+            >
+              <RefreshCw className="h-3 w-3 mr-1" />
+              Try Again
+            </Button>
           </div>
-          <Button variant="primary" startIcon={<Plus className="h-4 w-4" />}>
-            Create Room (Placeholder)
-          </Button>
-        </div>
+        )}
 
-        {/* Grind Rooms Grid Preview */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {/* Room 1 */}
-          <Card variant="interactive" className="p-5 flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <Badge variant="success" dot>Live Now</Badge>
-                <span className="text-xs text-muted-foreground font-medium flex items-center gap-1">
-                  <Users className="h-3.5 w-3.5" /> 8 Scholars
-                </span>
-              </div>
-              <h3 className="text-base font-bold text-foreground">Two Pointers Deep Focus</h3>
-              <p className="text-xs text-muted-foreground">
-                Tackling Week 17 problem set: 3Sum, Container With Most Water, and Two Sum II.
-              </p>
-              <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
-                <Clock className="h-3.5 w-3.5 text-primary" />
-                <span>Pomodoro: 45 min focus / 10 min rest</span>
-              </div>
-            </div>
-            <div className="mt-5 pt-3 border-t border-border/40">
-              <Button variant="secondary" size="sm" className="w-full justify-center" startIcon={<Play className="h-3.5 w-3.5" />}>
-                Join Room (Preview)
-              </Button>
-            </div>
-          </Card>
+        {/* 1. Daily Hero & Progress Banner */}
+        <GrindHero
+          currentStreak={currentStreak}
+          todaySolvedCount={todaySolvedCount}
+          dailyTarget={dailyTarget}
+          isTodayComplete={isTodayComplete}
+          percentage={todayProgressPercentage}
+          loading={loading}
+        />
 
-          {/* Room 2 */}
-          <Card variant="interactive" className="p-5 flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <Badge variant="success" dot>Live Now</Badge>
-                <span className="text-xs text-muted-foreground font-medium flex items-center gap-1">
-                  <Users className="h-3.5 w-3.5" /> 14 Scholars
-                </span>
-              </div>
-              <h3 className="text-base font-bold text-foreground">Graph Traversal (DFS & BFS)</h3>
-              <p className="text-xs text-muted-foreground">
-                Weeks 30 & 31: Number of Islands, Rotting Oranges, and Word Ladder.
-              </p>
-              <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
-                <Clock className="h-3.5 w-3.5 text-primary" />
-                <span>Pomodoro: 50 min focus / 10 min rest</span>
-              </div>
-            </div>
-            <div className="mt-5 pt-3 border-t border-border/40">
-              <Button variant="secondary" size="sm" className="w-full justify-center" startIcon={<Play className="h-3.5 w-3.5" />}>
-                Join Room (Preview)
-              </Button>
-            </div>
-          </Card>
+        {/* 2. Key Stats & Streak Overview */}
+        <GrindStats
+          currentStreak={currentStreak}
+          longestStreak={longestStreak}
+          todaySolvedCount={todaySolvedCount}
+          dailyTarget={dailyTarget}
+          solvedProblemsCount={solvedProblemsCount}
+          totalProblemsCount={totalProblemsCount}
+          loading={loading}
+        />
 
-          {/* Room 3 */}
-          <Card variant="interactive" className="p-5 flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <Badge variant="electric" dot>Silent Study</Badge>
-                <span className="text-xs text-muted-foreground font-medium flex items-center gap-1">
-                  <Users className="h-3.5 w-3.5" /> 21 Scholars
-                </span>
-              </div>
-              <h3 className="text-base font-bold text-foreground">Dynamic Programming Marathon</h3>
-              <p className="text-xs text-muted-foreground">
-                Weeks 35 & 36: Top-Down Memoization vs Bottom-Up Tabulation drill.
-              </p>
-              <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
-                <Clock className="h-3.5 w-3.5 text-primary" />
-                <span>Silent study mode · Screen share optional</span>
-              </div>
-            </div>
-            <div className="mt-5 pt-3 border-t border-border/40">
-              <Button variant="secondary" size="sm" className="w-full justify-center" startIcon={<Play className="h-3.5 w-3.5" />}>
-                Join Room (Preview)
-              </Button>
-            </div>
-          </Card>
-        </div>
+        {/* 3. Today's 3 Recommended Problems */}
+        <GrindProblemList
+          problems={todayProblems}
+          isTodayComplete={isTodayComplete}
+          loading={loading}
+        />
 
-        {/* Informational Placeholder */}
-        <Card className="p-6 text-center space-y-2 border-dashed">
-          <Sparkles className="h-5 w-5 text-primary mx-auto" />
-          <h3 className="text-base font-bold text-foreground">Grind Rooms Shell Ready</h3>
-          <p className="text-xs text-muted-foreground max-w-md mx-auto">
-            Live WebRTC audio/video sync, shared code timers, and attendance streaks will be implemented in future phases.
-          </p>
-        </Card>
+        {/* 4. Recent Grind Activity (Past 7 Days) */}
+        <GrindHistory
+          recentDays={recentDays}
+          currentStreak={currentStreak}
+          loading={loading}
+        />
       </div>
     </AppLayout>
   );

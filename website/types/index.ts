@@ -83,3 +83,18 @@ export interface NavItem {
   disabled?: boolean;
   external?: boolean;
 }
+
+export interface LeaderboardEntry {
+  uid: string;
+  displayName: string;
+  photoURL?: string | null;
+  completedWeeks: number;
+  solvedProblems: number;
+  currentStreak: number;
+  bestStreak: number;
+  dailyGrindDays: number;
+  totalPoints: number;
+  rank?: number;
+  optedIn?: boolean;
+  updatedAt?: unknown;
+}

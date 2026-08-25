@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import {
   doc,
   getDoc,
@@ -13,12 +13,28 @@ import {
 } from "firebase/firestore";
 import { db } from "./client";
 import { useAuth } from "@/contexts/auth-context";
-import { getAllPhases, getPhaseForWeek, getTotalProblemCount } from "@/lib/curriculum";
+import {
+  getAllPhases,
+  getPhaseForWeek,
+  getTotalProblemCount,
+  getAllEnrichedProblems,
+  isValidProblemId,
+  EnrichedProblem,
+} from "@/lib/curriculum";
 import { PhaseInfo } from "@/types";
+
+export const DAILY_GRIND_TARGET = 3;
+
+export interface GrindData {
+  completedDates: string[];
+  lastCompletedDate?: string | null;
+  dailyTarget?: number;
+}
 
 export interface UserProgress {
   completedWeeks: number[];
   completedProblems: string[];
+  grind?: GrindData;
   updatedAt?: unknown;
 }
 
@@ -27,6 +43,13 @@ export interface PhaseProgressSummary {
   completedCount: number;
   totalWeeks: number;
   percentage: number;
+}
+
+export interface RecentGrindDay {
+  dateKey: string;
+  dayLabel: string;
+  isToday: boolean;
+  isCompleted: boolean;
 }
 
 export interface UserProgressSummary {
@@ -44,8 +67,211 @@ export interface UserProgressSummary {
   problemsPercentage: number;
   isProblemSolved: (problemId: string) => boolean;
   toggleProblem: (problemId: string) => Promise<boolean>;
+  grindCompletedDates: string[];
+  currentStreak: number;
+  longestStreak: number;
   loading: boolean;
   error: string | null;
+}
+
+export interface GrindProgressSummary {
+  todayProblems: EnrichedProblem[];
+  todaySolvedCount: number;
+  dailyTarget: number;
+  isTodayComplete: boolean;
+  todayProgressPercentage: number;
+  currentStreak: number;
+  longestStreak: number;
+  completedDates: string[];
+  recentDays: RecentGrindDay[];
+  solvedProblemsCount: number;
+  totalProblemsCount: number;
+  loading: boolean;
+  error: string | null;
+  toggleProblem: (problemId: string) => Promise<boolean>;
+}
+
+/**
+ * Returns a stable YYYY-MM-DD date key in local time.
+ */
+export function getDateKey(date: Date = new Date()): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+/**
+ * Calculates current and longest streaks based on completed date strings (YYYY-MM-DD).
+ */
+export function calculateStreaks(
+  completedDates: string[],
+  referenceDate: Date = new Date()
+): { currentStreak: number; longestStreak: number } {
+  if (!completedDates || completedDates.length === 0) {
+    return { currentStreak: 0, longestStreak: 0 };
+  }
+
+  const sortedDates = Array.from(new Set(completedDates)).sort();
+  if (sortedDates.length === 0) {
+    return { currentStreak: 0, longestStreak: 0 };
+  }
+
+  const dateSet = new Set(sortedDates);
+
+  // 1. Calculate Longest Streak
+  let longestStreak = 0;
+  let runningStreak = 0;
+  let prevDate: Date | null = null;
+
+  for (const dateStr of sortedDates) {
+    const [y, m, d] = dateStr.split("-").map(Number);
+    const currentDate = new Date(y, m - 1, d);
+
+    if (!prevDate) {
+      runningStreak = 1;
+    } else {
+      const diffMs = currentDate.getTime() - prevDate.getTime();
+      const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
+      if (diffDays === 1) {
+        runningStreak += 1;
+      } else if (diffDays > 1) {
+        runningStreak = 1;
+      }
+    }
+    if (runningStreak > longestStreak) {
+      longestStreak = runningStreak;
+    }
+    prevDate = currentDate;
+  }
+
+  // 2. Calculate Current Streak
+  const todayKey = getDateKey(referenceDate);
+  const yesterday = new Date(referenceDate);
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayKey = getDateKey(yesterday);
+
+  let currentStreak = 0;
+  let checkDate: Date;
+
+  if (dateSet.has(todayKey)) {
+    checkDate = new Date(referenceDate);
+  } else if (dateSet.has(yesterdayKey)) {
+    checkDate = yesterday;
+  } else {
+    return { currentStreak: 0, longestStreak };
+  }
+
+  while (true) {
+    const key = getDateKey(checkDate);
+    if (dateSet.has(key)) {
+      currentStreak += 1;
+      checkDate.setDate(checkDate.getDate() - 1);
+    } else {
+      break;
+    }
+  }
+
+  return { currentStreak, longestStreak };
+}
+
+/**
+ * Returns the recent 7 days (including today) with completion status.
+ */
+export function getRecentGrindDays(
+  completedDates: string[],
+  referenceDate: Date = new Date()
+): RecentGrindDay[] {
+  const dateSet = new Set(completedDates || []);
+  const todayKey = getDateKey(referenceDate);
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const days: RecentGrindDay[] = [];
+
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(referenceDate);
+    d.setDate(d.getDate() - i);
+    const key = getDateKey(d);
+    const isToday = key === todayKey;
+    const dayLabel = isToday ? "Today" : dayNames[d.getDay()];
+    const isCompleted = dateSet.has(key);
+
+    days.push({
+      dateKey: key,
+      dayLabel,
+      isToday,
+      isCompleted,
+    });
+  }
+
+  return days;
+}
+
+/**
+ * Generates an integer seed from a date key for deterministic daily selection.
+ */
+function getDailySeed(dateKey: string): number {
+  let hash = 0;
+  for (let i = 0; i < dateKey.length; i++) {
+    hash = (hash << 5) - hash + dateKey.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+/**
+ * Deterministically selects the 3 fixed daily grind problems based on the date and curriculum position.
+ */
+export function getDailyGrindProblems(
+  dateKey: string,
+  allProbs: EnrichedProblem[],
+  userWeek: number | null = 1,
+  target: number = DAILY_GRIND_TARGET
+): EnrichedProblem[] {
+  if (!allProbs || allProbs.length === 0) return [];
+  const centerWeek = Math.max(1, Math.min(43, userWeek || 1));
+
+  // Order weeks by proximity from the user's current week position
+  const weekDistanceOrder: number[] = [];
+  for (let d = 0; d <= 43; d++) {
+    if (centerWeek + d <= 43) weekDistanceOrder.push(centerWeek + d);
+    if (d > 0 && centerWeek - d >= 1) weekDistanceOrder.push(centerWeek - d);
+  }
+
+  const proximityPool: EnrichedProblem[] = [];
+  for (const w of weekDistanceOrder) {
+    const probsInWeek = allProbs.filter((p) => p.weekNumber === w);
+    proximityPool.push(...probsInWeek);
+  }
+
+  // Take a stable cluster around current position
+  const clusterSize = Math.min(proximityPool.length, Math.max(target * 3, 9));
+  const cluster = proximityPool.slice(0, clusterSize);
+
+  const seed = getDailySeed(dateKey);
+  const selected: EnrichedProblem[] = [];
+  const chosenIds = new Set<string>();
+
+  for (let i = 0; i < cluster.length && selected.length < target; i++) {
+    const index = (seed + i) % cluster.length;
+    const candidate = cluster[index];
+    if (!chosenIds.has(candidate.id)) {
+      chosenIds.add(candidate.id);
+      selected.push(candidate);
+    }
+  }
+
+  // Fallback to fill target if needed
+  if (selected.length < target) {
+    for (const p of proximityPool) {
+      if (!chosenIds.has(p.id)) {
+        chosenIds.add(p.id);
+        selected.push(p);
+        if (selected.length === target) break;
+      }
+    }
+  }
+
+  return selected;
 }
 
 /**
@@ -67,14 +293,26 @@ export function sanitizeCompletedWeeks(rawWeeks: unknown): number[] {
 }
 
 /**
- * Sanitizes and deduplicates an array of problem IDs, keeping only non-empty strings.
+ * Sanitizes and deduplicates an array of problem IDs, strictly enforcing that they belong to the canonical 180-problem curriculum.
  */
 export function sanitizeCompletedProblems(rawProblems: unknown): string[] {
   if (!Array.isArray(rawProblems)) return [];
   const valid = rawProblems
-    .filter((id): id is string => typeof id === "string" && id.trim().length > 0)
+    .filter((id): id is string => typeof id === "string" && isValidProblemId(id.trim()))
     .map((id) => id.trim());
   return Array.from(new Set(valid)).sort();
+}
+
+/**
+ * Sanitizes and deduplicates an array of grind date keys (YYYY-MM-DD).
+ */
+export function sanitizeCompletedDates(rawDates: unknown): string[] {
+  if (!Array.isArray(rawDates)) return [];
+  const valid = rawDates.filter(
+    (d): d is string =>
+      typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d.trim())
+  );
+  return Array.from(new Set(valid.map((d) => d.trim()))).sort();
 }
 
 /**
@@ -98,10 +336,19 @@ export async function getUserProgress(uid: string): Promise<UserProgress | null>
       return {
         completedWeeks: sanitizeCompletedWeeks(data.completedWeeks),
         completedProblems: sanitizeCompletedProblems(data.completedProblems),
+        grind: {
+          completedDates: sanitizeCompletedDates(data.grind?.completedDates),
+          lastCompletedDate: data.grind?.lastCompletedDate || null,
+          dailyTarget: data.grind?.dailyTarget || DAILY_GRIND_TARGET,
+        },
         updatedAt: data.updatedAt,
       };
     }
-    return { completedWeeks: [], completedProblems: [] };
+    return {
+      completedWeeks: [],
+      completedProblems: [],
+      grind: { completedDates: [], lastCompletedDate: null, dailyTarget: DAILY_GRIND_TARGET },
+    };
   } catch (error) {
     console.error("Error fetching user progress:", error);
     throw error;
@@ -149,19 +396,20 @@ export async function markWeekIncomplete(uid: string, weekNumber: number): Promi
 }
 
 /**
- * Atomically adds a problem ID to the user's completedProblems array in Firestore.
+ * Atomically adds a validated problem ID to the user's completedProblems array in Firestore.
  */
 export async function markProblemSolved(uid: string, problemId: string): Promise<void> {
   if (!uid) throw new Error("User must be authenticated to save problem progress.");
-  if (!problemId || typeof problemId !== "string" || !problemId.trim()) {
-    throw new Error("Invalid problem ID.");
+  const cleanId = problemId ? problemId.trim() : "";
+  if (!isValidProblemId(cleanId)) {
+    throw new Error("Invalid problem ID: problem does not exist in the curriculum.");
   }
 
   const docRef = getProgressDocRef(uid);
   await setDoc(
     docRef,
     {
-      completedProblems: arrayUnion(problemId.trim()),
+      completedProblems: arrayUnion(cleanId),
       updatedAt: serverTimestamp(),
     },
     { merge: true }
@@ -173,7 +421,8 @@ export async function markProblemSolved(uid: string, problemId: string): Promise
  */
 export async function markProblemUnsolved(uid: string, problemId: string): Promise<void> {
   if (!uid) throw new Error("User must be authenticated to update problem progress.");
-  if (!problemId || typeof problemId !== "string" || !problemId.trim()) {
+  const cleanId = problemId ? problemId.trim() : "";
+  if (!isValidProblemId(cleanId)) {
     throw new Error("Invalid problem ID.");
   }
 
@@ -181,7 +430,60 @@ export async function markProblemUnsolved(uid: string, problemId: string): Promi
   await setDoc(
     docRef,
     {
-      completedProblems: arrayRemove(problemId.trim()),
+      completedProblems: arrayRemove(cleanId),
+      updatedAt: serverTimestamp(),
+    },
+    { merge: true }
+  );
+}
+
+/**
+ * Records a completed daily grind date in Firestore.
+ */
+export async function recordGrindCompletion(
+  uid: string,
+  dateKey: string = getDateKey()
+): Promise<void> {
+  if (!uid) throw new Error("User must be authenticated.");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) {
+    throw new Error("Invalid date key format.");
+  }
+
+  const docRef = getProgressDocRef(uid);
+  await setDoc(
+    docRef,
+    {
+      grind: {
+        completedDates: arrayUnion(dateKey),
+        lastCompletedDate: dateKey,
+        dailyTarget: DAILY_GRIND_TARGET,
+      },
+      updatedAt: serverTimestamp(),
+    },
+    { merge: true }
+  );
+}
+
+/**
+ * Removes a grind date completion from Firestore (e.g. if a problem is un-marked).
+ */
+export async function removeGrindCompletion(
+  uid: string,
+  dateKey: string = getDateKey()
+): Promise<void> {
+  if (!uid) throw new Error("User must be authenticated.");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) {
+    throw new Error("Invalid date key format.");
+  }
+
+  const docRef = getProgressDocRef(uid);
+  await setDoc(
+    docRef,
+    {
+      grind: {
+        completedDates: arrayRemove(dateKey),
+        dailyTarget: DAILY_GRIND_TARGET,
+      },
       updatedAt: serverTimestamp(),
     },
     { merge: true }
@@ -190,7 +492,6 @@ export async function markProblemUnsolved(uid: string, problemId: string): Promi
 
 /**
  * Subscribes to real-time updates on a user's progress document using onSnapshot.
- * Returns an unsubscribe function to clean up the listener.
  */
 export function subscribeToUserProgress(
   uid: string,
@@ -211,10 +512,19 @@ export function subscribeToUserProgress(
         onUpdate({
           completedWeeks: sanitizeCompletedWeeks(data.completedWeeks),
           completedProblems: sanitizeCompletedProblems(data.completedProblems),
+          grind: {
+            completedDates: sanitizeCompletedDates(data.grind?.completedDates),
+            lastCompletedDate: data.grind?.lastCompletedDate || null,
+            dailyTarget: data.grind?.dailyTarget || DAILY_GRIND_TARGET,
+          },
           updatedAt: data.updatedAt,
         });
       } else {
-        onUpdate({ completedWeeks: [], completedProblems: [] });
+        onUpdate({
+          completedWeeks: [],
+          completedProblems: [],
+          grind: { completedDates: [], lastCompletedDate: null, dailyTarget: DAILY_GRIND_TARGET },
+        });
       }
     },
     (err) => {
@@ -269,13 +579,8 @@ export function useWeekProgress(weekNumber: number) {
   }, [currentUser, authLoading, weekNumber]);
 
   const toggle = useCallback(async (): Promise<boolean> => {
-    if (!currentUser) {
-      throw new Error("UNAUTHENTICATED");
-    }
-
-    if (!isValidWeekNumber(weekNumber)) {
-      throw new Error("INVALID_WEEK");
-    }
+    if (!currentUser) throw new Error("UNAUTHENTICATED");
+    if (!isValidWeekNumber(weekNumber)) throw new Error("INVALID_WEEK");
 
     setIsSaving(true);
     setError(null);
@@ -350,13 +655,8 @@ export function useProblemProgress(problemId: string) {
   }, [currentUser, authLoading, problemId]);
 
   const toggle = useCallback(async (): Promise<boolean> => {
-    if (!currentUser) {
-      throw new Error("UNAUTHENTICATED");
-    }
-
-    if (!problemId) {
-      throw new Error("INVALID_PROBLEM_ID");
-    }
+    if (!currentUser) throw new Error("UNAUTHENTICATED");
+    if (!isValidProblemId(problemId)) throw new Error("INVALID_PROBLEM_ID");
 
     setIsSaving(true);
     setError(null);
@@ -395,6 +695,7 @@ export function useUserProgress(): UserProgressSummary {
   const { currentUser, loading: authLoading } = useAuth();
   const [completedWeeks, setCompletedWeeks] = useState<number[]>([]);
   const [completedProblems, setCompletedProblems] = useState<string[]>([]);
+  const [grindCompletedDates, setGrindCompletedDates] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -407,6 +708,7 @@ export function useUserProgress(): UserProgressSummary {
     if (!currentUser) {
       setCompletedWeeks([]);
       setCompletedProblems([]);
+      setGrindCompletedDates([]);
       setLoading(false);
       return;
     }
@@ -418,9 +720,11 @@ export function useUserProgress(): UserProgressSummary {
         if (progress) {
           setCompletedWeeks(sanitizeCompletedWeeks(progress.completedWeeks));
           setCompletedProblems(sanitizeCompletedProblems(progress.completedProblems));
+          setGrindCompletedDates(sanitizeCompletedDates(progress.grind?.completedDates));
         } else {
           setCompletedWeeks([]);
           setCompletedProblems([]);
+          setGrindCompletedDates([]);
         }
         setLoading(false);
       },
@@ -445,7 +749,7 @@ export function useUserProgress(): UserProgressSummary {
       ? Math.round((solvedProblemsCount / totalProblemsCount) * 100)
       : 0;
 
-  // Determine next incomplete week (first missing integer from 1 to 43)
+  // Next incomplete week
   let nextIncompleteWeek: number | null = null;
   for (let i = 1; i <= totalWeeks; i++) {
     if (!completedWeeks.includes(i)) {
@@ -454,12 +758,12 @@ export function useUserProgress(): UserProgressSummary {
     }
   }
 
-  // Determine current phase based on next incomplete week or final phase if completed
+  // Current phase
   const currentPhase = nextIncompleteWeek
     ? getPhaseForWeek(nextIncompleteWeek)
     : getAllPhases()[getAllPhases().length - 1];
 
-  // Calculate progress for each of the 4 curriculum phases
+  // Phase progress
   const phases = getAllPhases();
   const phaseProgress: PhaseProgressSummary[] = phases.map((phase) => {
     const completedInPhase = phase.weeks.filter((w) =>
@@ -475,8 +779,11 @@ export function useUserProgress(): UserProgressSummary {
     };
   });
 
-  // Highest completed week numbers first for recently completed list
   const recentlyCompletedWeeks = [...completedWeeks].reverse().slice(0, 5);
+
+  const { currentStreak, longestStreak } = useMemo(() => {
+    return calculateStreaks(grindCompletedDates);
+  }, [grindCompletedDates]);
 
   const isProblemSolved = useCallback(
     (problemId: string): boolean => {
@@ -515,7 +822,93 @@ export function useUserProgress(): UserProgressSummary {
     problemsPercentage,
     isProblemSolved,
     toggleProblem,
+    grindCompletedDates,
+    currentStreak,
+    longestStreak,
     loading,
     error,
+  };
+}
+
+/**
+ * Dedicated React hook for the Daily Grind workspace.
+ */
+export function useGrindProgress(): GrindProgressSummary {
+  const { currentUser, loading: authLoading } = useAuth();
+  const {
+    completedProblems,
+    nextIncompleteWeek,
+    grindCompletedDates,
+    currentStreak,
+    longestStreak,
+    solvedProblemsCount,
+    totalProblemsCount,
+    loading: progressLoading,
+    error: progressError,
+    toggleProblem,
+  } = useUserProgress();
+
+  const allProblems = useMemo<EnrichedProblem[]>(() => {
+    return getAllEnrichedProblems();
+  }, []);
+
+  const todayKey = useMemo(() => getDateKey(), []);
+
+  // Compute deterministic daily recommended problems (fixed 3 for today)
+  const todayProblems = useMemo(() => {
+    return getDailyGrindProblems(
+      todayKey,
+      allProblems,
+      nextIncompleteWeek || 1,
+      DAILY_GRIND_TARGET
+    );
+  }, [todayKey, allProblems, nextIncompleteWeek]);
+
+  // Compute how many of today's recommended problems are solved
+  const todaySolvedCount = useMemo(() => {
+    return todayProblems.filter((p) => completedProblems.includes(p.id)).length;
+  }, [todayProblems, completedProblems]);
+
+  const isTodayComplete = todaySolvedCount >= DAILY_GRIND_TARGET;
+  const todayProgressPercentage = Math.round(
+    (todaySolvedCount / DAILY_GRIND_TARGET) * 100
+  );
+
+  // Auto-sync grind completion date to Firestore when target is reached
+  useEffect(() => {
+    if (!currentUser || progressLoading) return;
+
+    const isDateRecorded = grindCompletedDates.includes(todayKey);
+
+    if (isTodayComplete && !isDateRecorded) {
+      recordGrindCompletion(currentUser.uid, todayKey).catch((err) =>
+        console.error("Failed to auto-record grind completion:", err)
+      );
+    } else if (!isTodayComplete && isDateRecorded) {
+      removeGrindCompletion(currentUser.uid, todayKey).catch((err) =>
+        console.error("Failed to auto-remove grind completion:", err)
+      );
+    }
+  }, [currentUser, isTodayComplete, grindCompletedDates, todayKey, progressLoading]);
+
+  const recentDays = useMemo(() => {
+    return getRecentGrindDays(grindCompletedDates);
+  }, [grindCompletedDates]);
+
+  return {
+    todayProblems,
+    todaySolvedCount,
+    dailyTarget: DAILY_GRIND_TARGET,
+    isTodayComplete,
+    todayProgressPercentage,
+    currentStreak,
+    longestStreak,
+    completedDates: grindCompletedDates,
+    recentDays,
+    solvedProblemsCount,
+    totalProblemsCount,
+    loading: authLoading || progressLoading,
+    error: progressError,
+    toggleProblem,
   };
 }
