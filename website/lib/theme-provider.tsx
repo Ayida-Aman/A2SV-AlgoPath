@@ -16,13 +16,13 @@ const STORAGE_KEY = "a2sv_legacy_theme";
 
 export function ThemeProvider({
   children,
-  defaultTheme = "system",
+  defaultTheme = "light",
 }: {
   children: React.ReactNode;
   defaultTheme?: Theme;
 }) {
   const [theme, setThemeState] = useState<Theme>(defaultTheme);
-  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("dark");
+  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("light");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export function ThemeProvider({
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
     const applyTheme = () => {
-      let activeTheme: "light" | "dark" = "dark";
+      let activeTheme: "light" | "dark" = "light";
 
       if (theme === "system") {
         activeTheme = mediaQuery.matches ? "dark" : "light";
