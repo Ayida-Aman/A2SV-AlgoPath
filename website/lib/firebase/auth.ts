@@ -120,3 +120,29 @@ export async function updateUserProfile(
     throw error;
   }
 }
+
+/**
+ * Updates the user's display name across Firebase Auth and Firestore.
+ */
+export async function updateUserDisplayName(displayName: string): Promise<void> {
+  const trimmed = displayName.trim();
+  if (!trimmed) {
+    throw new Error("Display name cannot be empty.");
+  }
+  if (trimmed.length > 50) {
+    throw new Error("Display name must be 50 characters or fewer.");
+  }
+  if (!auth.currentUser) {
+    throw new Error("User must be authenticated to update profile.");
+  }
+
+  // 1. Update Firebase Auth user
+  await updateProfile(auth.currentUser, {
+    displayName: trimmed,
+  });
+
+  // 2. Update Firestore users/{uid} document
+  await updateUserProfile(auth.currentUser.uid, {
+    displayName: trimmed,
+  });
+}
