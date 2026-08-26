@@ -56,7 +56,7 @@ export function Hero() {
                   className="w-full sm:w-auto font-semibold shadow-lg shadow-blue-600/20 hover:shadow-blue-600/30"
                   endIcon={<ArrowRight className="h-4 w-4" />}
                 >
-                  Start Your Journey →
+                  Start Your Journey
                 </Button>
               </Link>
               <Link href="/roadmap" className="w-full sm:w-auto">
@@ -76,10 +76,10 @@ export function Hero() {
                 <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0" />
                 <span>Zero fluff curriculum</span>
               </div>
-              <div className="flex items-center gap-1.5">
+              {/* <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0" />
                 <span>LeetCode & Codeforces integration</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0" />
                 <span>An independent community project shared publicly by A2SV students.</span>

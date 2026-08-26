@@ -2,6 +2,9 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut as firebaseSignOut,
+  sendPasswordResetEmail,
+  verifyPasswordResetCode,
+  confirmPasswordReset,
   updateProfile,
   User,
 } from "firebase/auth";
@@ -86,6 +89,49 @@ export async function loginUser({ email, password }: SignInData): Promise<User> 
  */
 export async function logoutUser(): Promise<void> {
   await firebaseSignOut(auth);
+}
+
+/**
+ * Sends a password reset email via Firebase Authentication.
+ * Prevents email enumeration by suppressing user-not-found errors.
+ */
+export async function sendUserPasswordResetEmail(email: string): Promise<void> {
+  const trimmedEmail = email.trim().toLowerCase();
+  try {
+    await sendPasswordResetEmail(auth, trimmedEmail);
+  } catch (err: any) {
+    // If the error is user-not-found, gracefully suppress it to prevent email enumeration
+    if (err?.code === "auth/user-not-found") {
+      return;
+    }
+    throw err;
+  }
+}
+
+/**
+ * Verifies a password reset action code (oobCode) and returns the associated email address.
+ */
+export async function verifyResetCode(actionCode: string): Promise<string> {
+  if (!actionCode || typeof actionCode !== "string") {
+    throw new Error("Invalid password reset action code.");
+  }
+  return await verifyPasswordResetCode(auth, actionCode);
+}
+
+/**
+ * Completes the password reset process with a new password in Firebase Authentication.
+ */
+export async function confirmUserPasswordReset(
+  actionCode: string,
+  newPassword: string
+): Promise<void> {
+  if (!actionCode || typeof actionCode !== "string") {
+    throw new Error("Invalid password reset action code.");
+  }
+  if (!newPassword || newPassword.length < 6) {
+    throw new Error("Password must be at least 6 characters.");
+  }
+  await confirmPasswordReset(auth, actionCode, newPassword);
 }
 
 /**

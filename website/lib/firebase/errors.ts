@@ -26,7 +26,7 @@ export function getAuthErrorMessage(error: unknown): string {
     case "auth/operation-not-allowed":
       return "Email and password authentication is currently not enabled in Firebase.";
     case "auth/too-many-requests":
-      return "Access to this account has been temporarily disabled due to many failed login attempts. Please try again later.";
+      return "Access to this service has been temporarily restricted due to many attempts. Please wait a moment and try again.";
     case "auth/network-request-failed":
       return "Network error. Please check your internet connection and try again.";
     case "auth/popup-closed-by-user":
@@ -35,6 +35,10 @@ export function getAuthErrorMessage(error: unknown): string {
       return "This action requires recent authentication. Please log in again.";
     case "auth/user-token-expired":
       return "Your session has expired. Please sign in again.";
+    case "auth/expired-action-code":
+      return "This password reset link has expired. Please request a new one.";
+    case "auth/invalid-action-code":
+      return "This password reset link is invalid or has already been used. Please request a new one.";
     default:
       if (err.message && !err.message.includes("Firebase:")) {
         return err.message;

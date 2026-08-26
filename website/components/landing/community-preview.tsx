@@ -1,60 +1,32 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
-import { Trophy, Users, Flame, ArrowRight, Sparkles, Medal, ShieldCheck } from "lucide-react";
+import {
+  Trophy,
+  Users,
+  Flame,
+  ArrowRight,
+  Sparkles,
+  Medal,
+  ShieldCheck,
+  AlertCircle,
+  Code2,
+} from "lucide-react";
+import { useTopLeaderboard } from "@/lib/firebase/leaderboard";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar } from "@/components/ui/avatar";
 
 export function CommunityPreview() {
-  const topScholars = [
-    {
-      rank: 1,
-      name: "Baka Codes",
-      role: "Cohort Pioneer",
-      weeksCompleted: 43,
-      problemsSolved: 180,
-      streak: 43,
-      badge: "Rank #1",
-      avatarStatus: "online" as const,
-    },
-    {
-      rank: 2,
-      name: "Kidus M.",
-      role: "Advanced Scholar",
-      weeksCompleted: 42,
-      problemsSolved: 174,
-      streak: 38,
-      badge: "Rank #2",
-      avatarStatus: "online" as const,
-    },
-    {
-      rank: 3,
-      name: "Selamawit T.",
-      role: "Core Scholar",
-      weeksCompleted: 40,
-      problemsSolved: 165,
-      streak: 29,
-      badge: "Rank #3",
-      avatarStatus: "busy" as const,
-    },
-    {
-      rank: 4,
-      name: "Yosef K.",
-      role: "Core Scholar",
-      weeksCompleted: 38,
-      problemsSolved: 152,
-      streak: 21,
-      badge: "Rank #4",
-      avatarStatus: "offline" as const,
-    },
-  ];
+  const { topEntries, totalScholars, loading, error } = useTopLeaderboard(5);
 
   return (
     <section className="py-20 md:py-28 relative">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Mock Leaderboard Card */}
+          {/* Left Column: Real Leaderboard Card */}
           <div className="lg:col-span-6 order-2 lg:order-1 relative">
             <div className="relative mx-auto max-w-lg">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 opacity-20 blur-xl" />
@@ -68,74 +40,165 @@ export function CommunityPreview() {
                     </div>
                     <div>
                       <h3 className="text-base font-bold text-foreground leading-tight">
-                        Cohort Global Ranking
+                        Global Scholar Ranking
                       </h3>
-                      <p className="text-[11px] text-muted-foreground">Updated weekly upon contest submissions</p>
+                      <p className="text-[11px] text-muted-foreground">
+                        Real-time standings across 43 curriculum weeks
+                      </p>
                     </div>
                   </div>
-                  <Badge variant="subtle">Season 1</Badge>
+                  <Badge variant="subtle" className="text-[10px]">
+                    Live Season
+                  </Badge>
                 </div>
 
-                {/* Ranking Rows */}
-                <div className="space-y-2.5">
-                  {topScholars.map((scholar) => (
-                    <div
-                      key={scholar.rank}
-                      className={`flex items-center justify-between p-3 rounded-xl border transition-all ${
-                        scholar.rank === 1
-                          ? "bg-primary/5 border-primary/40 shadow-xs"
-                          : "bg-muted/30 border-border/50 hover:bg-muted/50"
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <span
-                          className={`flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
-                            scholar.rank === 1
-                              ? "bg-amber-500 text-white"
-                              : scholar.rank === 2
-                              ? "bg-slate-300 text-slate-800 dark:bg-slate-700 dark:text-slate-200"
-                              : scholar.rank === 3
-                              ? "bg-amber-700 text-white"
-                              : "bg-muted text-muted-foreground"
-                          }`}
-                        >
-                          {scholar.rank}
-                        </span>
-                        <Avatar
-                          name={scholar.name}
-                          size="sm"
-                          status={scholar.avatarStatus}
-                        />
-                        <div>
-                          <div className="flex items-center gap-1.5">
-                            <span className="text-xs font-bold text-foreground">
-                              {scholar.name}
-                            </span>
-                            {scholar.rank === 1 && (
-                              <Medal className="h-3 w-3 text-amber-500 fill-amber-500" />
-                            )}
+                {/* State A: Loading Skeleton */}
+                {loading && (
+                  <div className="space-y-2.5">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                      <div
+                        key={i}
+                        className="flex items-center justify-between p-3 rounded-xl border border-border/50 bg-muted/20 animate-pulse"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="h-6 w-6 rounded-full bg-muted/60" />
+                          <div className="h-8 w-8 rounded-full bg-muted/60" />
+                          <div className="space-y-1.5">
+                            <div className="h-3.5 w-24 bg-muted/60 rounded" />
+                            <div className="h-2.5 w-32 bg-muted/40 rounded" />
                           </div>
-                          <span className="text-[10px] text-muted-foreground">
-                            {scholar.weeksCompleted} Weeks · {scholar.problemsSolved} Solved
-                          </span>
                         </div>
+                        <div className="h-5 w-16 bg-muted/50 rounded-full" />
                       </div>
+                    ))}
+                  </div>
+                )}
 
-                      <div className="flex items-center gap-2">
-                        <div className="flex items-center gap-1 text-[11px] font-semibold text-amber-600 dark:text-amber-400">
-                          <Flame className="h-3.5 w-3.5 fill-amber-500" />
-                          <span>{scholar.streak}d</span>
+                {/* State B: Error State */}
+                {!loading && error && (
+                  <div className="p-6 rounded-xl border border-destructive/30 bg-destructive/10 text-center space-y-2">
+                    <AlertCircle className="h-6 w-6 text-destructive mx-auto" />
+                    <p className="text-xs font-semibold text-foreground">
+                      {error}
+                    </p>
+                    <p className="text-[11px] text-muted-foreground">
+                      Leaderboard data will refresh automatically once connection is restored.
+                    </p>
+                  </div>
+                )}
+
+                {/* State C: Empty State */}
+                {!loading && !error && topEntries.length === 0 && (
+                  <div className="p-8 rounded-xl border border-dashed border-border/70 text-center space-y-3">
+                    <Sparkles className="h-8 w-8 text-primary mx-auto opacity-70" />
+                    <div className="space-y-1">
+                      <p className="text-sm font-bold text-foreground">
+                        Global ranking is just getting started
+                      </p>
+                      <p className="text-xs text-muted-foreground max-w-xs mx-auto">
+                        Be one of the first scholars to solve problems and claim the #1 spot on the leaderboard.
+                      </p>
+                    </div>
+                    <div className="pt-2">
+                      <Link href="/register">
+                        <Button variant="primary" size="sm" className="text-xs font-semibold">
+                          Join the Leaderboard
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                )}
+
+                {/* State D: Real Ranking Rows */}
+                {!loading && !error && topEntries.length > 0 && (
+                  <div className="space-y-2.5">
+                    {topEntries.map((scholar) => (
+                      <div
+                        key={scholar.uid}
+                        className={`flex items-center justify-between p-3 rounded-xl border transition-all ${
+                          scholar.rank === 1
+                            ? "bg-amber-500/5 border-amber-500/30 shadow-xs"
+                            : scholar.rank === 2
+                            ? "bg-slate-500/5 border-slate-400/30"
+                            : scholar.rank === 3
+                            ? "bg-amber-700/5 border-amber-700/30"
+                            : "bg-muted/20 border-border/50 hover:bg-muted/40"
+                        }`}
+                      >
+                        <div className="flex items-center gap-3 min-w-0">
+                          {/* Rank Pill */}
+                          <span
+                            className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-extrabold ${
+                              scholar.rank === 1
+                                ? "bg-amber-500 text-white shadow-xs"
+                                : scholar.rank === 2
+                                ? "bg-slate-300 text-slate-800 dark:bg-slate-700 dark:text-slate-200"
+                                : scholar.rank === 3
+                                ? "bg-amber-700 text-white"
+                                : "bg-muted text-muted-foreground font-mono"
+                            }`}
+                          >
+                            {scholar.rank}
+                          </span>
+
+                          {/* Avatar */}
+                          <Avatar
+                            name={scholar.displayName}
+                            size="sm"
+                            className="shrink-0"
+                          />
+
+                          {/* Scholar Info */}
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-1.5">
+                              <span className="text-xs font-bold text-foreground truncate">
+                                {scholar.displayName}
+                              </span>
+                              {scholar.rank === 1 && (
+                                <Medal className="h-3.5 w-3.5 text-amber-500 fill-amber-500 shrink-0" />
+                              )}
+                            </div>
+                            <span className="text-[10px] text-muted-foreground block truncate">
+                              {scholar.completedWeeks} {scholar.completedWeeks === 1 ? "Week" : "Weeks"} · {scholar.solvedProblems} Solved
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Right: Points & Streak */}
+                        <div className="flex items-center gap-2 shrink-0 ml-2">
+                          {scholar.currentStreak > 0 && (
+                            <div className="hidden sm:flex items-center gap-1 text-[10px] font-semibold text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1.5 py-0.5 rounded">
+                              <Flame className="h-3 w-3 fill-amber-500 text-amber-500" />
+                              <span>{scholar.currentStreak}d</span>
+                            </div>
+                          )}
+
+                          <div className="text-right">
+                            <span className="text-xs font-extrabold font-mono text-primary block">
+                              {scholar.totalPoints.toLocaleString()}
+                            </span>
+                            <span className="text-[9px] text-muted-foreground uppercase tracking-wider block">
+                              pts
+                            </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* Footer preview note */}
                 <div className="pt-2 border-t border-border/40 flex items-center justify-between text-xs text-muted-foreground">
-                  <span>Peer accountability rankings</span>
-                  <Link href="/leaderboard" className="text-primary font-semibold hover:underline inline-flex items-center gap-1">
-                    <span>View All</span>
+                  <span>
+                    {totalScholars > 0
+                      ? `${totalScholars} ${totalScholars === 1 ? "scholar" : "scholars"} competing`
+                      : "Peer accountability standings"}
+                  </span>
+                  <Link
+                    href="/leaderboard"
+                    className="text-primary font-semibold hover:underline inline-flex items-center gap-1 text-xs"
+                  >
+                    <span>View Full Leaderboard</span>
                     <ArrowRight className="h-3 w-3" />
                   </Link>
                 </div>
@@ -143,7 +206,7 @@ export function CommunityPreview() {
             </div>
           </div>
 
-          {/* Right Column: Copy & Grind Rooms Teaser */}
+          {/* Right Column: Copy & Community Teaser */}
           <div className="lg:col-span-6 order-1 lg:order-2 space-y-6">
             <Badge variant="subtle" className="font-semibold">
               Community & Accountability
@@ -157,40 +220,35 @@ export function CommunityPreview() {
             </h2>
 
             <p className="text-base text-muted-foreground leading-relaxed">
-              Studying Data Structures & Algorithms is an intense mental challenge. A2SV Legacy is built around peer accountability, friendly competition, and shared study rooms.
+              Studying Data Structures & Algorithms is an intense mental marathon. A2SV Legacy brings real-time peer accountability, friendly leaderboard competition, and structured daily routines to keep your momentum alive.
             </p>
 
-            <div className="space-y-4 pt-2">
-              <div className="p-4 rounded-xl bg-card border border-border/60 space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <Trophy className="h-4 w-4 text-primary" />
-                  <h3 className="text-sm font-bold text-foreground">Cohort Leaderboards</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="p-4 rounded-xl border border-border/60 bg-muted/20 space-y-1">
+                <div className="flex items-center gap-2 text-foreground font-bold text-sm">
+                  <Trophy className="h-4 w-4 text-amber-500" />
+                  <span>Authoritative Scoring</span>
                 </div>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Compete on problem solve count and daily consistency without toxic vanity metrics.
+                <p className="text-xs text-muted-foreground">
+                  Points mathematically derived from curriculum milestones, problem solutions, and active streaks.
                 </p>
               </div>
 
-              <div className="p-4 rounded-xl bg-card border border-border/60 space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <Users className="h-4 w-4 text-accent-electric" />
-                  <h3 className="text-sm font-bold text-foreground">Virtual Grind Rooms</h3>
+              <div className="p-4 rounded-xl border border-border/60 bg-muted/20 space-y-1">
+                <div className="flex items-center gap-2 text-foreground font-bold text-sm">
+                  <Flame className="h-4 w-4 text-amber-500" />
+                  <span>Daily Grind & Streaks</span>
                 </div>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Join timed Pomodoro study sessions with other engineers solving the same weekly modules.
+                <p className="text-xs text-muted-foreground">
+                  Build unbreakable daily problem-solving habits with curated 3-problem daily targets.
                 </p>
               </div>
             </div>
 
-            <div className="pt-2 flex items-center gap-3">
+            <div className="pt-2">
               <Link href="/leaderboard">
-                <Button variant="outline" size="md">
-                  Explore Leaderboard
-                </Button>
-              </Link>
-              <Link href="/grind">
-                <Button variant="ghost" size="md" endIcon={<ArrowRight className="h-4 w-4" />}>
-                  Preview Grind Rooms
+                <Button variant="outline" size="md" endIcon={<ArrowRight className="h-4 w-4" />}>
+                  Explore Full Leaderboard
                 </Button>
               </Link>
             </div>

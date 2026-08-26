@@ -381,3 +381,48 @@ export function useLeaderboard(): UseLeaderboardReturn {
     error,
   };
 }
+
+export interface UseTopLeaderboardReturn {
+  topEntries: LeaderboardEntry[];
+  totalScholars: number;
+  loading: boolean;
+  error: string | null;
+}
+
+/**
+ * Lightweight React hook for public surfaces (e.g. Landing Page) to retrieve top-ranking scholars.
+ * Works seamlessly for unauthenticated visitors and authenticated scholars.
+ */
+export function useTopLeaderboard(limit: number = 5): UseTopLeaderboardReturn {
+  const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    setLoading(true);
+    const unsubscribe = subscribeToLeaderboard(
+      (ranked) => {
+        setEntries(ranked);
+        setLoading(false);
+      },
+      (err) => {
+        console.error("Top leaderboard subscription error:", err);
+        setError("Global ranking is temporarily unavailable.");
+        setLoading(false);
+      }
+    );
+
+    return () => unsubscribe();
+  }, []);
+
+  const topEntries = useMemo(() => {
+    return entries.slice(0, limit);
+  }, [entries, limit]);
+
+  return {
+    topEntries,
+    totalScholars: entries.length,
+    loading,
+    error,
+  };
+}

@@ -143,7 +143,7 @@ export function RoadmapPreview() {
         <div className="mt-12 text-center">
           <Link href="/roadmap">
             <Button variant="primary" size="lg" endIcon={<ArrowRight className="h-4 w-4" />}>
-              Explore the full roadmap →
+              Explore the full roadmap 
             </Button>
           </Link>
         </div>

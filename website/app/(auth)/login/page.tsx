@@ -89,16 +89,32 @@ function LoginForm() {
             startIcon={<Mail className="h-4 w-4" />}
           />
 
-          <Input
-            label="Password"
-            type="password"
-            placeholder="••••••••"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            disabled={submitting}
-            required
-            startIcon={<Lock className="h-4 w-4" />}
-          />
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between">
+              <label
+                htmlFor="loginPasswordInput"
+                className="block text-xs font-medium text-foreground/90 uppercase tracking-wider"
+              >
+                Password
+              </label>
+              <Link
+                href="/forgot-password"
+                className="text-xs text-primary hover:underline font-semibold"
+              >
+                Forgot password?
+              </Link>
+            </div>
+            <Input
+              id="loginPasswordInput"
+              type="password"
+              placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              disabled={submitting}
+              required
+              startIcon={<Lock className="h-4 w-4" />}
+            />
+          </div>
 
           <Button
             type="submit"

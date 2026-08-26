@@ -42,7 +42,7 @@ export function FinalCTA() {
                 className="w-full sm:w-auto font-semibold shadow-lg shadow-blue-600/25 hover:shadow-blue-600/35"
                 endIcon={<ArrowRight className="h-4 w-4" />}
               >
-                Start Your Journey →
+                Start Your Journey
               </Button>
             </Link>
             <Link href="/roadmap" className="w-full sm:w-auto">
