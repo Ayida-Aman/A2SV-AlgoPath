@@ -9,7 +9,10 @@
     "associatedWeek": 13,
     "topic": "A2SV Arrays Lists",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "11RpLYZXQrNSeMzciowONY2Ewvck0X42S",
+    "driveUrl": "https://drive.google.com/file/d/11RpLYZXQrNSeMzciowONY2Ewvck0X42S/view",
+    "available": true
   },
   {
     "fileName": "A2SV Arrays_Lists .pdf_thumb.jpg",
@@ -21,7 +24,10 @@
     "associatedWeek": 13,
     "topic": "A2SV Arrays Lists  thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV final __ Linked List Lecture II.pdf",
@@ -33,7 +39,25 @@
     "associatedWeek": 21,
     "topic": "A2SV final    Linked List Lecture II",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "15GIhNi2zqOn45GQULqGk_6ishpuqsb5D",
+    "driveUrl": "https://drive.google.com/file/d/15GIhNi2zqOn45GQULqGk_6ishpuqsb5D/view",
+    "available": true
+  },
+  {
+    "fileName": "A2SV G5 Remote Focus, time management and planning.pdf",
+    "relativePath": "files/A2SV G5 Remote Focus, time management and planning.pdf",
+    "type": "pdf",
+    "sizeBytes": 9521970,
+    "onDisk": true,
+    "associatedSourceDay": 6,
+    "associatedWeek": 6,
+    "topic": "A2SV G5 Remote Focus, time management and planning",
+    "confidence": "high",
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV G6 Linked List Lecture I.pdf",
@@ -45,7 +69,10 @@
     "associatedWeek": 20,
     "topic": "A2SV G6 Linked List Lecture I",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "15CBcuKyc_PGX-LpdKf9xGJcPBmBP4VUo",
+    "driveUrl": "https://drive.google.com/file/d/15CBcuKyc_PGX-LpdKf9xGJcPBmBP4VUo/view",
+    "available": true
   },
   {
     "fileName": "A2SV G6 Remote - Python Track-DS Basics(Lists and Tuples).pdf",
@@ -57,7 +84,10 @@
     "associatedWeek": 5,
     "topic": "A2SV G6 Remote - Python Track-DS Basics(Lists and Tuples)",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "17x6qy0gGb08ZMWcbVQOGwYAJPxT12myC",
+    "driveUrl": "https://drive.google.com/file/d/17x6qy0gGb08ZMWcbVQOGwYAJPxT12myC/view",
+    "available": true
   },
   {
     "fileName": "A2SV G6 Remote - Python Track-DS Basics(Lists and Tuples).pdf_thumb.jpg",
@@ -69,7 +99,10 @@
     "associatedWeek": 5,
     "topic": "A2SV G6 Remote - Python Track-DS Basics(Lists and Tuples) thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV G6 Remote Education - Education Phase I - Two Pointers.pdf",
@@ -81,7 +114,10 @@
     "associatedWeek": 17,
     "topic": "A2SV G6 Remote Education - Education Phase I - Two Pointers",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1BWF26vmaYeqvkrL20EES9Bu7GnXD0LR8",
+    "driveUrl": "https://drive.google.com/file/d/1BWF26vmaYeqvkrL20EES9Bu7GnXD0LR8/view",
+    "available": true
   },
   {
     "fileName": "A2SV G6 Remote Education - Education Phase I - Two Pointers.pdf_thumb.jpg",
@@ -93,7 +129,10 @@
     "associatedWeek": 17,
     "topic": "A2SV G6 Remote Education - Education Phase I - Two Pointers thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV Matrices.pdf",
@@ -105,7 +144,10 @@
     "associatedWeek": 14,
     "topic": "A2SV Matrices",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1PLlGVpVLmWDBwmRV1VTxo4k66qTSBd_t",
+    "driveUrl": "https://drive.google.com/file/d/1PLlGVpVLmWDBwmRV1VTxo4k66qTSBd_t/view",
+    "available": true
   },
   {
     "fileName": "A2SV Matrices.pdf_thumb.jpg",
@@ -117,7 +159,10 @@
     "associatedWeek": 14,
     "topic": "A2SV Matrices thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV Python Track - Best Coding Practices and Code review.pdf",
@@ -129,7 +174,10 @@
     "associatedWeek": 3,
     "topic": "A2SV Python Track - Best Coding Practices and Code review",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1T1W9KX6FVmy9vSi8g7w_zY9qimuXpF8O",
+    "driveUrl": "https://drive.google.com/file/d/1T1W9KX6FVmy9vSi8g7w_zY9qimuXpF8O/view",
+    "available": true
   },
   {
     "fileName": "A2SV Python Track - Best Coding Practices and Code review.pdf_thumb.jpg",
@@ -141,7 +189,10 @@
     "associatedWeek": 3,
     "topic": "A2SV Python Track - Best Coding Practices and Code review thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV Python Track - Best Coding Practices.pdf",
@@ -153,7 +204,10 @@
     "associatedWeek": 1,
     "topic": "A2SV Python Track - Best Coding Practices",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "155YWwPRrziG_ffWDi3R3kAehOFtRTStU",
+    "driveUrl": "https://drive.google.com/file/d/155YWwPRrziG_ffWDi3R3kAehOFtRTStU/view",
+    "available": true
   },
   {
     "fileName": "A2SV Python Track - Best Coding Practices.pdf_thumb.jpg",
@@ -165,7 +219,25 @@
     "associatedWeek": 1,
     "topic": "A2SV Python Track - Best Coding Practices thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
+  },
+  {
+    "fileName": "A2SV_G6_Python_Track_Focus_time_management_and_planning.pdf",
+    "relativePath": "files/A2SV_G6_Python_Track_Focus_time_management_and_planning.pdf",
+    "type": "pdf",
+    "sizeBytes": 9521970,
+    "onDisk": true,
+    "associatedSourceDay": 6,
+    "associatedWeek": 6,
+    "topic": "A2SV G6 Python Track Focus time management and planning",
+    "confidence": "high",
+    "notes": "Telegram export attachment",
+    "driveFileId": "1el9CE4WHwgKiWuZJvhHG610qfER9AZaU",
+    "driveUrl": "https://drive.google.com/file/d/1el9CE4WHwgKiWuZJvhHG610qfER9AZaU/view",
+    "available": true
   },
   {
     "fileName": "A2SV_G6_Remote_Education_Education_Phase_I_Prefix_Sum_no_code.pdf",
@@ -177,7 +249,10 @@
     "associatedWeek": 19,
     "topic": "A2SV G6 Remote Education Education Phase I Prefix Sum no code",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1UmSUgThjFbdjPuzuXlg6NguqAL6vsdFl",
+    "driveUrl": "https://drive.google.com/file/d/1UmSUgThjFbdjPuzuXlg6NguqAL6vsdFl/view",
+    "available": true
   },
   {
     "fileName": "A2SV_G6_Remote_Education_Education_Phase_I_Prefix_Sum_no_code.pdf_thumb.jpg",
@@ -189,7 +264,10 @@
     "associatedWeek": 19,
     "topic": "A2SV G6 Remote Education Education Phase I Prefix Sum no code thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV_G6_Remote_Education_Education_Phase_I_Sliding_Window_Lecture.pdf",
@@ -201,7 +279,10 @@
     "associatedWeek": 18,
     "topic": "A2SV G6 Remote Education Education Phase I Sliding Window Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1odkOfMJHiUC4SUVdFhh3mQTSQ50y76B1",
+    "driveUrl": "https://drive.google.com/file/d/1odkOfMJHiUC4SUVdFhh3mQTSQ50y76B1/view",
+    "available": true
   },
   {
     "fileName": "A2SV_G6_Remote_Education_Education_Phase_I_Sliding_Window_Lecture.pdf_thumb.jpg",
@@ -213,7 +294,10 @@
     "associatedWeek": 18,
     "topic": "A2SV G6 Remote Education Education Phase I Sliding Window Lecture thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV_G6_Remote_Python_Track_Python_Basics,_Conditionals,_Loops_and.pdf",
@@ -225,7 +309,10 @@
     "associatedWeek": 2,
     "topic": "A2SV G6 Remote Python Track Python Basics, Conditionals, Loops and",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1qOlpn2NZBcSDjKjIWcBzoohLQbytgd4j",
+    "driveUrl": "https://drive.google.com/file/d/1qOlpn2NZBcSDjKjIWcBzoohLQbytgd4j/view",
+    "available": true
   },
   {
     "fileName": "A2SV_G6_Remote_Python_Track_Python_Basics,_Conditionals,_Loops_and.pdf_thumb.jpg",
@@ -237,7 +324,10 @@
     "associatedWeek": 2,
     "topic": "A2SV G6 Remote Python Track Python Basics, Conditionals, Loops and thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV_Remote_G5_Python_Track_Built_in_functions_and_classes.pdf",
@@ -249,7 +339,10 @@
     "associatedWeek": 9,
     "topic": "A2SV Remote G5 Python Track Built in functions and classes",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1zSk6lZ4fSy6W7wAEMSSyXzDr5vQuhWOG",
+    "driveUrl": "https://drive.google.com/file/d/1zSk6lZ4fSy6W7wAEMSSyXzDr5vQuhWOG/view",
+    "available": true
   },
   {
     "fileName": "A2SV_Remote_G5_Python_Track_Built_in_functions_and_classes.pdf_thumb.jpg",
@@ -261,7 +354,10 @@
     "associatedWeek": 9,
     "topic": "A2SV Remote G5 Python Track Built in functions and classes thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV_Remote_G6_Python_Track_DS_Basics_2_Sets_and_Dictionaries.pdf",
@@ -273,7 +369,10 @@
     "associatedWeek": 7,
     "topic": "A2SV Remote G6 Python Track DS Basics 2 Sets and Dictionaries",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "197C6usB35bwwCenblQmobZ150qiwcqC3",
+    "driveUrl": "https://drive.google.com/file/d/197C6usB35bwwCenblQmobZ150qiwcqC3/view",
+    "available": true
   },
   {
     "fileName": "A2SV_Remote_G6_Python_Track_DS_Basics_2_Sets_and_Dictionaries.pdf_thumb.jpg",
@@ -285,7 +384,10 @@
     "associatedWeek": 7,
     "topic": "A2SV Remote G6 Python Track DS Basics 2 Sets and Dictionaries thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV_Remote_G6_Python_Track_Time_and_Space_Complexity_1.pdf",
@@ -297,7 +399,10 @@
     "associatedWeek": 10,
     "topic": "A2SV Remote G6 Python Track Time and Space Complexity 1",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1DPKEZyhJSnbFNpWZnwutSEYEEFEDBg18",
+    "driveUrl": "https://drive.google.com/file/d/1DPKEZyhJSnbFNpWZnwutSEYEEFEDBg18/view",
+    "available": true
   },
   {
     "fileName": "A2SV_Remote_G6_Python_Track_Time_and_Space_Complexity_1.pdf_thumb.jpg",
@@ -309,7 +414,10 @@
     "associatedWeek": 10,
     "topic": "A2SV Remote G6 Python Track Time and Space Complexity 1 thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV_Remote_G6_Stacks,_Queues_and_Monotonicity_Lecture_Part_II_without.pdf",
@@ -321,7 +429,10 @@
     "associatedWeek": 23,
     "topic": "A2SV Remote G6 Stacks, Queues and Monotonicity Lecture Part II without",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "15GqiYavgaP1Jvu6PXEQ3AljRjKX8AgQ4",
+    "driveUrl": "https://drive.google.com/file/d/15GqiYavgaP1Jvu6PXEQ3AljRjKX8AgQ4/view",
+    "available": true
   },
   {
     "fileName": "A2SV_Remote_G6_The_7_Steps_of_Highly_Effective_Problem_Solving.pdf",
@@ -333,7 +444,10 @@
     "associatedWeek": 11,
     "topic": "A2SV Remote G6 The 7 Steps of Highly Effective Problem Solving",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1tsEwGtURe5chrD1zyXFfxEjPu8VqOHB9",
+    "driveUrl": "https://drive.google.com/file/d/1tsEwGtURe5chrD1zyXFfxEjPu8VqOHB9/view",
+    "available": true
   },
   {
     "fileName": "A2SV_Remote_G6_The_7_Steps_of_Highly_Effective_Problem_Solving.pdf_thumb.jpg",
@@ -345,7 +459,10 @@
     "associatedWeek": 11,
     "topic": "A2SV Remote G6 The 7 Steps of Highly Effective Problem Solving thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "A2SV_Remote_Stacks,_Queues_and_Monotonicity_Lecture_Part_I.pdf",
@@ -357,7 +474,10 @@
     "associatedWeek": 22,
     "topic": "A2SV Remote Stacks, Queues and Monotonicity Lecture Part I",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "11cqh4Au45Hwd7ftdFJ7W8J--5nUjmmvd",
+    "driveUrl": "https://drive.google.com/file/d/11cqh4Au45Hwd7ftdFJ7W8J--5nUjmmvd/view",
+    "available": true
   },
   {
     "fileName": "Advanced String Algorithms.pdf",
@@ -369,7 +489,10 @@
     "associatedWeek": 43,
     "topic": "Advanced String Algorithms",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "14SJKNXYDaP3V2TmFjh7MsLnPRhAqv4FU",
+    "driveUrl": "https://drive.google.com/file/d/14SJKNXYDaP3V2TmFjh7MsLnPRhAqv4FU/view",
+    "available": true
   },
   {
     "fileName": "BFS Lecture.pdf",
@@ -381,7 +504,10 @@
     "associatedWeek": 31,
     "topic": "BFS Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1FXZ3sSiBvfmNNCvEIugYFKI-vtW37g6H",
+    "driveUrl": "https://drive.google.com/file/d/1FXZ3sSiBvfmNNCvEIugYFKI-vtW37g6H/view",
+    "available": true
   },
   {
     "fileName": "Binary Search.pdf",
@@ -393,7 +519,10 @@
     "associatedWeek": 25,
     "topic": "Binary Search",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1X02cmp5IBMtN7jCctDGwkNxf-yr9SHkw",
+    "driveUrl": "https://drive.google.com/file/d/1X02cmp5IBMtN7jCctDGwkNxf-yr9SHkw/view",
+    "available": true
   },
   {
     "fileName": "Bitwise Operations.pdf",
@@ -405,7 +534,10 @@
     "associatedWeek": 37,
     "topic": "Bitwise Operations",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1B4HBjawIei26CxcNgJfiXovfytHHDoJm",
+    "driveUrl": "https://drive.google.com/file/d/1B4HBjawIei26CxcNgJfiXovfytHHDoJm/view",
+    "available": true
   },
   {
     "fileName": "Bottom Up DP.pdf",
@@ -417,7 +549,10 @@
     "associatedWeek": 36,
     "topic": "Bottom Up DP",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1OfMKpU5z4aMHgIPJ2ALMXlR0p8gj8SdV",
+    "driveUrl": "https://drive.google.com/file/d/1OfMKpU5z4aMHgIPJ2ALMXlR0p8gj8SdV/view",
+    "available": true
   },
   {
     "fileName": "DFS Lecture .pdf",
@@ -429,7 +564,10 @@
     "associatedWeek": 30,
     "topic": "DFS Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1JfEnH6wdIQJqEgR1ybue-muW6yQ4Gg4R",
+    "driveUrl": "https://drive.google.com/file/d/1JfEnH6wdIQJqEgR1ybue-muW6yQ4Gg4R/view",
+    "available": true
   },
   {
     "fileName": "Graph.pdf",
@@ -441,7 +579,10 @@
     "associatedWeek": 29,
     "topic": "Graph",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1WyR2miRCPRkaaKLFF5d0FVC6m0QUxlEM",
+    "driveUrl": "https://drive.google.com/file/d/1WyR2miRCPRkaaKLFF5d0FVC6m0QUxlEM/view",
+    "available": true
   },
   {
     "fileName": "Greedy Lecture.pdf",
@@ -453,7 +594,10 @@
     "associatedWeek": 33,
     "topic": "Greedy Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "18CM41Na096G2ozwrnygUIuSnjY7ZMUHJ",
+    "driveUrl": "https://drive.google.com/file/d/18CM41Na096G2ozwrnygUIuSnjY7ZMUHJ/view",
+    "available": true
   },
   {
     "fileName": "Heap Lecture.pdf",
@@ -465,7 +609,10 @@
     "associatedWeek": 32,
     "topic": "Heap Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "10tqdHDGmS9prM7EgqAwIX6OC6PYoBq9W",
+    "driveUrl": "https://drive.google.com/file/d/10tqdHDGmS9prM7EgqAwIX6OC6PYoBq9W/view",
+    "available": true
   },
   {
     "fileName": "Numerics Lecture.pdf",
@@ -477,7 +624,10 @@
     "associatedWeek": 40,
     "topic": "Numerics Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1shcMcmowzAt8EiJBwOKlsDoPmZYqEeGM",
+    "driveUrl": "https://drive.google.com/file/d/1shcMcmowzAt8EiJBwOKlsDoPmZYqEeGM/view",
+    "available": true
   },
   {
     "fileName": "Recursion_II.pdf",
@@ -489,7 +639,10 @@
     "associatedWeek": 28,
     "topic": "Recursion II",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1NfmnEd8LV3FyBUJjEmJC9wGjjyJWtK3C",
+    "driveUrl": "https://drive.google.com/file/d/1NfmnEd8LV3FyBUJjEmJC9wGjjyJWtK3C/view",
+    "available": true
   },
   {
     "fileName": "Shortest Path Lecture.pdf",
@@ -501,7 +654,10 @@
     "associatedWeek": 42,
     "topic": "Shortest Path Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1qFp7g3ucQbEyBs9RonmX6I5VZaCkcKhy",
+    "driveUrl": "https://drive.google.com/file/d/1qFp7g3ucQbEyBs9RonmX6I5VZaCkcKhy/view",
+    "available": true
   },
   {
     "fileName": "Sorting II - Part I.pdf",
@@ -513,7 +669,10 @@
     "associatedWeek": 39,
     "topic": "Sorting II - Part I",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "13YAADHaULeKkcQmO68QFBr7ulMngv7Og",
+    "driveUrl": "https://drive.google.com/file/d/13YAADHaULeKkcQmO68QFBr7ulMngv7Og/view",
+    "available": true
   },
   {
     "fileName": "Sorting II - Part II.pdf",
@@ -525,7 +684,10 @@
     "associatedWeek": 39,
     "topic": "Sorting II - Part II",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1fj_QE3ocUMdqkDGVOdUzgsNfYxf2ZjQD",
+    "driveUrl": "https://drive.google.com/file/d/1fj_QE3ocUMdqkDGVOdUzgsNfYxf2ZjQD/view",
+    "available": true
   },
   {
     "fileName": "Top-Down DP.pdf",
@@ -537,7 +699,10 @@
     "associatedWeek": 35,
     "topic": "Top-Down DP",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1Fgp9jXV7X3_wOyoLuu0z2UfQ27xKnJxv",
+    "driveUrl": "https://drive.google.com/file/d/1Fgp9jXV7X3_wOyoLuu0z2UfQ27xKnJxv/view",
+    "available": true
   },
   {
     "fileName": "Topological Sort Lecture.pdf",
@@ -549,7 +714,10 @@
     "associatedWeek": 34,
     "topic": "Topological Sort Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1TbzZclNsek1wV2hWvfLcMYsXpmKe3BJS",
+    "driveUrl": "https://drive.google.com/file/d/1TbzZclNsek1wV2hWvfLcMYsXpmKe3BJS/view",
+    "available": true
   },
   {
     "fileName": "Trees_I.pdf",
@@ -561,7 +729,10 @@
     "associatedWeek": 26,
     "topic": "Trees I",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "Trees_II.pdf",
@@ -573,7 +744,10 @@
     "associatedWeek": 27,
     "topic": "Trees II",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "Trie Lecture.pdf",
@@ -585,7 +759,10 @@
     "associatedWeek": 41,
     "topic": "Trie Lecture",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "Union Find.pdf",
@@ -597,7 +774,10 @@
     "associatedWeek": 38,
     "topic": "Union Find",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "_A2SV Remote G6 - Education Phase I - Sorting Part 1.pdf",
@@ -609,7 +789,10 @@
     "associatedWeek": 15,
     "topic": "A2SV Remote G6 - Education Phase I - Sorting Part 1",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": "1g6BVJ7lxBkwokXqXQlvWaSlCez4AKQLP",
+    "driveUrl": "https://drive.google.com/file/d/1g6BVJ7lxBkwokXqXQlvWaSlCez4AKQLP/view",
+    "available": true
   },
   {
     "fileName": "_A2SV Remote G6 - Education Phase I - Sorting Part 1.pdf_thumb.jpg",
@@ -621,7 +804,10 @@
     "associatedWeek": 15,
     "topic": "A2SV Remote G6 - Education Phase I - Sorting Part 1 thumb.jpg",
     "confidence": "high",
-    "notes": "Telegram export attachment"
+    "notes": "Telegram export attachment",
+    "driveFileId": null,
+    "driveUrl": null,
+    "available": false
   },
   {
     "fileName": "_A2SV __ Recursion I.pdf",
@@ -633,30 +819,9 @@
     "associatedWeek": 24,
     "topic": "A2SV    Recursion I",
     "confidence": "high",
-    "notes": "Telegram export attachment"
-  },
-  {
-    "fileName": "A2SV G5 Remote Focus, time management and planning.pdf",
-    "relativePath": "files/A2SV G5 Remote Focus, time management and planning.pdf",
-    "type": "pdf",
-    "sizeBytes": 9332326,
-    "onDisk": false,
-    "associatedSourceDay": 6,
-    "associatedWeek": 6,
-    "topic": "Focus, Time Management & Planning",
-    "confidence": "high",
-    "notes": "Referenced in Telegram message23 (Day 6 Lecture Slide). File download exceeded max export size in Telegram client."
-  },
-  {
-    "fileName": "A2SV_G6_Python_Track_Focus_time_management_and_planning.pdf",
-    "relativePath": "files/A2SV_G6_Python_Track_Focus_time_management_and_planning.pdf",
-    "type": "pdf",
-    "sizeBytes": 9437184,
-    "onDisk": false,
-    "associatedSourceDay": 6,
-    "associatedWeek": 6,
-    "topic": "Focus, Time Management & Planning Note",
-    "confidence": "high",
-    "notes": "Referenced in Telegram message12 (metadata forward). File download exceeded max export size in Telegram client."
+    "notes": "Telegram export attachment",
+    "driveFileId": "1lcabFa3gH6Las-a0SaoNBmZW5BZv7ju1",
+    "driveUrl": "https://drive.google.com/file/d/1lcabFa3gH6Las-a0SaoNBmZW5BZv7ju1/view",
+    "available": true
   }
 ]

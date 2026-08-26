@@ -61,8 +61,8 @@ export default async function WeekDetailPage({ params }: WeekPageProps) {
     <AppLayout>
       <div className="space-y-10 max-w-4xl mx-auto pb-12">
         <WeekDetail week={week} />
-        <WeekProblems problems={problems} weekNumber={weekNum} />
         <WeekResources materials={materials} />
+        <WeekProblems problems={problems} weekNumber={weekNum} />
         <WeekNav weekNumber={weekNum} />
       </div>
     </AppLayout>

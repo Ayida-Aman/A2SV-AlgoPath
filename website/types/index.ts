@@ -36,6 +36,9 @@ export interface MaterialItem {
   onDisk: boolean;
   topic: string;
   confidence: "high" | "medium" | "low";
+  driveUrl?: string | null;
+  driveFileId?: string | null;
+  available?: boolean;
 }
 
 export interface ConceptItem {
