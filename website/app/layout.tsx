@@ -17,9 +17,19 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "A2SV Legacy — 43-Week DSA Curriculum",
+  title: {
+    default: "A2SV Legacy — 43-Week DSA Curriculum",
+    template: "%s — A2SV Legacy",
+  },
   description:
     "An independent educational platform preserving and structuring an intensive 43-week Data Structures, Algorithms, and Competitive Programming journey.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.svg",
+  },
   keywords: [
     "A2SV",
     "DSA",

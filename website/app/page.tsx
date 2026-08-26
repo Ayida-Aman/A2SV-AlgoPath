@@ -10,7 +10,7 @@ import { CommunityPreview } from "@/components/landing/community-preview";
 import { FinalCTA } from "@/components/landing/final-cta";
 
 export const metadata = {
-  title: "A2SV Legacy — 43-Week DSA & Competitive Programming Journey",
+  title: "A2SV Legacy",
   description:
     "An independent educational platform structuring an intensive 43-week Data Structures, Algorithms, and Competitive Programming journey with 180+ problems and 41 lecture slide decks.",
 };
