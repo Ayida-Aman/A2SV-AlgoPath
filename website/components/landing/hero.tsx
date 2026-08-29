@@ -29,10 +29,10 @@ export function Hero() {
           {/* Left Column: Headline & Action */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Mission Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/30 bg-primary-muted text-primary text-xs font-semibold shadow-sm animate-in fade-in duration-500">
+            {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/30 bg-primary-muted text-primary text-xs font-semibold shadow-sm animate-in fade-in duration-500">
               <Sparkles className="h-3.5 w-3.5 text-accent-electric animate-pulse" />
               <span>A 43-week DSA & Competitive Programming journey</span>
-            </div>
+            </div> */}
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground leading-[1.12]">
