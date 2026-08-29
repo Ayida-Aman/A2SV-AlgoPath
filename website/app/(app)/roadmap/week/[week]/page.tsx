@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: WeekPageProps) {
 
   if (!week || isNaN(weekNum) || !/^\d+$/.test(weekParam)) {
     return {
-      title: "Week Not Found — A2SV Legacy",
+      title: "Week Not Found — A2SV AlgoPath",
     };
   }
 
   return {
-    title: `Week ${week.weekNumber}: ${week.title} — A2SV Legacy`,
+    title: `Week ${week.weekNumber}: ${week.title} — A2SV AlgoPath`,
     description: week.description,
   };
 }

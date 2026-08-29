@@ -60,7 +60,7 @@ export default function ForgotPasswordPage() {
             <CardDescription className="leading-relaxed">
               {submitted
                 ? "If an account exists with this email, we've sent a password reset link."
-                : "Enter the email associated with your A2SV Legacy account and we'll send you a password reset link."}
+                : "Enter the email associated with your A2SV AlgoPath account and we'll send you a password reset link."}
             </CardDescription>
           </CardHeader>
 

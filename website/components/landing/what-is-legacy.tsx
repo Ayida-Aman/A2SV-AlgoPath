@@ -3,7 +3,7 @@ import { BookOpen, Code2, Flame, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-export function WhatIsLegacy() {
+export function WhatIsAlgoPath() {
   const pillars = [
     {
       title: "LEARN",
@@ -52,7 +52,7 @@ export function WhatIsLegacy() {
             </span>
           </h2>
           <p className="text-base text-muted-foreground leading-relaxed">
-            Most roadmaps give you an endless list of unorganized links. A2SV Legacy structures the DSA experience into a cohesive, week-by-week learning system.
+            Most roadmaps give you an endless list of unorganized links. A2SV AlgoPath structures the DSA experience into a cohesive, week-by-week learning system.
           </p>
         </div>
 

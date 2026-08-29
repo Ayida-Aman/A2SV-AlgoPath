@@ -220,7 +220,7 @@ export function CommunityPreview() {
             </h2>
 
             <p className="text-base text-muted-foreground leading-relaxed">
-              Studying Data Structures & Algorithms is an intense mental marathon. A2SV Legacy brings real-time peer accountability, friendly leaderboard competition, and structured daily routines to keep your momentum alive.
+              Studying Data Structures & Algorithms is an intense mental marathon. A2SV AlgoPath brings real-time peer accountability, friendly leaderboard competition, and structured daily routines to keep your momentum alive.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

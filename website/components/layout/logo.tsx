@@ -18,9 +18,9 @@ export function Logo({
   href = "/",
 }: LogoProps) {
   const iconSizes = {
-    sm: "h-7 w-7 rounded-lg p-1",
-    md: "h-9 w-9 rounded-xl p-1.5",
-    lg: "h-11 w-11 rounded-2xl p-2",
+    sm: "h-7 w-7",
+    md: "h-9 w-9",
+    lg: "h-11 w-11",
   };
 
   const textSizes = {
@@ -31,43 +31,57 @@ export function Logo({
 
   const content = (
     <div className={cn("flex items-center gap-2.5 group select-none", className)}>
-      {/* Brand Icon: Architectural Algorithmic Emblem */}
+      {/* Brand Icon: Official A2SV AlgoPath Graph Traversal Emblem */}
       <div
         className={cn(
-          "relative flex items-center justify-center bg-gradient-to-br from-primary via-blue-600 to-sky-500 text-white shadow-md shadow-blue-500/20 transition-all duration-300 group-hover:scale-105 group-hover:shadow-glow-electric shrink-0 border border-white/20",
+          "relative flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-md shadow-blue-500/20 rounded-[22%]",
           iconSizes[size]
         )}
       >
         <svg
-          viewBox="0 0 24 24"
+          viewBox="0 0 512 512"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="h-full w-full"
         >
-          {/* Geometric Delta / Ascending Node Network */}
-          <path
-            d="M12 3L20.5 19H16.5L12 10.5L7.5 19H3.5L12 3Z"
-            fill="white"
-            fillOpacity="0.95"
-          />
-          <path
-            d="M12 14.5L15.5 20.5H8.5L12 14.5Z"
-            fill="currentColor"
-            className="text-sky-200"
-          />
-          <circle cx="12" cy="5.5" r="1.3" fill="white" />
-          <circle cx="6" cy="18" r="1.1" fill="white" />
-          <circle cx="18" cy="18" r="1.1" fill="white" />
-        </svg>
+          <defs>
+            <linearGradient id="logo-algo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#2c3ae8" />
+              <stop offset="50%" stopColor="#2962ff" />
+              <stop offset="100%" stopColor="#00b0ff" />
+            </linearGradient>
+          </defs>
 
-        {/* Pulsing activity indicator */}
-        <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-electric opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent-electric"></span>
-        </span>
+          {/* Background Squircle */}
+          <rect width="512" height="512" rx="112" fill="url(#logo-algo-bg)" />
+
+          {/* Connecting Path Segments */}
+          <path
+            d="M120 388L206 244L302 328L404 134"
+            stroke="white"
+            strokeWidth="52"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+
+          {/* Node 1 (Bottom Left - Cyan Center) */}
+          <circle cx="120" cy="388" r="62" fill="white" />
+          <circle cx="120" cy="388" r="38" fill="#00b0ff" />
+
+          {/* Node 2 (Middle Upper - Solid White) */}
+          <circle cx="206" cy="244" r="44" fill="white" />
+
+          {/* Node 3 (Valley Node - Pastel Sky Center) */}
+          <circle cx="302" cy="328" r="56" fill="white" />
+          <circle cx="302" cy="328" r="34" fill="#90caf9" />
+
+          {/* Node 4 (Apex Goal Node - Gold Center) */}
+          <circle cx="404" cy="134" r="70" fill="white" />
+          <circle cx="404" cy="134" r="46" fill="#fbc02d" />
+        </svg>
       </div>
 
-      {/* Brand Typography */}
+      {/* Brand Typography: A2SV AlgoPath */}
       {showText && (
         <div className="flex flex-col">
           <div className="flex items-center gap-1.5 leading-none">
@@ -81,16 +95,16 @@ export function Logo({
             </span>
             <span
               className={cn(
-                "font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-sky-500 dark:from-blue-400 dark:to-sky-300 bg-clip-text text-transparent",
+                "font-extrabold tracking-tight bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 dark:from-blue-400 dark:via-indigo-400 dark:to-cyan-300 bg-clip-text text-transparent",
                 textSizes[size]
               )}
             >
-              Legacy
+              AlgoPath
             </span>
           </div>
           {showTagline && (
             <span className="text-[10px] font-medium text-muted-foreground tracking-wide mt-0.5">
-              Build the skills. Continue the legacy.
+              Master the algorithms. Chart your path.
             </span>
           )}
         </div>

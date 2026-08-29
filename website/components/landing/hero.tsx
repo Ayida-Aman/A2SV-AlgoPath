@@ -36,9 +36,9 @@ export function Hero() {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground leading-[1.12]">
-              Build the skills. <br />
-              <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-primary dark:from-blue-400 dark:via-sky-300 dark:to-blue-500 bg-clip-text text-transparent">
-                Continue the legacy.
+              Master the algorithms. <br />
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-500 dark:from-blue-400 dark:via-indigo-300 dark:to-cyan-400 bg-clip-text text-transparent">
+                Chart your path.
               </span>
             </h1>
 
@@ -102,7 +102,7 @@ export function Hero() {
                     <span className="h-2.5 w-2.5 rounded-full bg-amber-500/80" />
                     <span className="h-2.5 w-2.5 rounded-full bg-emerald-500/80" />
                     <span className="ml-2 font-mono text-[11px] text-muted-foreground">
-                      a2sv-legacy://roadmap/week-30
+                      a2sv-algopath://roadmap/week-30
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-600 dark:text-amber-400 font-semibold text-[11px]">

@@ -15,7 +15,7 @@ export function PublicFooter() {
               An independent, community-driven educational platform preserving and structuring a 43-week Data Structures & Algorithms learning journey into an accessible, open curriculum.
             </p>
             <div className="rounded-lg border border-border/60 bg-muted/40 p-3 text-xs text-muted-foreground max-w-md">
-              <span className="font-semibold text-foreground">Disclaimer:</span> A2SV Legacy is an independent community project and is not officially affiliated with, endorsed by, or operated by A2SV.
+              <span className="font-semibold text-foreground">Disclaimer:</span> A2SV AlgoPath is an independent community project and is not officially affiliated with, endorsed by, or operated by A2SV.
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export function PublicFooter() {
 
         {/* Bottom Bar */}
         <div className="mt-8 border-t border-border/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <p>© {new Date().getFullYear()} A2SV Legacy. Build the skills. Continue the legacy.</p>
+          <p>© {new Date().getFullYear()} A2SV AlgoPath. Master the algorithms. Chart your path.</p>
           <div className="flex items-center gap-4">
             <Link href="/roadmap" className="hover:text-foreground transition-colors">
               Roadmap

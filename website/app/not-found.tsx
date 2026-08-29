@@ -21,7 +21,7 @@ export default function NotFound() {
               Module or Page Not Found
             </h1>
             <p className="text-xs sm:text-sm text-muted-foreground max-w-sm mx-auto leading-relaxed">
-              The week or page you requested does not exist in the 43-week A2SV Legacy curriculum. Valid weeks are between Week 1 and Week 43.
+              The week or page you requested does not exist in the 43-week A2SV AlgoPath curriculum. Valid weeks are between Week 1 and Week 43.
             </p>
           </div>
 

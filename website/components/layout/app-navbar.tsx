@@ -22,7 +22,7 @@ export function AppNavbar() {
     if (path.startsWith("/leaderboard")) return "Leaderboard";
     if (path.startsWith("/grind")) return "Grind Rooms";
     if (path.startsWith("/settings")) return "Settings";
-    return "A2SV Legacy";
+    return "A2SV AlgoPath";
   };
 
   return (

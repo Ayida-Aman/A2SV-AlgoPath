@@ -52,7 +52,7 @@ export function DashboardHero({
           <p className="text-sm text-muted-foreground max-w-xl leading-relaxed">
             {isCompletedAll
               ? "You have completed all 43 weeks of the structured A2SV DSA learning journey. Continue practicing and mastering competitive programming."
-              : "Continue your journey through the structured 43-week A2SV Legacy curriculum."}
+              : "Continue your journey through the structured 43-week A2SV AlgoPath curriculum."}
           </p>
         </div>
 
