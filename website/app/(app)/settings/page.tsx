@@ -26,11 +26,13 @@ import { Avatar } from "@/components/ui/avatar";
 import { useTheme } from "@/lib/theme-provider";
 import { useAuth } from "@/contexts/auth-context";
 import { updateUserDisplayName } from "@/lib/firebase/auth";
+import { getAuthErrorMessage } from "@/lib/firebase/errors";
+import { GoogleIcon } from "@/components/auth/google-icon";
 
 export default function SettingsPage() {
   const router = useRouter();
   const { theme, resolvedTheme, setTheme } = useTheme();
-  const { currentUser, userProfile, signOut, refreshProfile } = useAuth();
+  const { currentUser, userProfile, signOut, refreshProfile, linkGoogle } = useAuth();
 
   // Profile Form State
   const [displayName, setDisplayName] = useState<string>("");
@@ -39,8 +41,36 @@ export default function SettingsPage() {
   const [saveSuccess, setSaveSuccess] = useState<boolean>(false);
   const [saveError, setSaveError] = useState<string | null>(null);
 
+  // Google Linking State
+  const [isLinkingGoogle, setIsLinkingGoogle] = useState<boolean>(false);
+  const [linkSuccess, setLinkSuccess] = useState<string | null>(null);
+
   // Sign out State
   const [isSigningOut, setIsSigningOut] = useState<boolean>(false);
+
+  const isGoogleLinked = currentUser?.providerData?.some(
+    (p) => p.providerId === "google.com"
+  );
+  const isPasswordLinked = currentUser?.providerData?.some(
+    (p) => p.providerId === "password"
+  );
+
+  const handleLinkGoogle = async () => {
+    try {
+      setIsLinkingGoogle(true);
+      setSaveError(null);
+      setLinkSuccess(null);
+      await linkGoogle();
+      await refreshProfile();
+      setLinkSuccess("Google account linked successfully!");
+      setTimeout(() => setLinkSuccess(null), 4000);
+    } catch (err: any) {
+      if (err?.code === "auth/popup-closed-by-user") return;
+      setSaveError(getAuthErrorMessage(err));
+    } finally {
+      setIsLinkingGoogle(false);
+    }
+  };
 
   // Initialize display name from current user / profile
   useEffect(() => {
@@ -161,6 +191,7 @@ export default function SettingsPage() {
           {/* Avatar & Summary */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-4 rounded-xl bg-muted/20 border border-border/40">
             <Avatar
+              src={userProfile?.photoURL || currentUser?.photoURL}
               name={displayName || "Scholar"}
               size="lg"
               className="ring-2 ring-primary/30 shrink-0"
@@ -236,6 +267,46 @@ export default function SettingsPage() {
                   Managed via Firebase Authentication credentials.
                 </p>
               </div>
+            </div>
+
+            {/* Authentication Providers Status & Linking */}
+            <div className="pt-3 border-t border-border/40 space-y-2">
+              <span className="text-xs font-semibold text-foreground block">
+                Authentication Providers
+              </span>
+              <div className="flex flex-wrap items-center gap-2.5">
+                {isGoogleLinked && (
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border/60 bg-muted/30 text-xs font-medium text-foreground">
+                    <GoogleIcon className="h-3.5 w-3.5" />
+                    <span>Google Connected</span>
+                  </div>
+                )}
+                {isPasswordLinked && (
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border/60 bg-muted/30 text-xs font-medium text-foreground">
+                    <Lock className="h-3.5 w-3.5 text-primary" />
+                    <span>Email & Password</span>
+                  </div>
+                )}
+                {!isGoogleLinked && (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    className="text-xs h-8 gap-1.5 font-medium border-border/80 hover:bg-muted/50"
+                    onClick={handleLinkGoogle}
+                    isLoading={isLinkingGoogle}
+                    disabled={isLinkingGoogle}
+                  >
+                    {!isLinkingGoogle && <GoogleIcon className="h-3.5 w-3.5" />}
+                    <span>Connect Google Account</span>
+                  </Button>
+                )}
+              </div>
+              {linkSuccess && (
+                <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+                  {linkSuccess}
+                </p>
+              )}
             </div>
 
             {/* Save Button */}

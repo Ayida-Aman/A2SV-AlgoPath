@@ -211,6 +211,7 @@ export function AppSidebar() {
       >
         <div className="flex items-center gap-2.5 overflow-hidden min-w-0">
           <Avatar
+            src={userProfile?.photoURL || currentUser?.photoURL}
             name={displayName}
             size="sm"
             status={currentUser ? "online" : "offline"}

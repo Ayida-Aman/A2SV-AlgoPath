@@ -29,8 +29,18 @@ export function getAuthErrorMessage(error: unknown): string {
       return "Access to this service has been temporarily restricted due to many attempts. Please wait a moment and try again.";
     case "auth/network-request-failed":
       return "Network error. Please check your internet connection and try again.";
+    case "auth/account-exists-with-different-credential":
+      return "This email is already registered with email and password. Please sign in with your password first.";
+    case "auth/credential-already-in-use":
+      return "This Google account is already linked to another scholar profile.";
     case "auth/popup-closed-by-user":
-      return "The sign-in window was closed before completing.";
+      return "The Google sign-in window was closed before completing.";
+    case "auth/popup-blocked":
+      return "The Google sign-in popup was blocked by your browser. Please enable popups and try again.";
+    case "auth/cancelled-popup-request":
+      return "Only one sign-in request can be processed at a time.";
+    case "auth/unauthorized-domain":
+      return "This domain is not authorized for OAuth in Firebase Console. Please check authorized domains.";
     case "auth/requires-recent-login":
       return "This action requires recent authentication. Please log in again.";
     case "auth/user-token-expired":

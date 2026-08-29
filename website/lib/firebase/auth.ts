@@ -1,6 +1,9 @@
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signInWithPopup,
+  linkWithPopup,
+  GoogleAuthProvider,
   signOut as firebaseSignOut,
   sendPasswordResetEmail,
   verifyPasswordResetCode,
@@ -8,8 +11,13 @@ import {
   updateProfile,
   User,
 } from "firebase/auth";
-import { doc, getDoc, setDoc, updateDoc, serverTimestamp } from "firebase/firestore";
+import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 import { auth, db } from "./client";
+
+export const googleProvider = new GoogleAuthProvider();
+googleProvider.setCustomParameters({
+  prompt: "select_account",
+});
 
 export interface UserProfile {
   uid: string;
@@ -82,6 +90,74 @@ export async function loginUser({ email, password }: SignInData): Promise<User> 
   const trimmedEmail = email.trim().toLowerCase();
   const userCredential = await signInWithEmailAndPassword(auth, trimmedEmail, password);
   return userCredential.user;
+}
+
+/**
+ * Signs in or registers a user via Google Authentication popup.
+ * - For new users: creates users/{uid} document with profile metadata.
+ * - For existing users: preserves existing displayName, progress, and preferences.
+ */
+export async function signInWithGoogle(): Promise<User> {
+  const userCredential = await signInWithPopup(auth, googleProvider);
+  const user = userCredential.user;
+
+  try {
+    const userDocRef = doc(db, "users", user.uid);
+    const docSnap = await getDoc(userDocRef);
+
+    if (!docSnap.exists()) {
+      // New Google User: Create Firestore profile document
+      const newProfile: UserProfile = {
+        uid: user.uid,
+        displayName: user.displayName?.trim() || user.email?.split("@")[0] || "Scholar",
+        email: user.email || "",
+        photoURL: user.photoURL || null,
+        leaderboardOptIn: true,
+        createdAt: new Date().toISOString(),
+      };
+      await setDoc(userDocRef, newProfile);
+    } else {
+      // Existing User: sync photoURL if missing in Firestore while keeping custom displayName & all progress intact
+      const existingData = docSnap.data() as UserProfile;
+      if (!existingData.photoURL && user.photoURL) {
+        await updateDoc(userDocRef, {
+          photoURL: user.photoURL,
+        });
+      }
+    }
+  } catch (firestoreError) {
+    console.warn("Firestore Google profile sync note:", firestoreError);
+  }
+
+  return user;
+}
+
+/**
+ * Securely links the Google authentication provider to the currently signed-in user.
+ * Preserves the original Firebase UID and Firestore progress.
+ */
+export async function linkGoogleAccount(): Promise<User> {
+  if (!auth.currentUser) {
+    throw new Error("You must be signed in to link a Google account.");
+  }
+
+  const result = await linkWithPopup(auth.currentUser, googleProvider);
+  const user = result.user;
+
+  try {
+    const userDocRef = doc(db, "users", user.uid);
+    const docSnap = await getDoc(userDocRef);
+    if (docSnap.exists()) {
+      const existingData = docSnap.data() as UserProfile;
+      if (!existingData.photoURL && user.photoURL) {
+        await updateDoc(userDocRef, { photoURL: user.photoURL });
+      }
+    }
+  } catch (firestoreError) {
+    console.warn("Could not sync photoURL after linking Google account:", firestoreError);
+  }
+
+  return user;
 }
 
 /**

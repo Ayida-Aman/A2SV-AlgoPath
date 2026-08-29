@@ -6,6 +6,8 @@ import { auth } from "@/lib/firebase/client";
 import {
   registerUser,
   loginUser,
+  signInWithGoogle as firebaseSignInWithGoogle,
+  linkGoogleAccount as firebaseLinkGoogleAccount,
   logoutUser,
   getUserProfile,
   UserProfile,
@@ -19,6 +21,8 @@ interface AuthContextType {
   loading: boolean;
   signUp: (data: SignUpData) => Promise<User>;
   signIn: (data: SignInData) => Promise<User>;
+  signInWithGoogle: () => Promise<User>;
+  linkGoogle: () => Promise<User>;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
 }
@@ -78,6 +82,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return user;
   };
 
+  const signInWithGoogle = async (): Promise<User> => {
+    const user = await firebaseSignInWithGoogle();
+    setCurrentUser(user);
+    await fetchProfile(user);
+    return user;
+  };
+
+  const linkGoogle = async (): Promise<User> => {
+    const user = await firebaseLinkGoogleAccount();
+    setCurrentUser(user);
+    await fetchProfile(user);
+    return user;
+  };
+
   const signOut = async (): Promise<void> => {
     await logoutUser();
     setCurrentUser(null);
@@ -98,6 +116,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         loading,
         signUp,
         signIn,
+        signInWithGoogle,
+        linkGoogle,
         signOut,
         refreshProfile,
       }}

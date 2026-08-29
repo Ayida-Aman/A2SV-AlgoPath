@@ -95,7 +95,7 @@ export function Logo({
             </span>
             <span
               className={cn(
-                "font-extrabold tracking-tight bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 dark:from-blue-400 dark:via-indigo-400 dark:to-cyan-300 bg-clip-text text-transparent",
+                "font-extrabold tracking-tight text-primary",
                 textSizes[size]
               )}
             >

@@ -82,7 +82,12 @@ export function UserMenu({ compact = false }: UserMenuProps) {
         aria-haspopup="true"
         aria-label="User profile menu"
       >
-        <Avatar name={displayName} size="sm" status="online" />
+        <Avatar
+          src={userProfile?.photoURL || currentUser.photoURL}
+          name={displayName}
+          size="sm"
+          status="online"
+        />
         {!compact && (
           <>
             <div className="hidden lg:flex flex-col text-left min-w-0 max-w-[130px]">
